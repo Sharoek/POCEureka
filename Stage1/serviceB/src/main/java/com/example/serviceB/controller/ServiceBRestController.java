@@ -1,4 +1,4 @@
-package com.example.ClientB.controller;
+package com.example.serviceB.controller;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

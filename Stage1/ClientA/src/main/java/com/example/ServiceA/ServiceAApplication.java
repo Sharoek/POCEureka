@@ -1,10 +1,10 @@
-package com.example.ClientA;
+package com.example.ServiceA;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ClientAApplication {
+public class ServiceAApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ClientAApplication.class, args);
