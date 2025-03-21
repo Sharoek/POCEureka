@@ -1,0 +1,150 @@
+@import '../../vars';
+
+.react-modal {
+  &__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    // the base admin layout gets a z-index up until 2, so this ensures it's layered on top of the admin
+    // while leaving enough space for other UI elements on top of that (like react-select)
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  &__content {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    background: var(--body-bg);
+    border: 1px solid var(--hairline-color);
+    border-radius: 0;
+    outline: none;
+    padding: 20px;
+    overflow: auto;
+
+    box-shadow:
+      0 4px 8px 0 rgb(0 0 0 / 20%),
+      0 6px 20px 0 rgb(0 0 0 / 20%);
+
+    &--with-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--small {
+      width: 25vw;
+      min-width: 400px;
+      height: 25vh;
+      min-height: 250px;
+
+      .submit-row:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &--confirmation {
+      width: 25vw;
+      min-width: 400px;
+      height: auto;
+      max-height: 25vh;
+    }
+
+    &--large {
+      width: 75vw;
+      height: 75vh;
+    }
+  }
+
+  &__header + * {
+    // leave room for absolute positioned elements that otherwise get cut off by the
+    // overflow: auto
+    padding-block-start: 1em;
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--body-fg);
+    background: transparent;
+    border: none;
+    opacity: 0.5;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__title {
+    // taken from div#content h1 admin CSS styles
+    font-weight: 300;
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  &__section-title {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+
+    .submit-row {
+      margin-top: auto;
+      margin-bottom: 0;
+      flex-shrink: 0;
+      bottom: 1px;
+    }
+
+    // bootstrap styles compete with django .form-row styles...
+    .form-row {
+      display: block;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+
+      &,
+      * {
+        box-sizing: initial;
+      }
+
+      select {
+        box-sizing: border-box;
+      }
+    }
+
+    input[type='url'],
+    input[type='text'] {
+      inline-size: var(--of-admin-input-field-size);
+    }
+
+    // BOOTSTRAP + DJANGO ADMIN IS A TERRIBLE IDEA
+    .collapse:not(.show) {
+      display: inherit;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    margin-block-start: 1.25rem;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

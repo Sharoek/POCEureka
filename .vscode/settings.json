@@ -1,5 +1,3 @@
 {
-    "java.configuration.updateBuildConfiguration": "disabled",
-    "java.compile.nullAnalysis.mode": "disabled",
-    "java.checkstyle.configuration": "${workspaceFolder}\\Stage2\\frankframework\\checkstyle.xml"
+    "java.compile.nullAnalysis.mode": "disabled"
 }

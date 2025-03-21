@@ -1,0 +1,58 @@
+@import '../../vars';
+
+.list {
+  &--no-margin {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  &--accordion {
+    border: solid 1px var(--hairline-color);
+
+    .list__item {
+      padding: 0;
+      color: var(--body-fg);
+
+      & + .list__item {
+        border-top: solid 1px var(--hairline-color);
+      }
+
+      &:hover {
+        background: var(--primary);
+        color: var(--primary-fg);
+      }
+    }
+  }
+
+  &__item {
+    &--active {
+      background: var(--list-item-active-bg);
+      color: var(--list-item-active-fg);
+    }
+
+    &--with-actions {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__item-text {
+    &--allow-wrap {
+      word-break: break-all;
+      overflow-wrap: anywhere;
+    }
+  }
+}
+
+.list__item--active {
+  .button--plain {
+    color: var(--list-item-active-fg);
+  }
+
+  &:hover {
+    .button--plain {
+      color: var(--primary-fg);
+    }
+  }
+}

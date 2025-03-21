@@ -1,0 +1,30 @@
+/* SPDX-License-Identifier: EUPL-1.2 */
+/* Copyright (C) 2020 Dimpact */
+$color-row-background: #f9f9f9 !default;
+
+.external-form {
+  &#{&}--odd {
+    background: $color-row-background;
+  }
+
+  &__field {
+    padding: 20px 10px;
+  }
+
+  &__field--wide {
+    width: 95%;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__group {
+    padding-top: 10px;
+  }
+
+}

@@ -1,0 +1,180 @@
+{% extends "stuf/soap_envelope.xml" %}{% load stuf %}
+{% block body %}
+{# Parent template already defines some common namespaces #}
+<ZKN:zakLk01
+    xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310"
+    xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310"
+    xmlns:GML="http://www.opengis.net/gml"
+>
+    <ZKN:stuurgegevens>
+        <StUF:berichtcode>Lk01</StUF:berichtcode>
+        {% render_stuurgegevens stuurgegevens referentienummer %}
+        <StUF:entiteittype>ZAK</StUF:entiteittype>
+    </ZKN:stuurgegevens>
+    <ZKN:parameters>
+        <StUF:mutatiesoort>T</StUF:mutatiesoort>
+        <StUF:indicatorOvername>V</StUF:indicatorOvername>
+    </ZKN:parameters>
+    <ZKN:object StUF:verwerkingssoort="T" StUF:entiteittype="ZAK">
+        <ZKN:identificatie>{{ zaak_identificatie }}</ZKN:identificatie>
+        {% if zaak_omschrijving %}
+            <ZKN:omschrijving>{{ zaak_omschrijving }}</ZKN:omschrijving>
+        {% endif %}
+        {% for kenmerk in kenmerken %}
+        <ZKN:kenmerk>
+            <ZKN:kenmerk>{{ kenmerk }}</ZKN:kenmerk>
+            <ZKN:bron>Open Formulieren</ZKN:bron>
+        </ZKN:kenmerk>
+        {% endfor %}
+        {% if locatie %}
+            <ZKN:anderZaakObject>
+                <ZKN:omschrijving>{{ locatie.key }}</ZKN:omschrijving>
+                <ZKN:lokatie>
+                    {% if locatie.type == 'Point' %}
+                        <GML:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                            <GML:pos>{{ locatie.coordinates.0 }} {{ locatie.coordinates.1 }}</GML:pos>
+                        </GML:Point>
+                    {% elif locatie.type == 'Polygon' %}
+                        <GML:Polygon srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                            <GML:exterior>
+                                <GML:LinearRing>
+                                    {% for coordinates in locatie.coordinates.0 %}
+                                        <GML:pos>{{ coordinates.0 }} {{ coordinates.1 }}</GML:pos>
+                                    {% endfor %}
+                                </GML:LinearRing>
+                            </GML:exterior>
+                        </GML:Polygon>
+                    {% elif locatie.type == 'LineString' %}
+                        <GML:LineString srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                            <GML:posList srsDimension="2">
+                                {% for coordinates in locatie.coordinates %}{{ coordinates.0 }} {{ coordinates.1 }} {% endfor %}
+                            </GML:posList>
+                        </GML:LineString>
+                    {% endif %}
+               </ZKN:lokatie>
+            </ZKN:anderZaakObject>
+        {% endif %}
+        <ZKN:startdatum>{{ datum_vandaag }}</ZKN:startdatum>
+        <ZKN:registratiedatum>{{ datum_vandaag }}</ZKN:registratiedatum>
+        {% if betalings_indicatie %}<ZKN:betalingsIndicatie>{{ betalings_indicatie }}</ZKN:betalingsIndicatie>{% endif %}
+        {% if laatste_betaaldatum %}<ZKN:laatsteBetaaldatum>{{ laatste_betaaldatum }}</ZKN:laatsteBetaaldatum>{% endif %}
+
+        <ZKN:zaakniveau>1</ZKN:zaakniveau>
+        <ZKN:deelzakenIndicatie>N</ZKN:deelzakenIndicatie>
+        <StUF:tijdstipRegistratie>{{ tijdstip_registratie }}</StUF:tijdstipRegistratie>
+        {% include "stuf_zds/soap/includes/extraElementen.xml" %}
+        <ZKN:isVan StUF:entiteittype="ZAKZKT" StUF:verwerkingssoort="T">
+            <ZKN:gerelateerde StUF:verwerkingssoort="I" StUF:entiteittype="ZKT">
+                {% if zds_zaaktype_omschrijving %}
+                    <ZKN:omschrijving>{{ zds_zaaktype_omschrijving }}</ZKN:omschrijving>
+                {% endif %}
+                <ZKN:code>{{ zds_zaaktype_code }}</ZKN:code>
+                <ZKN:ingangsdatumObject>{{ datum_vandaag }}</ZKN:ingangsdatumObject>
+            </ZKN:gerelateerde>
+        </ZKN:isVan>
+        {% if initiator %}
+            <ZKN:heeftAlsInitiator StUF:verwerkingssoort="T" StUF:entiteittype="ZAKBTRINI">
+                <ZKN:gerelateerde>
+                    {% if initiator.medewerker_nummer %}
+                        <ZKN:medewerker StUF:entiteittype="MDW" StUF:verwerkingssoort="T">
+                            <ZKN:identificatie>{{ initiator.medewerker_nummer }}</ZKN:identificatie>}
+                        </ZKN:medewerker>
+                    {% endif %}
+                    {% if initiator.bsn or initiator.geslachtsnaam %}
+                        <ZKN:natuurlijkPersoon StUF:entiteittype="NPS" StUF:verwerkingssoort="T">
+                            {% if initiator.bsn %}
+                                <BG:inp.bsn>{{ initiator.bsn }}</BG:inp.bsn>
+                                <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+                            {% else %}
+                                <BG:authentiek StUF:metagegeven="true">N</BG:authentiek>
+                            {% endif %}
+                            {% if initiator.geslachtsnaam %}<BG:geslachtsnaam>{{ initiator.geslachtsnaam }}</BG:geslachtsnaam>{% endif %}
+                            {% if initiator.voorvoegselGeslachtsnaam %}<BG:voorvoegselGeslachtsnaam>{{ initiator.voorvoegselGeslachtsnaam }}</BG:voorvoegselGeslachtsnaam>{% endif %}
+                            {% if initiator.voorletters %}<BG:voorletters>{{ initiator.voorletters }}</BG:voorletters>{% endif %}
+                            {% if initiator.voornamen %}<BG:voornamen>{{ initiator.voornamen }}</BG:voornamen>{% endif %}
+                            {% if initiator.geslachtsaanduiding %}<BG:geslachtsaanduiding>{{ initiator.geslachtsaanduiding }}</BG:geslachtsaanduiding>{% endif %}
+                            {% if initiator.geboortedatum %}<BG:geboortedatum StUF:indOnvolledigeDatum="{{ initiator.geboortedatum.indicator }}">{{ initiator.geboortedatum.value }}</BG:geboortedatum>{% endif %}
+
+                            {% if initiator.verblijfsadres.postcode or initiator.verblijfsadres.woonplaatsNaam %}
+                                {% include "stuf_zds/soap/includes/verblijfsadres.xml" %}
+                            {% endif %}
+                        </ZKN:natuurlijkPersoon>
+                    {% elif initiator.vestigingsNummer %}
+                        <ZKN:vestiging StUF:entiteittype="VES" StUF:verwerkingssoort="T">
+                            <BG:vestigingsNummer>{{ initiator.vestigingsNummer }}</BG:vestigingsNummer>
+                            <BG:authentiek>N</BG:authentiek>
+                            {% if initiator.handelsnaam %}<BG:handelsnaam>{{ initiator.handelsnaam }}</BG:handelsnaam>{% endif %}
+
+                            {% if initiator.verblijfsadres.postcode or initiator.verblijfsadres.woonplaatsNaam %}
+                                {% include "stuf_zds/soap/includes/verblijfsadres.xml" %}
+                            {% endif %}
+                        </ZKN:vestiging>
+                    {% elif initiator.kvk or initiator.handelsnaam %}
+                        <ZKN:nietNatuurlijkPersoon StUF:entiteittype="NNP" StUF:verwerkingssoort="T">
+                            {% if initiator.kvk %}
+                                <BG:inn.nnpId>{{ initiator.kvk }}</BG:inn.nnpId>
+                                <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+                            {% else %}
+                                <BG:authentiek StUF:metagegeven="true">N</BG:authentiek>
+                            {% endif %}
+                            {% if initiator.handelsnaam %}<BG:statutaireNaam>{{ initiator.handelsnaam }}</BG:statutaireNaam>{% endif %}
+                            {% if initiator.verblijfsadres.postcode or initiator.verblijfsadres.woonplaatsNaam %}
+                                {% include "stuf_zds/soap/includes/bezoekadres.xml" %}
+                            {% endif %}
+                        </ZKN:nietNatuurlijkPersoon>
+                    {% elif not global_config.allow_empty_initiator %}
+                        <ZKN:natuurlijkPersoon StUF:entiteittype="NPS" StUF:verwerkingssoort="T">
+                            <BG:inp.bsn>111222333</BG:inp.bsn>
+                            <BG:authentiek StUF:metagegeven="true">N</BG:authentiek>
+                        </ZKN:natuurlijkPersoon>
+                    {% endif %}
+                </ZKN:gerelateerde>
+                <StUF:tijdstipRegistratie>{{ tijdstip_registratie }}</StUF:tijdstipRegistratie>
+            </ZKN:heeftAlsInitiator>
+        {% elif not global_config.allow_empty_initiator %}
+            <ZKN:heeftAlsInitiator StUF:verwerkingssoort="T" StUF:entiteittype="ZAKBTRINI">
+                <ZKN:gerelateerde>
+                    <ZKN:natuurlijkPersoon StUF:entiteittype="NPS" StUF:verwerkingssoort="T">
+                        <BG:inp.bsn>111222333</BG:inp.bsn>
+                        <BG:authentiek StUF:metagegeven="true">N</BG:authentiek>
+                    </ZKN:natuurlijkPersoon>
+                </ZKN:gerelateerde>
+                <StUF:tijdstipRegistratie>{{ tijdstip_registratie }}</StUF:tijdstipRegistratie>
+            </ZKN:heeftAlsInitiator>
+        {% endif %}
+        {% if co_signer %}
+            <ZKN:heeftAlsOverigBetrokkene StUF:entiteittype="ZAKOBJ" StUF:verwerkingssoort="T">
+                <ZKN:gerelateerde>
+                    <ZKN:natuurlijkPersoon StUF:entiteittype="NPS" StUF:verwerkingssoort="T">
+                        <BG:inp.bsn>{{ co_signer }}</BG:inp.bsn>
+                        <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+                    </ZKN:natuurlijkPersoon>
+                </ZKN:gerelateerde>
+                <ZKN:omschrijving>mede_initiator</ZKN:omschrijving>
+            </ZKN:heeftAlsOverigBetrokkene>
+        {% endif %}
+        {% if registrator.medewerker %}
+        <ZKN:heeftAlsOverigBetrokkene StUF:entiteittype="ZAKBTROVR" StUF:verwerkingssoort="T">
+            <ZKN:gerelateerde>
+                <ZKN:medewerker StUF:entiteittype="MDW" StUF:verwerkingssoort="T">
+                    <ZKN:identificatie>{{ registrator.medewerker.identificatie }}</ZKN:identificatie>
+                </ZKN:medewerker>
+            </ZKN:gerelateerde>
+        </ZKN:heeftAlsOverigBetrokkene>
+        {% endif %}
+        {% if zds_zaaktype_status_code or zds_zaaktype_status_omschrijving %}
+            <ZKN:heeft StUF:entiteittype="ZAKSTT" StUF:verwerkingssoort="T">
+                <ZKN:gerelateerde StUF:entiteittype="STT" StUF:verwerkingssoort="I">
+                    {% if zds_zaaktype_status_code %}
+                        <ZKN:code>{{ zds_zaaktype_status_code }}</ZKN:code>
+                    {% endif %}
+                    {% if zds_zaaktype_status_omschrijving %}
+                        <ZKN:omschrijving>{{ zds_zaaktype_status_omschrijving }}</ZKN:omschrijving>
+                    {% endif %}
+                </ZKN:gerelateerde>
+                <ZKN:toelichting>Status gezet door verzendende applicatie.</ZKN:toelichting>
+                <ZKN:datumStatusGezet>{{ datum_vandaag }}</ZKN:datumStatusGezet>
+            </ZKN:heeft>
+        {% endif %}
+    </ZKN:object>
+</ZKN:zakLk01>{% endblock %}

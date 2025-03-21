@@ -1,0 +1,29 @@
+# .readthedocs.yaml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+version: 2
+
+sphinx:
+  configuration: docs/conf.py
+
+formats:
+  - pdf
+
+build:
+  os: 'ubuntu-22.04'
+  apt_packages:
+    - libxml2-dev
+    - libxmlsec1-dev
+    - libxmlsec1-openssl
+    - wget
+    - libmagic1
+  tools:
+    python: '3.12'
+  jobs:
+    post_checkout:
+      - bash bin/rtd_post_checkout.sh
+
+python:
+  install:
+    - requirements: requirements/ci.txt

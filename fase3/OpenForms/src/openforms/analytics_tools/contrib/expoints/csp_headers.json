@@ -1,0 +1,14 @@
+[
+    {
+        "directive" : "default-src",
+        "value": "https://*.expoints.nl"
+    },
+    {
+        "directive" : "font-src",
+        "value": "https://*.expoints.nl https://cdn.expoints.nl"
+    },
+    {
+        "directive" : "script-src",
+        "value": "https://*.expoints.nl"
+    }
+]

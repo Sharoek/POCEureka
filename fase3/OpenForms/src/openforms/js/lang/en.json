@@ -1,0 +1,3322 @@
+{
+  "+8EnHh": {
+    "defaultMessage": "Are you sure you want to delete this action?",
+    "description": "Logic rule action deletion confirm message",
+    "originalDefault": "Are you sure you want to delete this action?"
+  },
+  "+BicbW": {
+    "defaultMessage": "Configure",
+    "description": "Manage complex process vars configure link text",
+    "originalDefault": "Configure"
+  },
+  "+DztEl": {
+    "defaultMessage": "Path",
+    "description": "Service fetch configuration modal form Path field label",
+    "originalDefault": "Path"
+  },
+  "+Te82K": {
+    "defaultMessage": "Optional ZGW configuration",
+    "description": "ZGW APIs registration: default overrides fieldset title",
+    "originalDefault": "Optional ZGW configuration"
+  },
+  "+dcHiF": {
+    "defaultMessage": "A case of this type will be created during registration.",
+    "description": "ZGW APIs registration options 'case type' helpText",
+    "originalDefault": "A case of this type will be created during registration."
+  },
+  "+dcsE0": {
+    "defaultMessage": "Remove value",
+    "description": "Delete datetime value",
+    "originalDefault": "Remove value"
+  },
+  "+hAGg7": {
+    "defaultMessage": "Users will not be able to start the form if it is in maintenance mode.",
+    "description": "Form maintenance mode field help text",
+    "originalDefault": "Users will not be able to start the form if it is in maintenance mode."
+  },
+  "+peJTt": {
+    "defaultMessage": "is equal to",
+    "description": "\"==\" operator description",
+    "originalDefault": "is equal to"
+  },
+  "+rILvF": {
+    "defaultMessage": "Mark the form step as applicable",
+    "description": "action type \"step-applicable\" label",
+    "originalDefault": "Mark the form step as applicable"
+  },
+  "/fAEsY": {
+    "defaultMessage": "Submission report CSV informatieobjecttype",
+    "description": "Objects API registration options \"Submission report CSV informatieobjecttype\" label",
+    "originalDefault": "Submission report CSV informatieobjecttype"
+  },
+  "/rF8P0": {
+    "defaultMessage": "Configuration",
+    "description": "Service fetch config configuration tab title",
+    "originalDefault": "Configuration"
+  },
+  "01mWK2": {
+    "defaultMessage": "The format(s) of the attachment(s) containing the submission details",
+    "description": "Email registration options 'attachmentFormats' label",
+    "originalDefault": "The format(s) of the attachment(s) containing the submission details"
+  },
+  "0EYS7D": {
+    "defaultMessage": "Objecttype",
+    "description": "Objects API prefill options 'Objecttype' label",
+    "originalDefault": "Objecttype"
+  },
+  "0M2B7B": {
+    "defaultMessage": "DMN variable",
+    "description": "DMN variable label",
+    "originalDefault": "DMN variable"
+  },
+  "0RXE97": {
+    "defaultMessage": "Literals",
+    "description": "Form literals tab title",
+    "originalDefault": "Literals"
+  },
+  "0ZtMje": {
+    "defaultMessage": "Are you sure you want to delete the step {step}?",
+    "description": "Step delete confirmation",
+    "originalDefault": "Are you sure you want to delete the step {step}?"
+  },
+  "0c0WcI": {
+    "defaultMessage": "Form configuration",
+    "description": "Form configuration fieldset title",
+    "originalDefault": "Form configuration"
+  },
+  "0h7gYQ": {
+    "defaultMessage": "Specify a ZGW property name.",
+    "description": "Column help text for case property that a variable is mapped to",
+    "originalDefault": "Specify a ZGW property name."
+  },
+  "10KWbo": {
+    "defaultMessage": "BRP Personen processing header value",
+    "description": "Form 'BRP Personen processing header value' field label",
+    "originalDefault": "BRP Personen processing header value"
+  },
+  "1ArmQ5": {
+    "defaultMessage": "Confirm",
+    "description": "Camunda complex process variables confirm button",
+    "originalDefault": "Confirm"
+  },
+  "1HfdUc": {
+    "defaultMessage": "The API group specifies which objects and objecttypes services to use.",
+    "description": "Objects API group field help text",
+    "originalDefault": "The API group specifies which objects and objecttypes services to use."
+  },
+  "1I9Slb": {
+    "defaultMessage": "DMN configuration:",
+    "description": "Configuration button DMN label",
+    "originalDefault": "DMN configuration:"
+  },
+  "1M3VJC": {
+    "defaultMessage": "Configure options",
+    "description": "Link label to open registration options modal",
+    "originalDefault": "Configure options"
+  },
+  "1fD+K4": {
+    "defaultMessage": "Incomplete Submissions Removal Method",
+    "description": "Incomplete Submissions Removal Method field label",
+    "originalDefault": "Incomplete Submissions Removal Method"
+  },
+  "1iwlXs": {
+    "defaultMessage": "Add variable",
+    "description": "Add variable button",
+    "originalDefault": "Add variable"
+  },
+  "1lMaOI": {
+    "defaultMessage": "Open Forms variable",
+    "description": "Open Forms variable label",
+    "originalDefault": "Open Forms variable"
+  },
+  "1y4N2r": {
+    "defaultMessage": "RSIN of the organization, which creates and owns the case and documents.",
+    "description": "ZGW APIs registration options 'organisationRSIN' help text",
+    "originalDefault": "RSIN of the organization, which creates and owns the case and documents."
+  },
+  "1z/bNS": {
+    "defaultMessage": "Zds zaaktype code",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeCode' label",
+    "originalDefault": "Zds zaaktype code"
+  },
+  "20K9To": {
+    "defaultMessage": "Service fetch configuration",
+    "description": "Service fetch configuration selection modal title",
+    "originalDefault": "Service fetch configuration"
+  },
+  "294MCM": {
+    "defaultMessage": "Is deleted",
+    "description": "Form deleted field label",
+    "originalDefault": "Is deleted"
+  },
+  "2MK7iF": {
+    "defaultMessage": "Number",
+    "description": "JSON variable type \"number\" representation",
+    "originalDefault": "Number"
+  },
+  "2P7mDI": {
+    "defaultMessage": "Content of the registration email message (as text).",
+    "description": "Email registration options 'emailContentTemplateText' helpText",
+    "originalDefault": "Content of the registration email message (as text)."
+  },
+  "2Z/hNo": {
+    "defaultMessage": "Type",
+    "description": "Camunda complex process var 'type' label",
+    "originalDefault": "Type"
+  },
+  "2boL55": {
+    "defaultMessage": "Query parameters",
+    "description": "Service fetch configuration modal form query parameters field label",
+    "originalDefault": "Query parameters"
+  },
+  "2d5RfI": {
+    "defaultMessage": "Registration backend options",
+    "description": "Registration backend options label",
+    "originalDefault": "Registration backend options"
+  },
+  "2emuJW": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel link",
+    "originalDefault": "Cancel"
+  },
+  "2k1bnf": {
+    "defaultMessage": "API group",
+    "description": "Objects API group field label",
+    "originalDefault": "API group"
+  },
+  "2nxTFx": {
+    "defaultMessage": "Postcode Schema target",
+    "description": "Objects registration variable mapping, addressNL component: 'options.postcode schema target' label",
+    "originalDefault": "Postcode Schema target"
+  },
+  "2uIYst": {
+    "defaultMessage": "The process definition for which to start a process instance.",
+    "description": "Camunda 'process definition' help text",
+    "originalDefault": "The process definition for which to start a process instance."
+  },
+  "3FxzLm": {
+    "defaultMessage": "When {desc}",
+    "description": "Logic expression generated description",
+    "originalDefault": "When {desc}"
+  },
+  "3SCiQR": {
+    "defaultMessage": "Copy configuration from registration",
+    "description": "Objects API prefill options: link to show copy from registration button",
+    "originalDefault": "Copy configuration from registration"
+  },
+  "3W3Px9": {
+    "defaultMessage": "Add another",
+    "description": "Button text to add extra item",
+    "originalDefault": "Add another"
+  },
+  "3ZtB10": {
+    "defaultMessage": "Ask statement of truth",
+    "description": "Form askStatementOfTruth field label",
+    "originalDefault": "Ask statement of truth"
+  },
+  "3z1hhJ": {
+    "defaultMessage": "Toggle JSON Schema",
+    "description": "Objects API variable configuration editor JSON Schema visibility toggle",
+    "originalDefault": "Toggle JSON Schema"
+  },
+  "3zaZWN": {
+    "defaultMessage": "Plugin configuration: demo",
+    "description": "Demo registration options modal title",
+    "originalDefault": "Plugin configuration: demo"
+  },
+  "4FQxD/": {
+    "defaultMessage": "Configure",
+    "description": "JSON editor: 'configure' header label",
+    "originalDefault": "Configure"
+  },
+  "4sFGgA": {
+    "defaultMessage": "The expressions here are extracted from the selected decision definition. It's possible certain inputs are displayed here that are already provided by a dependency of the selected decision, due to the complexity of the input expression.",
+    "description": "DMN input expressions warning about extraction accuracy",
+    "originalDefault": "The expressions here are extracted from the selected decision definition. It's possible certain inputs are displayed here that are already provided by a dependency of the selected decision, due to the complexity of the input expression."
+  },
+  "5/5LjA": {
+    "defaultMessage": "Enable {plugin}",
+    "description": "Plugin enabled label",
+    "originalDefault": "Enable {plugin}"
+  },
+  "5/xPX6": {
+    "defaultMessage": "Name",
+    "description": "Form name field label",
+    "originalDefault": "Name"
+  },
+  "5AC1+x": {
+    "defaultMessage": "The value of the selected field will be the process variable value.",
+    "description": "Manage process vars component help text",
+    "originalDefault": "The value of the selected field will be the process variable value."
+  },
+  "5EOSwM": {
+    "defaultMessage": "Additional",
+    "description": "JSON registration options 'additionalMetadataVariables' label",
+    "originalDefault": "Additional"
+  },
+  "5JNnFB": {
+    "defaultMessage": "Switching to the legacy registration options will remove the existing variables mapping. Are you sure you want to continue?",
+    "description": "Objects API registration backend: v1 switch warning message",
+    "originalDefault": "Switching to the legacy registration options will remove the existing variables mapping. Are you sure you want to continue?"
+  },
+  "5MiyLE": {
+    "defaultMessage": "Configure",
+    "description": "Button to open DMN configuration modal",
+    "originalDefault": "Configure"
+  },
+  "5P+YgL": {
+    "defaultMessage": "Add step",
+    "description": "add step button",
+    "originalDefault": "Add step"
+  },
+  "5QLG/6": {
+    "defaultMessage": "Add another value",
+    "description": "Label for add button used in MappingArrayInput",
+    "originalDefault": "Add another value"
+  },
+  "5obGLN": {
+    "defaultMessage": "User defined",
+    "description": "Variable source group label for user defined variables",
+    "originalDefault": "User defined"
+  },
+  "5rj0a+": {
+    "defaultMessage": "Service",
+    "description": "JSON registration options 'serviceSelect' label",
+    "originalDefault": "Service"
+  },
+  "5uaKBM": {
+    "defaultMessage": "minus",
+    "description": "\"-\" operator description",
+    "originalDefault": "minus"
+  },
+  "5zieWh": {
+    "defaultMessage": "Name of the form definition used in this form step",
+    "description": "Form step name field help text",
+    "originalDefault": "Name of the form definition used in this form step"
+  },
+  "6IAwkJ": {
+    "defaultMessage": "This form step requires a login, but no authentication backend has been specified.",
+    "description": "No authentication backend selected warning.",
+    "originalDefault": "This form step requires a login, but no authentication backend has been specified."
+  },
+  "6PIG4q": {
+    "defaultMessage": "Authentication",
+    "description": "Auth plugin field label",
+    "originalDefault": "Authentication"
+  },
+  "6ZW12a": {
+    "defaultMessage": "Request body",
+    "description": "Service fetch configuration modal form request body field label",
+    "originalDefault": "Request body"
+  },
+  "6hApJ7": {
+    "defaultMessage": "Stay logged in",
+    "description": "Extend session button",
+    "originalDefault": "Stay logged in"
+  },
+  "6jv6nd": {
+    "defaultMessage": "Data type",
+    "description": "DMN Input clause data type header",
+    "originalDefault": "Data type"
+  },
+  "6k14SS": {
+    "defaultMessage": "Key",
+    "description": "Variable table key title",
+    "originalDefault": "Key"
+  },
+  "6qPITC": {
+    "defaultMessage": "Something went wrong while retrieving the available object types.",
+    "description": "Objects API prefill options: object type select error",
+    "originalDefault": "Something went wrong while retrieving the available object types."
+  },
+  "7/Bhpw": {
+    "defaultMessage": "Please fill in the name of the previous variable before adding another",
+    "description": "Warning to finish invalid user defined variable",
+    "originalDefault": "Please fill in the name of the previous variable before adding another"
+  },
+  "7/n6O+": {
+    "defaultMessage": "This form has no versions.",
+    "description": "No form version history message",
+    "originalDefault": "This form has no versions."
+  },
+  "70Q0CM": {
+    "defaultMessage": "Previous text",
+    "description": "literals.previousText form label",
+    "originalDefault": "Previous text"
+  },
+  "7F64bK": {
+    "defaultMessage": "Whether the form is (soft) deleted",
+    "description": "Form deleted field help text",
+    "originalDefault": "Whether the form is (soft) deleted"
+  },
+  "7JMcZW": {
+    "defaultMessage": "The text that will be displayed at the start of the form to indicate the user can begin to fill in the form. Leave blank to get value from global configuration.",
+    "description": "literals.beginText help text",
+    "originalDefault": "The text that will be displayed at the start of the form to indicate the user can begin to fill in the form. Leave blank to get value from global configuration."
+  },
+  "7RVZYq": {
+    "defaultMessage": "Unique identifier for the form",
+    "description": "Form ID field help text",
+    "originalDefault": "Unique identifier for the form"
+  },
+  "7X6yT4": {
+    "defaultMessage": "You are modifying an existing form definition! This change affects <link>{count, plural, one {# form} other {# forms} }</link>",
+    "description": "Warning when modifying existing form definitions",
+    "originalDefault": "You are modifying an existing form definition! This change affects <link>{count, plural, one {# form} other {# forms} }</link>"
+  },
+  "7YqZOp": {
+    "defaultMessage": "Next text",
+    "description": "Form step next text label",
+    "originalDefault": "Next text"
+  },
+  "7ZdEaP": {
+    "defaultMessage": "Documenttype description for newly created zaken in StUF-ZDS",
+    "description": "StUF-ZDS registration options 'zdsDocumenttypeOmschrijvingInzending' helpText",
+    "originalDefault": "Documenttype description for newly created zaken in StUF-ZDS"
+  },
+  "7cfkp6": {
+    "defaultMessage": "Expected input expressions",
+    "description": "DMN input expressions title",
+    "originalDefault": "Expected input expressions"
+  },
+  "7di6Fm": {
+    "defaultMessage": "is less than or equal to",
+    "description": "\"<=\" operator description",
+    "originalDefault": "is less than or equal to"
+  },
+  "7gZkW/": {
+    "defaultMessage": "Registration",
+    "description": "Variable table registration title",
+    "originalDefault": "Registration"
+  },
+  "7hc31v": {
+    "defaultMessage": "The email addresses to which the payment status update will be sent (defaults to general registration addresses)",
+    "description": "Email registration options 'paymentEmails' label",
+    "originalDefault": "The email addresses to which the payment status update will be sent (defaults to general registration addresses)"
+  },
+  "7jY1U4": {
+    "defaultMessage": "Fields",
+    "description": "Form definition formio configuration",
+    "originalDefault": "Fields"
+  },
+  "833GAg": {
+    "defaultMessage": "Input mapping",
+    "description": "Input mapping title",
+    "originalDefault": "Input mapping"
+  },
+  "89fqYz": {
+    "defaultMessage": "Is reusable?",
+    "description": "Form step is reusable label",
+    "originalDefault": "Is reusable?"
+  },
+  "8LLxRg": {
+    "defaultMessage": "The text that will be displayed in the form step to save the current information. Leave blank to get value from global configuration.",
+    "description": "Form step save text field help text",
+    "originalDefault": "The text that will be displayed in the form step to save the current information. Leave blank to get value from global configuration."
+  },
+  "8NbOpb": {
+    "defaultMessage": "Variables",
+    "description": "Variables tab title",
+    "originalDefault": "Variables"
+  },
+  "8VqmbG": {
+    "defaultMessage": "Type",
+    "description": "JSON editor: 'type' header label",
+    "originalDefault": "Type"
+  },
+  "8ZSQ9s": {
+    "defaultMessage": "Whether to display the short progress summary, indicating the current step number and total amount of steps.",
+    "description": "Summary of the progress help text",
+    "originalDefault": "Whether to display the short progress summary, indicating the current step number and total amount of steps."
+  },
+  "8hSjw4": {
+    "defaultMessage": "Component {label} ({key}) uses a non-existent component key {missingKey} in the simple logic.",
+    "description": "Wrong simple logic warning",
+    "originalDefault": "Component {label} ({key}) uses a non-existent component key {missingKey} in the simple logic."
+  },
+  "8nY+h7": {
+    "defaultMessage": "Zaaktype description for newly created Zaken in StUF-ZDS",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeOmschrijving' helpText",
+    "originalDefault": "Zaaktype description for newly created Zaken in StUF-ZDS"
+  },
+  "8pemD3": {
+    "defaultMessage": "Edit variable {name}",
+    "description": "JSON editor: variable edit panel title",
+    "originalDefault": "Edit variable {name}"
+  },
+  "91XY1Q": {
+    "defaultMessage": "Is not sensitive",
+    "description": "Is not sensitive icon title",
+    "originalDefault": "Is not sensitive"
+  },
+  "9AQi2/": {
+    "defaultMessage": "Please select the logic type:",
+    "description": "Logic type selection label",
+    "originalDefault": "Please select the logic type:"
+  },
+  "9LdZVP": {
+    "defaultMessage": "Attribute",
+    "description": "Variable prefill attribute label",
+    "originalDefault": "Attribute"
+  },
+  "9LflJr": {
+    "defaultMessage": "Key",
+    "description": "Label for 'key' in MappingArrayInput table column",
+    "originalDefault": "Key"
+  },
+  "9RDDDn": {
+    "defaultMessage": "{varCount, plural, =0 {} one {(1 variable defined)} other {({varCount} variables defined)} }",
+    "description": "Managed complex Camunda process vars state feedback",
+    "originalDefault": "{varCount, plural, =0 {} one {(1 variable defined)} other {({varCount} variables defined)} }"
+  },
+  "9WZkZg": {
+    "defaultMessage": "Changing the objecttype will remove the existing variables mapping. Are you sure you want to continue?",
+    "description": "Objects API registration options: warning message when changing the object type",
+    "originalDefault": "Changing the objecttype will remove the existing variables mapping. Are you sure you want to continue?"
+  },
+  "9akVrT": {
+    "defaultMessage": "Zds documenttype omschrijving inzending",
+    "description": "StUF-ZDS registration options 'zdsDocumenttypeOmschrijvingInzending' label",
+    "originalDefault": "Zds documenttype omschrijving inzending"
+  },
+  "9bGp7h": {
+    "defaultMessage": "Active",
+    "description": "Form active field label",
+    "originalDefault": "Active"
+  },
+  "9dLOs2": {
+    "defaultMessage": "and",
+    "description": "Extra logic action prefix",
+    "originalDefault": "and"
+  },
+  "9fW2NX": {
+    "defaultMessage": "Sorry! Something unexpected went wrong.<br></br>Contact your technical administrator to investigate, or perhaps more information is available in the <link>outgoing request logs</link>.",
+    "description": "Generic admin error message",
+    "originalDefault": "Sorry! Something unexpected went wrong.<br></br>Contact your technical administrator to investigate, or perhaps more information is available in the <link>outgoing request logs</link>."
+  },
+  "9y3/ek": {
+    "defaultMessage": "Confirm",
+    "description": "JSON editor: confirm edited variable definition",
+    "originalDefault": "Confirm"
+  },
+  "9zJefY": {
+    "defaultMessage": "Errored Submissions Removal Limit",
+    "description": "Errored Submissions Removal Limit field label",
+    "originalDefault": "Errored Submissions Removal Limit"
+  },
+  "A1tDIH": {
+    "defaultMessage": "Name",
+    "description": "Registration backend long name",
+    "originalDefault": "Name"
+  },
+  "A3uQyR": {
+    "defaultMessage": "Display main website link",
+    "description": "Display main website link field label",
+    "originalDefault": "Display main website link"
+  },
+  "ADAp0E": {
+    "defaultMessage": "Please log in again to continue.",
+    "description": "Call to action to log in again",
+    "originalDefault": "Please log in again to continue."
+  },
+  "AFyQut": {
+    "defaultMessage": "is greater than",
+    "description": "\">\" operator description",
+    "originalDefault": "is greater than"
+  },
+  "AHfeW/": {
+    "defaultMessage": "Configure",
+    "description": "Button to open service fetch configuration modal",
+    "originalDefault": "Configure"
+  },
+  "AHsD4C": {
+    "defaultMessage": "Something went wrong retrieving the available object type versions.",
+    "description": "Objects API registrations options: object type version select error",
+    "originalDefault": "Something went wrong retrieving the available object type versions."
+  },
+  "APOVFs": {
+    "defaultMessage": "Form details",
+    "description": "Form details fieldset title",
+    "originalDefault": "Form details"
+  },
+  "AUADgz": {
+    "defaultMessage": "The text that will be displayed in the overview page to change a certain step. Leave blank to get value from global configuration.",
+    "description": "literals.changeText help text",
+    "originalDefault": "The text that will be displayed in the overview page to change a certain step. Leave blank to get value from global configuration."
+  },
+  "AWyevn": {
+    "defaultMessage": "Confidentiality",
+    "description": "ZGW APIs registration options 'zaakVertrouwelijkheidaanduiding' label",
+    "originalDefault": "Confidentiality"
+  },
+  "AdyBdF": {
+    "defaultMessage": "Something went wrong while retrieving the available role types defined in the selected case. Please check that the services in the selected API group are configured correctly.",
+    "description": "ZGW APIs registrations options: role type error",
+    "originalDefault": "Something went wrong while retrieving the available role types defined in the selected case. Please check that the services in the selected API group are configured correctly."
+  },
+  "AkG8Zu": {
+    "defaultMessage": "Plugin configuration: JSON",
+    "description": "JSON registration options modal title",
+    "originalDefault": "Plugin configuration: JSON"
+  },
+  "AtBVAV": {
+    "defaultMessage": "Confirm",
+    "description": "Form definition select confirm button",
+    "originalDefault": "Confirm"
+  },
+  "B/A1Bk": {
+    "defaultMessage": "Which merchant should be used for payments related to this form.",
+    "description": "Ogone legacy payment options 'merchantId' help text",
+    "originalDefault": "Which merchant should be used for payments related to this form."
+  },
+  "B5RSyi": {
+    "defaultMessage": "Email payment subject",
+    "description": "Email registration options 'emailPaymentSubject' label",
+    "originalDefault": "Email payment subject"
+  },
+  "BHr/3M": {
+    "defaultMessage": "If specified, the recipient email addresses will be taken from the selected variable. You must still specify 'regular' email addresses as a fallback, in case something is wrong with the variable.",
+    "description": "Email registration options 'toEmailsFromVariable' helpText",
+    "originalDefault": "If specified, the recipient email addresses will be taken from the selected variable. You must still specify 'regular' email addresses as a fallback, in case something is wrong with the variable."
+  },
+  "BKTOtD": {
+    "defaultMessage": "{varCount, plural, =0 {} one {(1 variable mapped)} other {({varCount} variables mapped)} }",
+    "description": "Managed Camunda process vars state feedback",
+    "originalDefault": "{varCount, plural, =0 {} one {(1 variable mapped)} other {({varCount} variables mapped)} }"
+  },
+  "BR6rKB": {
+    "defaultMessage": "Check to include the field as process variable",
+    "description": "Manage complex process vars enabled checkbox help text",
+    "originalDefault": "Check to include the field as process variable"
+  },
+  "BStu9Z": {
+    "defaultMessage": "Form",
+    "description": "Form fields tab title",
+    "originalDefault": "Form"
+  },
+  "Bc8xyG": {
+    "defaultMessage": "Show summary progress",
+    "description": "showSummaryProgress field label",
+    "originalDefault": "Show summary progress"
+  },
+  "BcuXrg": {
+    "defaultMessage": "Boolean",
+    "description": "data type boolean",
+    "originalDefault": "Boolean"
+  },
+  "BiKRJT": {
+    "defaultMessage": "Key",
+    "description": "Fixed metadata table name key title",
+    "originalDefault": "Key"
+  },
+  "Bin/vM": {
+    "defaultMessage": "Save changes",
+    "description": "Text on button in modal to save design token values",
+    "originalDefault": "Save changes"
+  },
+  "BqA9of": {
+    "defaultMessage": "Try it out",
+    "description": "Service fetch config try it out tab title",
+    "originalDefault": "Try it out"
+  },
+  "BrGg65": {
+    "defaultMessage": "plus",
+    "description": "\"+\" operator description",
+    "originalDefault": "plus"
+  },
+  "C+91tl": {
+    "defaultMessage": "Data extraction",
+    "description": "Service fetch configuration modal data extraction fieldset title",
+    "originalDefault": "Data extraction"
+  },
+  "C2FSDV": {
+    "defaultMessage": "Documents produced in the form submission are registered with this document type, unless more fine grained configuration is available. Only document types available on the selected case type are shown.",
+    "description": "ZGW APIs registration options 'document type' helpText",
+    "originalDefault": "Documents produced in the form submission are registered with this document type, unless more fine grained configuration is available. Only document types available on the selected case type are shown."
+  },
+  "C4Zn+R": {
+    "defaultMessage": "Internal name of the form definition used in this form step",
+    "description": "Form step internal name field help text",
+    "originalDefault": "Internal name of the form definition used in this form step"
+  },
+  "CD6UBS": {
+    "defaultMessage": "Global setting",
+    "description": "option \"global_setting\" of statement checkbox configuration",
+    "originalDefault": "Global setting"
+  },
+  "CGSzx/": {
+    "defaultMessage": "Whether to map this variable to the {geometryPath} attribute",
+    "description": "'Map to geometry field' checkbox help text",
+    "originalDefault": "Whether to map this variable to the {geometryPath} attribute"
+  },
+  "CN9j+L": {
+    "defaultMessage": "Delete",
+    "description": "Delete icon title",
+    "originalDefault": "Delete"
+  },
+  "CXKQZZ": {
+    "defaultMessage": "Confirmation",
+    "description": "Form confirmation options tab title",
+    "originalDefault": "Confirmation"
+  },
+  "CXwWdu": {
+    "defaultMessage": "Whether the form is active or not. Deactivated forms cannot be started.",
+    "description": "Form active field help text",
+    "originalDefault": "Whether the form is active or not. Deactivated forms cannot be started."
+  },
+  "CYtRRM": {
+    "defaultMessage": "value",
+    "description": "\"literal\" operand type",
+    "originalDefault": "value"
+  },
+  "CiaAYL": {
+    "defaultMessage": "Select the allowed authentication plugins to log in at the start of the form.",
+    "description": "Auth plugin field help text",
+    "originalDefault": "Select the allowed authentication plugins to log in at the start of the form."
+  },
+  "Ckzpff": {
+    "defaultMessage": "Use a variable for the price",
+    "description": "variable pricing mode label",
+    "originalDefault": "Use a variable for the price"
+  },
+  "CtjZFq": {
+    "defaultMessage": "Submission allowed",
+    "description": "Form submissionAllowed field label",
+    "originalDefault": "Submission allowed"
+  },
+  "Cz+O0n": {
+    "defaultMessage": "Source",
+    "description": "Fixed metadata table source title",
+    "originalDefault": "Source"
+  },
+  "D6NRQk": {
+    "defaultMessage": "Detected problems in {count} logic rule(s).",
+    "description": "Logic tab warning icon message",
+    "originalDefault": "Detected problems in {count} logic rule(s)."
+  },
+  "D717gY": {
+    "defaultMessage": "Other options",
+    "description": "Objects registration: other options",
+    "originalDefault": "Other options"
+  },
+  "DEAqyQ": {
+    "defaultMessage": "Boolean",
+    "description": "JSON variable type \"boolean\" representation",
+    "originalDefault": "Boolean"
+  },
+  "DFQ0Pq": {
+    "defaultMessage": "Update existing objects",
+    "description": "Objects registration: update existing objects settings",
+    "originalDefault": "Update existing objects"
+  },
+  "DGpAyT": {
+    "defaultMessage": "Move down",
+    "description": "Move down icon title",
+    "originalDefault": "Move down"
+  },
+  "DHVDF/": {
+    "defaultMessage": "Cosign subject",
+    "description": "Confirmation Email for cosign Subject label",
+    "originalDefault": "Cosign subject"
+  },
+  "DJ8XX2": {
+    "defaultMessage": "Select a registration backend and click the button to copy the configuration.",
+    "description": "Copy Objects API prefill configuration from registration backend help text",
+    "originalDefault": "Select a registration backend and click the button to copy the configuration."
+  },
+  "DRG6XN": {
+    "defaultMessage": "invalid input mapping(s)",
+    "description": "Warning message: DMN input mapping problems detected",
+    "originalDefault": "invalid input mapping(s)"
+  },
+  "DRidde": {
+    "defaultMessage": "Could not retrieve the decision definitions IDs/versions. Is the selected DMN plugin running and properly configured?",
+    "description": "Admin error for API error when configuring Camunda actions",
+    "originalDefault": "Could not retrieve the decision definitions IDs/versions. Is the selected DMN plugin running and properly configured?"
+  },
+  "DWhkNq": {
+    "defaultMessage": "Plugin",
+    "description": "Variable prefill plugin label",
+    "originalDefault": "Plugin"
+  },
+  "DaxIUG": {
+    "defaultMessage": "Variable key",
+    "description": "'Variable key' label",
+    "originalDefault": "Variable key"
+  },
+  "DbajPO": {
+    "defaultMessage": "Indication of the level to which extent the case is meant to be public. The value selected here will override the default configured on the case type.",
+    "description": "ZGW APIs registration options 'zaakVertrouwelijkheidaanduiding' help text",
+    "originalDefault": "Indication of the level to which extent the case is meant to be public. The value selected here will override the default configured on the case type."
+  },
+  "DcI1VF": {
+    "defaultMessage": "Session expired",
+    "description": "Modal title session expired",
+    "originalDefault": "Session expired"
+  },
+  "Dog4vX": {
+    "defaultMessage": "This field is required.",
+    "description": "Required error message",
+    "originalDefault": "This field is required."
+  },
+  "DqG0YS": {
+    "defaultMessage": "Enable from step:",
+    "description": "'Trigger from step' label",
+    "originalDefault": "Enable from step:"
+  },
+  "DxGKNm": {
+    "defaultMessage": "Logic",
+    "description": "Logic fieldset title",
+    "originalDefault": "Logic"
+  },
+  "DyF32d": {
+    "defaultMessage": "Indicates whether or not the submission CSV should be uploaded as a Document in Documenten API and attached to the product request.",
+    "description": "Objects API registration: uploadSubmissionCsv helpText",
+    "originalDefault": "Indicates whether or not the submission CSV should be uploaded as a Document in Documenten API and attached to the product request."
+  },
+  "EBsxTk": {
+    "defaultMessage": "Field",
+    "description": "Manage process vars component column title",
+    "originalDefault": "Field"
+  },
+  "EDwCbX": {
+    "defaultMessage": "<code>{componentKey}</code>: in {numSteps, plural, =1 {{tail}} other {{lead} and {tail}} }",
+    "description": "Description of which key is duplicated in which steps.",
+    "originalDefault": "<code>{componentKey}</code>: in {numSteps, plural, =1 {{tail}} other {{lead} and {tail}} }"
+  },
+  "ENyg8G": {
+    "defaultMessage": "There are multiple co-sign components specified in this form. At most one should be present.",
+    "description": "Too many cosign components",
+    "originalDefault": "There are multiple co-sign components specified in this form. At most one should be present."
+  },
+  "EQho4S": {
+    "defaultMessage": "API group",
+    "description": "ZGW APIs group field label",
+    "originalDefault": "API group"
+  },
+  "Ekld1h": {
+    "defaultMessage": "Save as new",
+    "description": "Save as new service fetch configuration button label",
+    "originalDefault": "Save as new"
+  },
+  "EtAvFF": {
+    "defaultMessage": "Duplicate this form",
+    "description": "Copy form button title",
+    "originalDefault": "Duplicate this form"
+  },
+  "Ev+T9r": {
+    "defaultMessage": "in",
+    "description": "\"in\" operator description",
+    "originalDefault": "in"
+  },
+  "F+UwT0": {
+    "defaultMessage": "House letter Schema target",
+    "description": "'Objects registration variable mapping, addressNL component: 'options.houseLetter schema target' label",
+    "originalDefault": "House letter Schema target"
+  },
+  "F+cPJR": {
+    "defaultMessage": "the array",
+    "description": "\"array\" operand type",
+    "originalDefault": "the array"
+  },
+  "F2GYwp": {
+    "defaultMessage": "Base",
+    "description": "StUF-ZDS registration backend options, 'base' tab label",
+    "originalDefault": "Base"
+  },
+  "F2VuCs": {
+    "defaultMessage": "Merchant ID",
+    "description": "Ogone legacy payment options 'merchantId' label",
+    "originalDefault": "Merchant ID"
+  },
+  "F9ew4C": {
+    "defaultMessage": "Version",
+    "description": "Objects API registration options 'objecttypeVersion' label",
+    "originalDefault": "Version"
+  },
+  "FH2sxf": {
+    "defaultMessage": "This form version was created in an application version different from the current version. There may be missing configuration after restoring.",
+    "description": "FormVersion: Warning message different application versions",
+    "originalDefault": "This form version was created in an application version different from the current version. There may be missing configuration after restoring."
+  },
+  "FH9/HC": {
+    "defaultMessage": "The co-sign component requires at least one authentication plugin to be enabled.",
+    "description": "MissingAuthCosignWarning message",
+    "originalDefault": "The co-sign component requires at least one authentication plugin to be enabled."
+  },
+  "FNT8nq": {
+    "defaultMessage": "Variable containing email addresses",
+    "description": "Email registration options 'toEmailsFromVariable' label",
+    "originalDefault": "Variable containing email addresses"
+  },
+  "FQ1JZc": {
+    "defaultMessage": "Zaaktype code for newly created Zaken in StUF-ZDS",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeCode' helpText",
+    "originalDefault": "Zaaktype code for newly created Zaken in StUF-ZDS"
+  },
+  "FQswyM": {
+    "defaultMessage": "Mode",
+    "description": "Pricing mode label",
+    "originalDefault": "Mode"
+  },
+  "FayNPY": {
+    "defaultMessage": "Simple",
+    "description": "Simple logic type",
+    "originalDefault": "Simple"
+  },
+  "FceidS": {
+    "defaultMessage": "is not equal to",
+    "description": "\"!=\" operator description",
+    "originalDefault": "is not equal to"
+  },
+  "FyNxJn": {
+    "defaultMessage": "Text",
+    "description": "Interpolation expression field label",
+    "originalDefault": "Text"
+  },
+  "Fz4U73": {
+    "defaultMessage": "Send confirmation email",
+    "description": "Label of form field 'Send the confirmation email'",
+    "originalDefault": "Send confirmation email"
+  },
+  "G1JHUM": {
+    "defaultMessage": "Cancel rule creation",
+    "description": "Cancel link help",
+    "originalDefault": "Cancel rule creation"
+  },
+  "G2rpx2": {
+    "defaultMessage": "Whether the step progression should be displayed in the UI or not.",
+    "description": "Progress indicator help text",
+    "originalDefault": "Whether the step progression should be displayed in the UI or not."
+  },
+  "G5q9GH": {
+    "defaultMessage": "Reset to default description",
+    "description": "Reset logic expression icon title",
+    "originalDefault": "Reset to default description"
+  },
+  "GBsms3": {
+    "defaultMessage": "No form variable specified (anymore).",
+    "description": "DMN in/output mapping: detected empty form variable",
+    "originalDefault": "No form variable specified (anymore)."
+  },
+  "GFXEAX": {
+    "defaultMessage": "Internal step name",
+    "description": "Form step internal name label",
+    "originalDefault": "Internal step name"
+  },
+  "GIdTgB": {
+    "defaultMessage": "Use existing form definition",
+    "description": "Form definition selection modal title",
+    "originalDefault": "Use existing form definition"
+  },
+  "GJ8Ok2": {
+    "defaultMessage": "Reset submissions counter",
+    "description": "Reset submissions counter",
+    "originalDefault": "Reset submissions counter"
+  },
+  "GO9yud": {
+    "defaultMessage": "When the form should be activated.",
+    "description": "Form activation field help text",
+    "originalDefault": "When the form should be activated."
+  },
+  "GV8HnZ": {
+    "defaultMessage": "Select payment backend",
+    "description": "Payment backend label",
+    "originalDefault": "Select payment backend"
+  },
+  "Gc7gu3": {
+    "defaultMessage": "How incomplete submissions of this form will be removed after the limit. Leave blank to use value in General Configuration.",
+    "description": "Incomplete Submissions Removal Method help text",
+    "originalDefault": "How incomplete submissions of this form will be removed after the limit. Leave blank to use value in General Configuration."
+  },
+  "GfH2yX": {
+    "defaultMessage": "The text that will be displayed in the overview page to confirm the form is filled in correctly. Leave blank to get value from global configuration.",
+    "description": "literals.confirmText help text",
+    "originalDefault": "The text that will be displayed in the overview page to confirm the form is filled in correctly. Leave blank to get value from global configuration."
+  },
+  "Ggu4I8": {
+    "defaultMessage": "Whether to map the specific subfield of addressNl component",
+    "description": "'Map specific subfields' checkbox help text",
+    "originalDefault": "Whether to map the specific subfield of addressNl component"
+  },
+  "Gi+cvN": {
+    "defaultMessage": "Use linked product price",
+    "description": "static pricing mode label",
+    "originalDefault": "Use linked product price"
+  },
+  "GjQdpb": {
+    "defaultMessage": ", at location \"{location}\"",
+    "description": "Formio configuration backend validation error location suffix",
+    "originalDefault": ", at location \"{location}\""
+  },
+  "GjcAY2": {
+    "defaultMessage": "Null",
+    "description": "JSON variable type \"null\" representation",
+    "originalDefault": "Null"
+  },
+  "GwOWGv": {
+    "defaultMessage": "Plugin configuration: ZGW APIs",
+    "description": "ZGW APIs registration options modal title",
+    "originalDefault": "Plugin configuration: ZGW APIs"
+  },
+  "H3dRU6": {
+    "defaultMessage": "Check to include the field as process variable",
+    "description": "Manage process vars enabled checkbox help text",
+    "originalDefault": "Check to include the field as process variable"
+  },
+  "H6VxhG": {
+    "defaultMessage": "Maintenance mode",
+    "description": "Form maintenance mode field label",
+    "originalDefault": "Maintenance mode"
+  },
+  "H7WmS4": {
+    "defaultMessage": "Plugin configuration: Camunda",
+    "description": "Camunda registration options modal title",
+    "originalDefault": "Plugin configuration: Camunda"
+  },
+  "H7z8+8": {
+    "defaultMessage": "Extra elements",
+    "description": "StUF-ZDS registration backend options, 'extra elements' tab label",
+    "originalDefault": "Extra elements"
+  },
+  "HCfL9x": {
+    "defaultMessage": "If enabled, the user will have to agree to the privacy policy before submitting a form.",
+    "description": "Form askPrivacyConsent field help text",
+    "originalDefault": "If enabled, the user will have to agree to the privacy policy before submitting a form."
+  },
+  "HDsHI8": {
+    "defaultMessage": "DMN configuration",
+    "description": "DMN configuration selection modal title",
+    "originalDefault": "DMN configuration"
+  },
+  "HEg854": {
+    "defaultMessage": "Name",
+    "description": "Service fetch configuration modal form name field label",
+    "originalDefault": "Name"
+  },
+  "HF0cSk": {
+    "defaultMessage": "Amount of days errored submissions of this form will remain before being removed. Leave blank to use value in General Configuration.",
+    "description": "Errored Submissions Removal Limit help text",
+    "originalDefault": "Amount of days errored submissions of this form will remain before being removed. Leave blank to use value in General Configuration."
+  },
+  "HNB0l+": {
+    "defaultMessage": "The legacy document types configuration will be ignored as soon as a catalogue is selected, even if you don't select any document type in the dropdowns.",
+    "description": "New document types informative message",
+    "originalDefault": "The legacy document types configuration will be ignored as soon as a catalogue is selected, even if you don't select any document type in the dropdowns."
+  },
+  "HVG1xy": {
+    "defaultMessage": "Cosign content",
+    "description": "Confirmation Email for cosign Content label",
+    "originalDefault": "Cosign content"
+  },
+  "HXE3Mm": {
+    "defaultMessage": "Slug of the form, used in URLs",
+    "description": "Form slug field help text",
+    "originalDefault": "Slug of the form, used in URLs"
+  },
+  "HXqhlN": {
+    "defaultMessage": "BRP Personen purpose limitation header value",
+    "description": "Form 'BRP Personen purpose limitation header value' field label",
+    "originalDefault": "BRP Personen purpose limitation header value"
+  },
+  "HdRpKT": {
+    "defaultMessage": "Version",
+    "description": "Objects API prefill options 'objecttypeVersion' label",
+    "originalDefault": "Version"
+  },
+  "Hfdfv2": {
+    "defaultMessage": "Which version of the process definition to start. The latest version is used if not specified.",
+    "description": "Camunda 'process definition version' help text",
+    "originalDefault": "Which version of the process definition to start. The latest version is used if not specified."
+  },
+  "HhZc5C": {
+    "defaultMessage": "(none)",
+    "description": "Label for option to disable autoLoginAuthenticationBackend",
+    "originalDefault": "(none)"
+  },
+  "HpKhVP": {
+    "defaultMessage": "Appointment enabled",
+    "description": "Form appointment enabled field label",
+    "originalDefault": "Appointment enabled"
+  },
+  "HrSXGN": {
+    "defaultMessage": "You are about to reset the submissions counter and this action is irreversible. Are you sure that you want to do this?",
+    "description": "Reset the submissions counter confirmation message",
+    "originalDefault": "You are about to reset the submissions counter and this action is irreversible. Are you sure that you want to do this?"
+  },
+  "HuAm1K": {
+    "defaultMessage": "and the step \"{step}\" has been reached",
+    "description": "Additional 'trigger from step' condition",
+    "originalDefault": "and the step \"{step}\" has been reached"
+  },
+  "I0bgsg": {
+    "defaultMessage": "Successful Submissions Removal Method field label",
+    "description": "Successful Submissions Removal Method",
+    "originalDefault": "Successful Submissions Removal Method field label"
+  },
+  "I3zyib": {
+    "defaultMessage": "Select form definition",
+    "description": "Form definition select label",
+    "originalDefault": "Select form definition"
+  },
+  "I6wBDK": {
+    "defaultMessage": "Object and/or product request definition",
+    "description": "Objects registration: object definition",
+    "originalDefault": "Object and/or product request definition"
+  },
+  "I9+K9f": {
+    "defaultMessage": "Mappings",
+    "description": "Objects API prefill mappings fieldset title",
+    "originalDefault": "Mappings"
+  },
+  "Igt0Rc": {
+    "defaultMessage": "Skip ownership check",
+    "description": "Objects API registration: skipOwnershipCheck label",
+    "originalDefault": "Skip ownership check"
+  },
+  "IhIqdj": {
+    "defaultMessage": "Decision definition ID",
+    "description": "Decision definition ID label",
+    "originalDefault": "Decision definition ID"
+  },
+  "Ika4IH": {
+    "defaultMessage": "Submissions will be deleted",
+    "description": "delete_permanently removal method option label",
+    "originalDefault": "Submissions will be deleted"
+  },
+  "InHf6+": {
+    "defaultMessage": "Text with (embedded) form field(s)",
+    "description": "JSON editor: \"interpolate\" variable source label",
+    "originalDefault": "Text with (embedded) form field(s)"
+  },
+  "Is9K3/": {
+    "defaultMessage": "Add all form variables",
+    "description": "JSON registration options 'add all form variables' label",
+    "originalDefault": "Add all form variables"
+  },
+  "ItH6EY": {
+    "defaultMessage": "Time",
+    "description": "data type time",
+    "originalDefault": "Time"
+  },
+  "Iv+lBL": {
+    "defaultMessage": "The text that will be displayed in the form step to go to the next step. Leave blank to get value from global configuration.",
+    "description": "Form step next text field help text",
+    "originalDefault": "The text that will be displayed in the form step to go to the next step. Leave blank to get value from global configuration."
+  },
+  "IxTWbv": {
+    "defaultMessage": "Are you sure you want to delete this item?",
+    "description": "Confirmation message to delete an item from a multi-value input",
+    "originalDefault": "Are you sure you want to delete this item?"
+  },
+  "J5EZDj": {
+    "defaultMessage": "hidden",
+    "description": "component property \"hidden\" label",
+    "originalDefault": "hidden"
+  },
+  "JDD7PC": {
+    "defaultMessage": "Authentication failure",
+    "description": "Modal title API call failed with HTTP 401",
+    "originalDefault": "Authentication failure"
+  },
+  "JHQfjZ": {
+    "defaultMessage": "Optional custom template for the the description, included in the payment overviews for the backoffice. Use this to link the payment back to a particular process or form.<br></br> You can use all form variables (using their keys) and the <code>public_reference</code> template variable. If unspecified, a default description is used.<br></br> <strong>Note</strong>: the length of the result is capped to 100 characters.",
+    "description": "Ogone legacy payment options 'comTemplate' help text",
+    "originalDefault": "Optional custom template for the the description, included in the payment overviews for the backoffice. Use this to link the payment back to a particular process or form.<br></br> You can use all form variables (using their keys) and the <code>public_reference</code> template variable. If unspecified, a default description is used.<br></br> <strong>Note</strong>: the length of the result is capped to 100 characters."
+  },
+  "JKq3TC": {
+    "defaultMessage": "Medewerker roltype",
+    "description": "Objects API registration options 'medewerkerRoltype' label",
+    "originalDefault": "Medewerker roltype"
+  },
+  "JRGs/Q": {
+    "defaultMessage": "Expand/collapse JsonLogic",
+    "description": "Expand/collapse logic expression icon title",
+    "originalDefault": "Expand/collapse JsonLogic"
+  },
+  "JXcHQ2": {
+    "defaultMessage": "Not yet configured",
+    "description": "'Not yet configured' registration summary message",
+    "originalDefault": "Not yet configured"
+  },
+  "JZRX+C": {
+    "defaultMessage": "Successful Submissions Removal Limit",
+    "description": "Successful Submissions Removal Limit field label",
+    "originalDefault": "Successful Submissions Removal Limit"
+  },
+  "JfIB3K": {
+    "defaultMessage": "Override the minimum Level of Assurance. This is not supported by all authentication plugins.",
+    "description": "Minimal LoA override help text",
+    "originalDefault": "Override the minimum Level of Assurance. This is not supported by all authentication plugins."
+  },
+  "JfgATN": {
+    "defaultMessage": "Additional variables to include.",
+    "description": "JSON registration options 'additionalMetadataVariables' helpText",
+    "originalDefault": "Additional variables to include."
+  },
+  "JhdlEg": {
+    "defaultMessage": "There are co-sign components inside repeating groups. This is not supported.",
+    "description": "Cosign components in repeating group warning message",
+    "originalDefault": "There are co-sign components inside repeating groups. This is not supported."
+  },
+  "K/Oijt": {
+    "defaultMessage": "Organisation RSIN",
+    "description": "Objects API registration options 'organisationRSIN' label",
+    "originalDefault": "Organisation RSIN"
+  },
+  "K1A6QK": {
+    "defaultMessage": "Component {label} requires login, but this form step doesn't have the login marked as required.",
+    "description": "No login required for formstep",
+    "originalDefault": "Component {label} requires login, but this form step doesn't have the login marked as required."
+  },
+  "KClY/2": {
+    "defaultMessage": "Processing",
+    "description": "Form processing fieldset title",
+    "originalDefault": "Processing"
+  },
+  "KGcyn+": {
+    "defaultMessage": "The form is not active",
+    "description": "Show form button disabled title",
+    "originalDefault": "The form is not active"
+  },
+  "KIy7Wr": {
+    "defaultMessage": "Name/title of the form",
+    "description": "Form name field help text",
+    "originalDefault": "Name/title of the form"
+  },
+  "KL5k2f": {
+    "defaultMessage": "Content",
+    "description": "Confirmation Email Content label",
+    "originalDefault": "Content"
+  },
+  "KMTsJc": {
+    "defaultMessage": "Static",
+    "description": "'Static' source label for fixed metadata variables table",
+    "originalDefault": "Static"
+  },
+  "KYTAJZ": {
+    "defaultMessage": "(checked for every step)",
+    "description": "'Trigger from step' information for when unset",
+    "originalDefault": "(checked for every step)"
+  },
+  "KjDolH": {
+    "defaultMessage": "Manually defined",
+    "description": "JSON editor: \"manual\" variable source label",
+    "originalDefault": "Manually defined"
+  },
+  "Kl9yvd": {
+    "defaultMessage": "Path",
+    "description": "JSON registration options 'path' label",
+    "originalDefault": "Path"
+  },
+  "KtVIGz": {
+    "defaultMessage": "Document types (legacy)",
+    "description": "Objects registration: document types (legacy)",
+    "originalDefault": "Document types (legacy)"
+  },
+  "KzlSYi": {
+    "defaultMessage": "Restore",
+    "description": "Restore form version link",
+    "originalDefault": "Restore"
+  },
+  "L0g8AL": {
+    "defaultMessage": "Payment provider",
+    "description": "Payment provider fieldset title",
+    "originalDefault": "Payment provider"
+  },
+  "L4EVfI": {
+    "defaultMessage": "Changing the api group will clear the existing configuration. Are you sure you want to continue?",
+    "description": "ZGW APIs registration options: warning message when changing the api group",
+    "originalDefault": "Changing the api group will clear the existing configuration. Are you sure you want to continue?"
+  },
+  "L97GKs": {
+    "defaultMessage": "Optional theme to use for styling.",
+    "description": "Form theme field help text",
+    "originalDefault": "Optional theme to use for styling."
+  },
+  "L9L8X7": {
+    "defaultMessage": "Something went wrong while rendering the registration options",
+    "description": "Registration summary error message",
+    "originalDefault": "Something went wrong while rendering the registration options"
+  },
+  "LBEeSy": {
+    "defaultMessage": "Drive ID",
+    "description": "MS Graph registration options 'driveId' label",
+    "originalDefault": "Drive ID"
+  },
+  "LD3weJ": {
+    "defaultMessage": "Advanced configuration",
+    "description": "Advanced configuration tab title",
+    "originalDefault": "Advanced configuration"
+  },
+  "LHBcNe": {
+    "defaultMessage": "Variable definition",
+    "description": "JSON editor: complex variable definition title",
+    "originalDefault": "Variable definition"
+  },
+  "LMCo4N": {
+    "defaultMessage": "Select date/time...",
+    "description": "datetime input widget placeholder",
+    "originalDefault": "Select date/time..."
+  },
+  "LN58C1": {
+    "defaultMessage": "Sensitive data within the submissions will be deleted",
+    "description": "make_anonymous removal method option label",
+    "originalDefault": "Sensitive data within the submissions will be deleted"
+  },
+  "LNeqFF": {
+    "defaultMessage": "Copy",
+    "description": "Copy form button",
+    "originalDefault": "Copy"
+  },
+  "LaovNg": {
+    "defaultMessage": "Add variable",
+    "description": "Add process variable button",
+    "originalDefault": "Add variable"
+  },
+  "LbiXCA": {
+    "defaultMessage": "Something went wrong while retrieving the available products defined in the selected case. Please check that the services in the selected API group are configured correctly.",
+    "description": "ZGW APIs registrations options: case product error",
+    "originalDefault": "Something went wrong while retrieving the available products defined in the selected case. Please check that the services in the selected API group are configured correctly."
+  },
+  "LeVpdf": {
+    "defaultMessage": "Plugin configuration: Email",
+    "description": "Email registration options modal title",
+    "originalDefault": "Plugin configuration: Email"
+  },
+  "LiXrER": {
+    "defaultMessage": "The selected trigger step could not be found in this form! Please change it!",
+    "description": "Warning missing trigger step",
+    "originalDefault": "The selected trigger step could not be found in this form! Please change it!"
+  },
+  "LkrFow": {
+    "defaultMessage": "Something went wrong while retrieving the available catalogues or case/document types defined in the selected catalogue. Please check that the services in the selected API group are configured correctly.",
+    "description": "ZGW APIs registrations options: generic error",
+    "originalDefault": "Something went wrong while retrieving the available catalogues or case/document types defined in the selected catalogue. Please check that the services in the selected API group are configured correctly."
+  },
+  "LrlAVD": {
+    "defaultMessage": "Data extraction",
+    "description": "Service fetch configuration try it out tabpanel data extraction fieldset title",
+    "originalDefault": "Data extraction"
+  },
+  "Ltde29": {
+    "defaultMessage": "fetch the value for a variable from a service",
+    "description": "action type \"fetch-from-service\" label",
+    "originalDefault": "fetch the value for a variable from a service"
+  },
+  "M0kOz9": {
+    "defaultMessage": "Are you sure you want to remove this variable?",
+    "description": "Camunda process variable mapping delete confirmation message",
+    "originalDefault": "Are you sure you want to remove this variable?"
+  },
+  "M1L9/1": {
+    "defaultMessage": "Change text",
+    "description": "literals.changeText form label",
+    "originalDefault": "Change text"
+  },
+  "M9JbDC": {
+    "defaultMessage": "Cancel",
+    "description": "Confirmation modal cancel button",
+    "originalDefault": "Cancel"
+  },
+  "MEkGHD": {
+    "defaultMessage": "Component",
+    "description": "Formio component selection label",
+    "originalDefault": "Component"
+  },
+  "MIrPon": {
+    "defaultMessage": "Component \"{label}\" uses a prefill that requires one of the \"{requiredAuthAttribute}\" attributes. Please select one or more authentication plugins that provide such an attribute.",
+    "description": "Prefill plugin requires unavailable auth attribute warning",
+    "originalDefault": "Component \"{label}\" uses a prefill that requires one of the \"{requiredAuthAttribute}\" attributes. Please select one or more authentication plugins that provide such an attribute."
+  },
+  "MUfBmP": {
+    "defaultMessage": "The value of the selected field will be the process variable value.",
+    "description": "Column help text for variable to map to property",
+    "originalDefault": "The value of the selected field will be the process variable value."
+  },
+  "MXKqVO": {
+    "defaultMessage": "Below you can specify a custom template for the configuration email. If not specified, the globally configured template will be used.",
+    "description": "Custom confirmation email template explanation",
+    "originalDefault": "Below you can specify a custom template for the configuration email. If not specified, the globally configured template will be used."
+  },
+  "Mdnl0l": {
+    "defaultMessage": "Prefill",
+    "description": "Variable table prefill title",
+    "originalDefault": "Prefill"
+  },
+  "MnfzL3": {
+    "defaultMessage": "Plugin ID",
+    "description": "Plugin ID label",
+    "originalDefault": "Plugin ID"
+  },
+  "Mv8yjC": {
+    "defaultMessage": "Form variables configuration",
+    "description": "Form variables configuration editor fieldset title",
+    "originalDefault": "Form variables configuration"
+  },
+  "N5Hv+1": {
+    "defaultMessage": "Case type",
+    "description": "ZGW APIs registration options 'case type' label",
+    "originalDefault": "Case type"
+  },
+  "NE5h2q": {
+    "defaultMessage": "Description",
+    "description": "Description column header",
+    "originalDefault": "Description"
+  },
+  "NJ3Psx": {
+    "defaultMessage": "Your session has expired.",
+    "description": "Session expiry notice - expired",
+    "originalDefault": "Your session has expired."
+  },
+  "NY6h3i": {
+    "defaultMessage": "All simple variables are mapped to a case property.",
+    "description": "Warning that all simple variables are mapped",
+    "originalDefault": "All simple variables are mapped to a case property."
+  },
+  "NYJo4j": {
+    "defaultMessage": "Catalogue",
+    "description": "Objects API registration options 'catalogue' label",
+    "originalDefault": "Catalogue"
+  },
+  "Nfn2qu": {
+    "defaultMessage": "Case type API resource URL in the Catalogi API.",
+    "description": "ZGW APIs registration options 'CaseType' help text",
+    "originalDefault": "Case type API resource URL in the Catalogi API."
+  },
+  "NrF5vy": {
+    "defaultMessage": "Document type",
+    "description": "ZGW APIs registration options 'document type' label",
+    "originalDefault": "Document type"
+  },
+  "NyyJMK": {
+    "defaultMessage": "The API group specifies which ZGW services to use.",
+    "description": "ZGW APIs group field help text",
+    "originalDefault": "The API group specifies which ZGW services to use."
+  },
+  "O+M71I": {
+    "defaultMessage": "This product will be set on the created case.",
+    "description": "ZGW APIs registration options 'product' helpText",
+    "originalDefault": "This product will be set on the created case."
+  },
+  "O/wKJh": {
+    "defaultMessage": "Value",
+    "description": "JSON (primitive) value label",
+    "originalDefault": "Value"
+  },
+  "O3l+pQ": {
+    "defaultMessage": "Type",
+    "description": "JSON datatype selector label",
+    "originalDefault": "Type"
+  },
+  "OB48En": {
+    "defaultMessage": "Design token values",
+    "description": "Title of modal to edit design token values",
+    "originalDefault": "Design token values"
+  },
+  "OFAJVW": {
+    "defaultMessage": "Registration",
+    "description": "Form registration options tab title",
+    "originalDefault": "Registration"
+  },
+  "OX8wxE": {
+    "defaultMessage": "Your session is about to expire {delta}. Extend your session if you wish to continue.",
+    "description": "Session expiry warning (in modal)",
+    "originalDefault": "Your session is about to expire {delta}. Extend your session if you wish to continue."
+  },
+  "Od+jm6": {
+    "defaultMessage": "Values:",
+    "description": "Label indicating the 'values' part of the data",
+    "originalDefault": "Values:"
+  },
+  "Oi+DV0": {
+    "defaultMessage": "<code>{attr}</code> from <code>{plugin}</code> (of the {role})",
+    "description": "Prefill configuration summary",
+    "originalDefault": "<code>{attr}</code> from <code>{plugin}</code> (of the {role})"
+  },
+  "OmQdqG": {
+    "defaultMessage": "Cache timeout",
+    "description": "Label cache timeout",
+    "originalDefault": "Cache timeout"
+  },
+  "OobRu3": {
+    "defaultMessage": "Advanced",
+    "description": "Advanced logic type",
+    "originalDefault": "Advanced"
+  },
+  "OpkUgV": {
+    "defaultMessage": "Whether to include this variable in the data to be sent.",
+    "description": "'Include variable' checkbox help text",
+    "originalDefault": "Whether to include this variable in the data to be sent."
+  },
+  "Orf0vr": {
+    "defaultMessage": "Update",
+    "description": "Update service fetch configuration button label",
+    "originalDefault": "Update"
+  },
+  "OvqnXR": {
+    "defaultMessage": "Yes",
+    "description": "Component property boolean value \"true\"",
+    "originalDefault": "Yes"
+  },
+  "Ox/rkB": {
+    "defaultMessage": "Product",
+    "description": "ZGW APIs registration options 'product' label",
+    "originalDefault": "Product"
+  },
+  "P/njxS": {
+    "defaultMessage": "Datetime",
+    "description": "data type datetime",
+    "originalDefault": "Datetime"
+  },
+  "P4JMHA": {
+    "defaultMessage": "Zaaktype status code for newly created zaken in StUF-ZDS",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeStatusCode' helpText",
+    "originalDefault": "Zaaktype status code for newly created zaken in StUF-ZDS"
+  },
+  "P7Wd+/": {
+    "defaultMessage": "Content",
+    "description": "form.introductionPageContent label",
+    "originalDefault": "Content"
+  },
+  "PC7ICN": {
+    "defaultMessage": "Enabled",
+    "description": "Manage process vars enabled checkbox column title",
+    "originalDefault": "Enabled"
+  },
+  "PRNizF": {
+    "defaultMessage": "Include confirmation page content in PDF",
+    "description": "Include confirmation page content in PDF",
+    "originalDefault": "Include confirmation page content in PDF"
+  },
+  "PaEo2j": {
+    "defaultMessage": "Process",
+    "description": "Camunda 'process definition' label",
+    "originalDefault": "Process"
+  },
+  "PdaMqg": {
+    "defaultMessage": "Add rule",
+    "description": "Add form logic rule button",
+    "originalDefault": "Add rule"
+  },
+  "PhN977": {
+    "defaultMessage": "Plugin configuration: StUF-ZDS",
+    "description": "StUF-ZDS registration options modal title",
+    "originalDefault": "Plugin configuration: StUF-ZDS"
+  },
+  "PtFAWx": {
+    "defaultMessage": "Presentation / appearance",
+    "description": "Form presentation fieldset title",
+    "originalDefault": "Presentation / appearance"
+  },
+  "PtZ96W": {
+    "defaultMessage": "Alias",
+    "description": "Manage process vars alias column title",
+    "originalDefault": "Alias"
+  },
+  "PwUKIe": {
+    "defaultMessage": "(provides {attrs})",
+    "description": "Auth plugin provided attributes suffix",
+    "originalDefault": "(provides {attrs})"
+  },
+  "Q8WgtE": {
+    "defaultMessage": "Output mapping",
+    "description": "Output mapping title",
+    "originalDefault": "Output mapping"
+  },
+  "QDBI2H": {
+    "defaultMessage": "Select existing form definition",
+    "description": "Select form definition tile",
+    "originalDefault": "Select existing form definition"
+  },
+  "QLTh2N": {
+    "defaultMessage": "Save text",
+    "description": "Form step save text label",
+    "originalDefault": "Save text"
+  },
+  "QXfH7G": {
+    "defaultMessage": "Whether the user is allowed to submit this form or not, and whether the overview page should be shown if they are not.",
+    "description": "Form submissionAllowed field help text",
+    "originalDefault": "Whether the user is allowed to submit this form or not, and whether the overview page should be shown if they are not."
+  },
+  "QaPqxz": {
+    "defaultMessage": "No (with overview page)",
+    "description": "option \"no_with_overview\" of \"submission_allowed\"",
+    "originalDefault": "No (with overview page)"
+  },
+  "Qb1GWo": {
+    "defaultMessage": "StUF-ZDS name",
+    "description": "StUF-ZDS extraElement name label",
+    "originalDefault": "StUF-ZDS name"
+  },
+  "QljfI7": {
+    "defaultMessage": "Email subject",
+    "description": "Email registration options 'emailSubject' label",
+    "originalDefault": "Email subject"
+  },
+  "Qr2wnR": {
+    "defaultMessage": "Payment backend options",
+    "description": "Payment backend options label",
+    "originalDefault": "Payment backend options"
+  },
+  "QsrtPz": {
+    "defaultMessage": "Prefill configuration",
+    "description": "Variable prefill configuration modal title",
+    "originalDefault": "Prefill configuration"
+  },
+  "QzZdVz": {
+    "defaultMessage": "Something went wrong while retrieving the available object types.",
+    "description": "Objects API registrations options: object type select error",
+    "originalDefault": "Something went wrong while retrieving the available object types."
+  },
+  "R7XVbR": {
+    "defaultMessage": "Main/representee",
+    "description": "Identifier role (for mandate context) label for representee",
+    "originalDefault": "Main/representee"
+  },
+  "R8/zGm": {
+    "defaultMessage": "Form variable",
+    "description": "Accessible label for (form) variable dropdown",
+    "originalDefault": "Form variable"
+  },
+  "RA263v": {
+    "defaultMessage": "{viewMode, select, ui {Show JSON definition} json {Show editor} other {UNKNOWN}}",
+    "description": "Toggle icon for JSON logic presentation mode.",
+    "originalDefault": "{viewMode, select, ui {Show JSON definition} json {Show editor} other {UNKNOWN}}"
+  },
+  "RcVlPF": {
+    "defaultMessage": "Internal name/title of the form",
+    "description": "Form name field help text",
+    "originalDefault": "Internal name/title of the form"
+  },
+  "RfbS0v": {
+    "defaultMessage": "Language",
+    "description": "Readable label for the language",
+    "originalDefault": "Language"
+  },
+  "Rk13i+": {
+    "defaultMessage": "Initial value",
+    "description": "Variable table initial value title",
+    "originalDefault": "Initial value"
+  },
+  "RvJXSo": {
+    "defaultMessage": "change the value of a variable/component",
+    "description": "action type \"variable\" label",
+    "originalDefault": "change the value of a variable/component"
+  },
+  "S6eF5o": {
+    "defaultMessage": "Data removal",
+    "description": "Data removal tab title",
+    "originalDefault": "Data removal"
+  },
+  "S94ET7": {
+    "defaultMessage": "Session expires {expiresToday, select, true {{relativeTimeToExpiry}} other {on {expiryDate} at {expiryTime}}}",
+    "description": "Session expiry notice",
+    "originalDefault": "Session expires {expiresToday, select, true {{relativeTimeToExpiry}} other {on {expiryDate} at {expiryTime}}}"
+  },
+  "SX2HTA": {
+    "defaultMessage": "change a property of a component.",
+    "description": "action type \"property\" label",
+    "originalDefault": "change a property of a component."
+  },
+  "ScbJK7": {
+    "defaultMessage": "Organisation RSIN",
+    "description": "ZGW APIs registration options 'organisationRSIN' label",
+    "originalDefault": "Organisation RSIN"
+  },
+  "SgdAj7": {
+    "defaultMessage": "Static variables",
+    "description": "Variable source group label for static variables",
+    "originalDefault": "Static variables"
+  },
+  "ShUATL": {
+    "defaultMessage": "Explanation",
+    "description": "Start page explanation text label",
+    "originalDefault": "Explanation"
+  },
+  "SjbNyf": {
+    "defaultMessage": "Add variable",
+    "description": "Add zaakeigenschap (mapping) button",
+    "originalDefault": "Add variable"
+  },
+  "SlvZKo": {
+    "defaultMessage": "You can (optionally) configure an introduction page shown before the form start page. Leave the content field blank to disable this page - users will then immediately go to the start page.",
+    "description": "Introduction page description",
+    "originalDefault": "You can (optionally) configure an introduction page shown before the form start page. Leave the content field blank to disable this page - users will then immediately go to the start page."
+  },
+  "Sw6TLH": {
+    "defaultMessage": "Document type",
+    "description": "ZGW APIs registration options 'DocumentType' label",
+    "originalDefault": "Document type"
+  },
+  "T0OLUV": {
+    "defaultMessage": "Add key-value pair",
+    "description": "JSON editor: add object key-value pair button",
+    "originalDefault": "Add key-value pair"
+  },
+  "T1VnMs": {
+    "defaultMessage": "Open editor",
+    "description": "Text on button to open design token editor in modal.",
+    "originalDefault": "Open editor"
+  },
+  "T2TGaF": {
+    "defaultMessage": "Ownership checks",
+    "description": "Objects API ownership check fieldset title",
+    "originalDefault": "Ownership checks"
+  },
+  "TB/ku3": {
+    "defaultMessage": "Add variable",
+    "description": "Add user defined variable button label",
+    "originalDefault": "Add variable"
+  },
+  "TCQic2": {
+    "defaultMessage": "Confirm text",
+    "description": "literals.confirmText form label",
+    "originalDefault": "Confirm text"
+  },
+  "TF+tAc": {
+    "defaultMessage": "ID",
+    "description": "Form ID field label",
+    "originalDefault": "ID"
+  },
+  "TFxv38": {
+    "defaultMessage": "Back to login",
+    "description": "Session status modal close button",
+    "originalDefault": "Back to login"
+  },
+  "TH62Jn": {
+    "defaultMessage": "the path should not have a leading slash",
+    "description": "Service fetch configuration modal form Path field help text",
+    "originalDefault": "the path should not have a leading slash"
+  },
+  "TR5xSY": {
+    "defaultMessage": "Are you sure you want to delete this rule?",
+    "description": "Logic rule deletion confirm message",
+    "originalDefault": "Are you sure you want to delete this rule?"
+  },
+  "TRjRww": {
+    "defaultMessage": "Base",
+    "description": "ZGW APIs registration backend options, 'base' tab label",
+    "originalDefault": "Base"
+  },
+  "TXwGu1": {
+    "defaultMessage": "Slug",
+    "description": "Form slug field label",
+    "originalDefault": "Slug"
+  },
+  "TbFGCG": {
+    "defaultMessage": "Is applicable?",
+    "description": "Form step is applicable label",
+    "originalDefault": "Is applicable?"
+  },
+  "Tfpxsi": {
+    "defaultMessage": "Something went wrong while rendering this logic rule! For debugging, here is the JSON of the logic rule:",
+    "description": "Unexpected error message in logic rule",
+    "originalDefault": "Something went wrong while rendering this logic rule! For debugging, here is the JSON of the logic rule:"
+  },
+  "TjjvQL": {
+    "defaultMessage": "days",
+    "description": "Logic trigger number of days",
+    "originalDefault": "days"
+  },
+  "TmRKe+": {
+    "defaultMessage": "Do not ask",
+    "description": "option \"disabled\" of statement checkbox configuration",
+    "originalDefault": "Do not ask"
+  },
+  "U/t6b+": {
+    "defaultMessage": "Variables Mapping",
+    "description": "Objects API registration backend options 'Variables Mapping' tab label",
+    "originalDefault": "Variables Mapping"
+  },
+  "U3g0MU": {
+    "defaultMessage": "Authentication {hasAuth, select, false {(status: none configured)} other {}}",
+    "description": "Form authentication fieldset title",
+    "originalDefault": "Authentication {hasAuth, select, false {(status: none configured)} other {}}"
+  },
+  "UKTqb8": {
+    "defaultMessage": "All Submissions Removal Limit",
+    "description": "All Submissions Removal Limit field label",
+    "originalDefault": "All Submissions Removal Limit"
+  },
+  "Uq9Hbx": {
+    "defaultMessage": "-",
+    "description": "Registration summary no registration backend fallback message",
+    "originalDefault": "-"
+  },
+  "V21YkS": {
+    "defaultMessage": "Confirm",
+    "description": "Camunda process variables confirm button",
+    "originalDefault": "Confirm"
+  },
+  "VMMOA0": {
+    "defaultMessage": "Page content",
+    "description": "Confirmation page content label",
+    "originalDefault": "Page content"
+  },
+  "VUOOSy": {
+    "defaultMessage": "Name",
+    "description": "Camunda complex process var 'name' label",
+    "originalDefault": "Name"
+  },
+  "VV2TCH": {
+    "defaultMessage": "disable continuing to the next form step.",
+    "description": "action type \"disable-next\" label",
+    "originalDefault": "disable continuing to the next form step."
+  },
+  "VWJvZB": {
+    "defaultMessage": "required",
+    "description": "component property \"required\" label",
+    "originalDefault": "required"
+  },
+  "Vi0+dd": {
+    "defaultMessage": "Indicates whether translations are enabled for this form.",
+    "description": "Form translation enabled field help text",
+    "originalDefault": "Indicates whether translations are enabled for this form."
+  },
+  "Vsgunp": {
+    "defaultMessage": "Sensitive data",
+    "description": "Variable table sensitive data title",
+    "originalDefault": "Sensitive data"
+  },
+  "WHqkYA": {
+    "defaultMessage": "Date/time",
+    "description": "Date/time column header",
+    "originalDefault": "Date/time"
+  },
+  "WHxJpx": {
+    "defaultMessage": "The configuration options here control if the user can submit the form on the overview page and what the requirements are to do so.",
+    "description": "Form submission settings description",
+    "originalDefault": "The configuration options here control if the user can submit the form on the overview page and what the requirements are to do so."
+  },
+  "WNPDeM": {
+    "defaultMessage": "Catalogue",
+    "description": "ZGW APIs registration options 'catalogue' label",
+    "originalDefault": "Catalogue"
+  },
+  "WQCs+M": {
+    "defaultMessage": "Product",
+    "description": "Product fieldset title",
+    "originalDefault": "Product"
+  },
+  "WUTOwp": {
+    "defaultMessage": "Service",
+    "description": "Service fetch configuration modal form Service field label",
+    "originalDefault": "Service"
+  },
+  "WdVKZw": {
+    "defaultMessage": "Logic",
+    "description": "Form logic tab title",
+    "originalDefault": "Logic"
+  },
+  "WnKF/i": {
+    "defaultMessage": "URL that points to the INFORMATIEOBJECTTYPE in the Catalogi API to be used for the submission attachments",
+    "description": "Objects API registration options \"Attachment informatieobjecttype\" description",
+    "originalDefault": "URL that points to the INFORMATIEOBJECTTYPE in the Catalogi API to be used for the submission attachments"
+  },
+  "Wz5QZo": {
+    "defaultMessage": "Active",
+    "description": "Form list 'active' column header",
+    "originalDefault": "Active"
+  },
+  "X+NeMd": {
+    "defaultMessage": "Include variable in metadata",
+    "description": "'Include variable in metadata' checkbox label",
+    "originalDefault": "Include variable in metadata"
+  },
+  "X18/UP": {
+    "defaultMessage": "Owner identifier",
+    "description": "Objects API registration: authAttributePath label",
+    "originalDefault": "Owner identifier"
+  },
+  "XAKzo5": {
+    "defaultMessage": "Authentication automatic login",
+    "description": "Auto-login field label",
+    "originalDefault": "Authentication automatic login"
+  },
+  "XNqV97": {
+    "defaultMessage": "Subject",
+    "description": "Confirmation Email Subject label",
+    "originalDefault": "Subject"
+  },
+  "XOgJDS": {
+    "defaultMessage": "Invalid JSON logic expression",
+    "description": "Advanced logic rule invalid JSON-logic message",
+    "originalDefault": "Invalid JSON logic expression"
+  },
+  "XPEv9r": {
+    "defaultMessage": "Legacy",
+    "description": "Objects API registration backend options 'Legacy' tab label",
+    "originalDefault": "Legacy"
+  },
+  "XPLnIL": {
+    "defaultMessage": "Edit variable registration",
+    "description": "'Edit variable registration' icon label",
+    "originalDefault": "Edit variable registration"
+  },
+  "XUW6Gx": {
+    "defaultMessage": "Ask privacy consent",
+    "description": "Form askPrivacyConsent field label",
+    "originalDefault": "Ask privacy consent"
+  },
+  "XYZcYw": {
+    "defaultMessage": "Map to geometry field",
+    "description": "'Map to geometry field' checkbox label",
+    "originalDefault": "Map to geometry field"
+  },
+  "Xe+CCn": {
+    "defaultMessage": "Basic",
+    "description": "Service fetch configuration modal basic fieldset title",
+    "originalDefault": "Basic"
+  },
+  "Xg9O5Y": {
+    "defaultMessage": "House number Schema target",
+    "description": "Objects registration variable mapping, addressNL component: 'options.houseNumber schema target' label",
+    "originalDefault": "House number Schema target"
+  },
+  "Xpw7Gk": {
+    "defaultMessage": "Whether to include this variable in the metadata to be sent.",
+    "description": "'Include variable in metadata' checkbox help text",
+    "originalDefault": "Whether to include this variable in the metadata to be sent."
+  },
+  "XyDeaD": {
+    "defaultMessage": "Variables",
+    "description": "JSON registration options 'variables' label",
+    "originalDefault": "Variables"
+  },
+  "YDjQH8": {
+    "defaultMessage": "Something went wrong while retrieving the available catalogues and/or document types.",
+    "description": "Objects API registrations options: document types selection error",
+    "originalDefault": "Something went wrong while retrieving the available catalogues and/or document types."
+  },
+  "YQ/Vx0": {
+    "defaultMessage": "Save",
+    "description": "Admin save submit button",
+    "originalDefault": "Save"
+  },
+  "YbnFnL": {
+    "defaultMessage": "The component \"{label}\" (with key \"{key}\"{location}) has a problem in the field \"{field}\": {error}",
+    "description": "Formio configuration backend validation error for specific component property",
+    "originalDefault": "The component \"{label}\" (with key \"{key}\"{location}) has a problem in the field \"{field}\": {error}"
+  },
+  "YdHbH9": {
+    "defaultMessage": "Decision definition version",
+    "description": "Decision definition version label",
+    "originalDefault": "Decision definition version"
+  },
+  "YdIu8k": {
+    "defaultMessage": "Add item",
+    "description": "JSON editor: add array value button",
+    "originalDefault": "Add item"
+  },
+  "Yyvvx1": {
+    "defaultMessage": "URL that points to the INFORMATIEOBJECTTYPE in the Catalogi API to be used for the submission report CSV",
+    "description": "Objects API registration options \"Submission report CSV informatieobjecttype\" description",
+    "originalDefault": "URL that points to the INFORMATIEOBJECTTYPE in the Catalogi API to be used for the submission report CSV"
+  },
+  "YzLSHY": {
+    "defaultMessage": "Are you sure you want to delete this?",
+    "description": "Default delete confirmation message",
+    "originalDefault": "Are you sure you want to delete this?"
+  },
+  "Z/wFhz": {
+    "defaultMessage": "Content of the registration email message (as html).",
+    "description": "Email registration options 'emailContentTemplateHtml' helpText",
+    "originalDefault": "Content of the registration email message (as html)."
+  },
+  "Z8f4hI": {
+    "defaultMessage": "Document confidentiality level",
+    "description": "StUF-ZDS registration options 'zdsZaakdocVertrouwelijkheid' label",
+    "originalDefault": "Document confidentiality level"
+  },
+  "ZB6mnn": {
+    "defaultMessage": "The variable key must be unique within a form",
+    "description": "Unique key error message",
+    "originalDefault": "The variable key must be unique within a form"
+  },
+  "ZEo3mR": {
+    "defaultMessage": "Form has translation enabled, but is missing <link>{count, plural, one {# translation} other {# translations} }</link>",
+    "description": "Warning message for missing translations",
+    "originalDefault": "Form has translation enabled, but is missing <link>{count, plural, one {# translation} other {# translations} }</link>"
+  },
+  "ZFcKzh": {
+    "defaultMessage": "Suspension allowed",
+    "description": "Form suspensionAllowed field label",
+    "originalDefault": "Suspension allowed"
+  },
+  "ZGY2dI": {
+    "defaultMessage": "Whether the user is allowed to suspend this form or not.",
+    "description": "Form suspensionAllowed field help text",
+    "originalDefault": "Whether the user is allowed to suspend this form or not."
+  },
+  "ZICfus": {
+    "defaultMessage": "Previous text",
+    "description": "Form step previous text label",
+    "originalDefault": "Previous text"
+  },
+  "ZP5B/v": {
+    "defaultMessage": "The processing (\"verwerking\") for queries to the BRP Persoon API.",
+    "description": "Form 'BRP Personen processing header value' field help text",
+    "originalDefault": "The processing (\"verwerking\") for queries to the BRP Persoon API."
+  },
+  "ZSvQcR": {
+    "defaultMessage": "TITLE parameter",
+    "description": "Ogone legacy payment options 'titleTemplate' label",
+    "originalDefault": "TITLE parameter"
+  },
+  "ZdZ2Mb": {
+    "defaultMessage": "Set the registration backend to use for the submission",
+    "description": "action type \"set-registration-backend\" label",
+    "originalDefault": "Set the registration backend to use for the submission"
+  },
+  "ZiARkY": {
+    "defaultMessage": "Any configuration option specified here overrides the matching option of the selected API group.",
+    "description": "ZGW APIs defaults override informative message",
+    "originalDefault": "Any configuration option specified here overrides the matching option of the selected API group."
+  },
+  "ZzjFxE": {
+    "defaultMessage": "Changing the api group will remove the existing variables mapping. Are you sure you want to continue?",
+    "description": "Objects API registration options: warning message when changing the api group",
+    "originalDefault": "Changing the api group will remove the existing variables mapping. Are you sure you want to continue?"
+  },
+  "a4gS07": {
+    "defaultMessage": "No (without overview page)",
+    "description": "option \"no_without_overview\" of \"submission_allowed\"",
+    "originalDefault": "No (without overview page)"
+  },
+  "a9RqmQ": {
+    "defaultMessage": "Slug of the form definition used in this form step",
+    "description": "Form step slug field help text",
+    "originalDefault": "Slug of the form definition used in this form step"
+  },
+  "aBC+qN": {
+    "defaultMessage": "Mapped to the {geometryPath} attribute",
+    "description": "'Mapped to geometry' registration summary message",
+    "originalDefault": "Mapped to the {geometryPath} attribute"
+  },
+  "aXJpiI": {
+    "defaultMessage": "This field is required.",
+    "description": "Field required error",
+    "originalDefault": "This field is required."
+  },
+  "aXg4YH": {
+    "defaultMessage": "Login required?",
+    "description": "Form step login required label",
+    "originalDefault": "Login required?"
+  },
+  "af22yB": {
+    "defaultMessage": "Changing the data type requires the initial value to be changed. This will reset the initial value back to the empty value. Are you sure that you want to do this?",
+    "description": "Changing user variable data type and transforming initial value confirmation message",
+    "originalDefault": "Changing the data type requires the initial value to be changed. This will reset the initial value back to the empty value. Are you sure that you want to do this?"
+  },
+  "ag/AZx": {
+    "defaultMessage": "There are errors in the DMN configuration.",
+    "description": "DMN evaluation configuration errors message",
+    "originalDefault": "There are errors in the DMN configuration."
+  },
+  "auZOcD": {
+    "defaultMessage": "Mapping expression",
+    "description": "Service fetch configuration modal form mapping expression field label",
+    "originalDefault": "Mapping expression"
+  },
+  "b+ekU/": {
+    "defaultMessage": "Evaluate DMN",
+    "description": "action type \"evaluate-dmn\" label",
+    "originalDefault": "Evaluate DMN"
+  },
+  "b06rv0": {
+    "defaultMessage": "Document types",
+    "description": "Objects registration: document types",
+    "originalDefault": "Document types"
+  },
+  "b9D64D": {
+    "defaultMessage": "Is sensitive",
+    "description": "Is sensitive icon title",
+    "originalDefault": "Is sensitive"
+  },
+  "bDjeSb": {
+    "defaultMessage": "Array",
+    "description": "data type array",
+    "originalDefault": "Array"
+  },
+  "bRe/yq": {
+    "defaultMessage": "There are validation errors",
+    "description": "Tab validation errors icon title",
+    "originalDefault": "There are validation errors"
+  },
+  "bf6Y/t": {
+    "defaultMessage": "{varName}: registration configuration for {backendName}",
+    "description": "Variable registration configuration modal title",
+    "originalDefault": "{varName}: registration configuration for {backendName}"
+  },
+  "bjIQDR": {
+    "defaultMessage": "Objecttype",
+    "description": "Objects API registration options 'Objecttype' label",
+    "originalDefault": "Objecttype"
+  },
+  "bmUuAH": {
+    "defaultMessage": "Fixed",
+    "description": "JSON registration options 'fixedMetadataVariables' label",
+    "originalDefault": "Fixed"
+  },
+  "bmlODS": {
+    "defaultMessage": "Identifier role",
+    "description": "Variable prefill identifier role label",
+    "originalDefault": "Identifier role"
+  },
+  "bnxtnX": {
+    "defaultMessage": "Full request",
+    "description": "Service fetch configuration try it out tabpanel full request fieldset title",
+    "originalDefault": "Full request"
+  },
+  "brvKtm": {
+    "defaultMessage": "Activate on",
+    "description": "Form activation field label",
+    "originalDefault": "Activate on"
+  },
+  "bzVhb6": {
+    "defaultMessage": "Move up",
+    "description": "Move up icon title",
+    "originalDefault": "Move up"
+  },
+  "c0dfYJ": {
+    "defaultMessage": "Build a JsonLogic expression using raw JSON.",
+    "description": "Advanced logic type info text",
+    "originalDefault": "Build a JsonLogic expression using raw JSON."
+  },
+  "cDbGU2": {
+    "defaultMessage": "Incomplete Submissions Removal Limit",
+    "description": "Incomplete Submissions Removal Limit field label",
+    "originalDefault": "Incomplete Submissions Removal Limit"
+  },
+  "cID9dz": {
+    "defaultMessage": "(complex value)",
+    "description": "JSON editor: complex value representation",
+    "originalDefault": "(complex value)"
+  },
+  "cK2O6E": {
+    "defaultMessage": "Something went wrong when fetching the available target paths",
+    "description": "Objects API variable registration configuration API error",
+    "originalDefault": "Something went wrong when fetching the available target paths"
+  },
+  "cUVVbl": {
+    "defaultMessage": "is greater than or equal to",
+    "description": "\">=\" operator description",
+    "originalDefault": "is greater than or equal to"
+  },
+  "cV72I+": {
+    "defaultMessage": "Product",
+    "description": "Form product label",
+    "originalDefault": "Product"
+  },
+  "cZbqaM": {
+    "defaultMessage": "Content that will be shown on the start page of the form, below the title and above the log in text.",
+    "description": "Start page explanation text",
+    "originalDefault": "Content that will be shown on the start page of the form, below the title and above the log in text."
+  },
+  "cakbDK": {
+    "defaultMessage": "{numDuplicated, plural, =1 {A key is duplicated:} other {{numDuplicated} keys are duplicated:} } <duplicatedKeys></duplicatedKeys>",
+    "description": "Warning message for duplicated keys",
+    "originalDefault": "{numDuplicated, plural, =1 {A key is duplicated:} other {{numDuplicated} keys are duplicated:} } <duplicatedKeys></duplicatedKeys>"
+  },
+  "cpJErE": {
+    "defaultMessage": "Integer",
+    "description": "data type int",
+    "originalDefault": "Integer"
+  },
+  "crEWfn": {
+    "defaultMessage": "Product request type",
+    "description": "Legacy objects API registration options: 'productaanvraagType' label",
+    "originalDefault": "Product request type"
+  },
+  "cuivC6": {
+    "defaultMessage": "Version",
+    "description": "ZGW APIs registration options 'objecttypeVersion' label",
+    "originalDefault": "Version"
+  },
+  "d1W41c": {
+    "defaultMessage": "From form field",
+    "description": "JSON editor: \"component\" variable source label",
+    "originalDefault": "From form field"
+  },
+  "d45v2X": {
+    "defaultMessage": "Export this form",
+    "description": "Export form button title",
+    "originalDefault": "Export this form"
+  },
+  "d6q6wz": {
+    "defaultMessage": "Introduction page",
+    "description": "Introduction page fieldset title",
+    "originalDefault": "Introduction page"
+  },
+  "dGBYF7": {
+    "defaultMessage": "{collapsed, select, true {(Show)} other {(Hide)}}",
+    "description": "Fieldset collapse link text",
+    "originalDefault": "{collapsed, select, true {(Show)} other {(Hide)}}"
+  },
+  "dV8M5q": {
+    "defaultMessage": "A recognisable name for this backend configuration.",
+    "description": "Backend name help text",
+    "originalDefault": "A recognisable name for this backend configuration."
+  },
+  "dWNClE": {
+    "defaultMessage": "Optional category for internal organisation.",
+    "description": "Form category field help text",
+    "originalDefault": "Optional category for internal organisation."
+  },
+  "ddDA6+": {
+    "defaultMessage": "Array",
+    "description": "JSON variable type \"array\" representation",
+    "originalDefault": "Array"
+  },
+  "deoN5r": {
+    "defaultMessage": "Show progress indicator",
+    "description": "Progress indicator field label",
+    "originalDefault": "Show progress indicator"
+  },
+  "dgwRIk": {
+    "defaultMessage": "String",
+    "description": "data type string",
+    "originalDefault": "String"
+  },
+  "dlrWUr": {
+    "defaultMessage": "Date",
+    "description": "data type date",
+    "originalDefault": "Date"
+  },
+  "dyBb9g": {
+    "defaultMessage": "Content for the introduction page that leads to the start page of the form. Leave blank to disable the introduction page.",
+    "description": "form.introductionPageContent help text",
+    "originalDefault": "Content for the introduction page that leads to the start page of the form. Leave blank to disable the introduction page."
+  },
+  "eBk+W0": {
+    "defaultMessage": "Manage process variables",
+    "description": "Camunda process var selection modal title",
+    "originalDefault": "Manage process variables"
+  },
+  "eBtStW": {
+    "defaultMessage": "URL that points to the INFORMATIEOBJECTTYPE in the Catalogi API to be used for the submission report PDF",
+    "description": "Objects API registration options \"Submission report PDF informatieobjecttype\" description",
+    "originalDefault": "URL that points to the INFORMATIEOBJECTTYPE in the Catalogi API to be used for the submission report PDF"
+  },
+  "eC2etA": {
+    "defaultMessage": "Name of the product request type. It is available in the JSON template as the 'productaanvraag_type' variable.",
+    "description": "Legacy objects API registration options: 'productaanvraagType' helpText",
+    "originalDefault": "Name of the product request type. It is available in the JSON template as the 'productaanvraag_type' variable."
+  },
+  "eF9O7c": {
+    "defaultMessage": "Attachments",
+    "description": "Email registration: attachments fieldset title",
+    "originalDefault": "Attachments"
+  },
+  "eLDxD5": {
+    "defaultMessage": "Advanced options",
+    "description": "Logic rule advanced options icon title",
+    "originalDefault": "Advanced options"
+  },
+  "eNSJ0f": {
+    "defaultMessage": "Features",
+    "description": "Form feature fields fieldset title",
+    "originalDefault": "Features"
+  },
+  "eO6MNT": {
+    "defaultMessage": "Zds zaaktype status code",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeStatusCode' label",
+    "originalDefault": "Zds zaaktype status code"
+  },
+  "eZJFP7": {
+    "defaultMessage": "COM parameter",
+    "description": "Ogone legacy payment options 'comTemplate' label",
+    "originalDefault": "COM parameter"
+  },
+  "efsF8+": {
+    "defaultMessage": "{label} {isPublished, select, false {<draft>(not published)</draft>} other {}}",
+    "description": "Document type option label",
+    "originalDefault": "{label} {isPublished, select, false {<draft>(not published)</draft>} other {}}"
+  },
+  "evbysh": {
+    "defaultMessage": "Variable definition",
+    "description": "Camunda complex variable definition title",
+    "originalDefault": "Variable definition"
+  },
+  "f590Rb": {
+    "defaultMessage": "Begin text",
+    "description": "literals.beginText form label",
+    "originalDefault": "Begin text"
+  },
+  "f8lihY": {
+    "defaultMessage": "Subject of the email sent to the registration backend. You can use the expressions '{{ form_name }}' and '{{ public_reference }}' to include the form name and the reference number to the submission in the subject.",
+    "description": "Email registration options 'emailSubject' helpText",
+    "originalDefault": "Subject of the email sent to the registration backend. You can use the expressions '{{ form_name }}' and '{{ public_reference }}' to include the form name and the reference number to the submission in the subject."
+  },
+  "f9Zr9D": {
+    "defaultMessage": "Amount of days incomplete submissions of this form will remain before being removed. Leave blank to use value in General Configuration.",
+    "description": "Incomplete Submissions Removal Limit help text",
+    "originalDefault": "Amount of days incomplete submissions of this form will remain before being removed. Leave blank to use value in General Configuration."
+  },
+  "fB1baI": {
+    "defaultMessage": "The property that gets compared with the identifier (e.g. BSN/KVK) of the authenticated user to verify ownership of the object being updated. This is important to prevent malicious users modifying information of other people than themselves.",
+    "description": "Objects API registration: authAttributePath helpText",
+    "originalDefault": "The property that gets compared with the identifier (e.g. BSN/KVK) of the authenticated user to verify ownership of the object being updated. This is important to prevent malicious users modifying information of other people than themselves."
+  },
+  "fLCWjk": {
+    "defaultMessage": "Name",
+    "description": "Variable table name title",
+    "originalDefault": "Name"
+  },
+  "fLHOey": {
+    "defaultMessage": "Pricing logic",
+    "description": "Dynamic pricing fieldset title",
+    "originalDefault": "Pricing logic"
+  },
+  "fQuLvm": {
+    "defaultMessage": "Copy configuration from registration backend",
+    "description": "Copy Objects API prefill configuration from registration backend label",
+    "originalDefault": "Copy configuration from registration backend"
+  },
+  "fTmdl/": {
+    "defaultMessage": "Payment status update variable mapping",
+    "description": "StUF-ZDS registration paymentStatusUpdateMapping label",
+    "originalDefault": "Payment status update variable mapping"
+  },
+  "fUaRWW": {
+    "defaultMessage": "City Schema target",
+    "description": "Objects registration variable mapping, addressNL component: 'options.city schema target' label",
+    "originalDefault": "City Schema target"
+  },
+  "fWcg7I": {
+    "defaultMessage": "Object",
+    "description": "data type object",
+    "originalDefault": "Object"
+  },
+  "fpX4ei": {
+    "defaultMessage": "Mapping expression language",
+    "description": "Service fetch configuration modal form mapping expression language field label",
+    "originalDefault": "Mapping expression language"
+  },
+  "fqGKJu": {
+    "defaultMessage": "If enabled, the user will have to agree that they filled out the form ruthfully before submitting it.",
+    "description": "Form askStatementOfTruth field help text",
+    "originalDefault": "If enabled, the user will have to agree that they filled out the form ruthfully before submitting it."
+  },
+  "ftzF/n": {
+    "defaultMessage": "When",
+    "description": "Logic trigger prefix",
+    "originalDefault": "When"
+  },
+  "fv74On": {
+    "defaultMessage": "Choose existing configuration",
+    "description": "Service fetch configuration modal select existing field label",
+    "originalDefault": "Choose existing configuration"
+  },
+  "g+ppJj": {
+    "defaultMessage": "Do nothing",
+    "description": "Session expiry warning \"do nothing\" button",
+    "originalDefault": "Do nothing"
+  },
+  "g1i5ru": {
+    "defaultMessage": "The property that gets compared with the identifier (e.g. BSN/KVK) of the authenticated user. This is important to prevent malicious users looking up private information of other people.",
+    "description": "Objects API prefill: authAttributePath helpText",
+    "originalDefault": "The property that gets compared with the identifier (e.g. BSN/KVK) of the authenticated user. This is important to prevent malicious users looking up private information of other people."
+  },
+  "gAf9pR": {
+    "defaultMessage": "(not configured yet)",
+    "description": "No service fetch configuration configured yet message",
+    "originalDefault": "(not configured yet)"
+  },
+  "gDAZQ1": {
+    "defaultMessage": "Zds zaaktype status omschrijving",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeStatusOmschrijving' label",
+    "originalDefault": "Zds zaaktype status omschrijving"
+  },
+  "gGNIdG": {
+    "defaultMessage": "The text that will be displayed in the overview page to go to the previous step. Leave blank to get value from global configuration.",
+    "description": "literals.previousText help text",
+    "originalDefault": "The text that will be displayed in the overview page to go to the previous step. Leave blank to get value from global configuration."
+  },
+  "gUl3mu": {
+    "defaultMessage": "Are you sure that you want to remove this mapping?",
+    "description": "Confirmation message to remove a mapping",
+    "originalDefault": "Are you sure that you want to remove this mapping?"
+  },
+  "gdEbdr": {
+    "defaultMessage": "Map specific subfields",
+    "description": "'Map specific subfields' checkbox label",
+    "originalDefault": "Map specific subfields"
+  },
+  "gheRkp": {
+    "defaultMessage": "Detected some problems in this action: {problems}.",
+    "description": "Logic action warning icon text",
+    "originalDefault": "Detected some problems in this action: {problems}."
+  },
+  "gpiYPI": {
+    "defaultMessage": "Confirm",
+    "description": "Confirmation modal confirm button",
+    "originalDefault": "Confirm"
+  },
+  "gqVGbb": {
+    "defaultMessage": "Edit prefill configuration",
+    "description": "'Edit variable prefill' icon label",
+    "originalDefault": "Edit prefill configuration"
+  },
+  "gr7edY": {
+    "defaultMessage": "App version",
+    "description": "App version column header",
+    "originalDefault": "App version"
+  },
+  "gz32s2": {
+    "defaultMessage": "If desired, you can specify a different process variable name.",
+    "description": "Manage process vars alias help text",
+    "originalDefault": "If desired, you can specify a different process variable name."
+  },
+  "gzAzdU": {
+    "defaultMessage": "Save and continue editing",
+    "description": "Admin save and continue editing submit button",
+    "originalDefault": "Save and continue editing"
+  },
+  "h/tRGs": {
+    "defaultMessage": "Yes",
+    "description": "option \"yes\" of \"submission_allowed\"",
+    "originalDefault": "Yes"
+  },
+  "h1EURI": {
+    "defaultMessage": "The text that will be displayed in the form step to go to the previous step. Leave blank to get value from global configuration.",
+    "description": "Form step previous text field help text",
+    "originalDefault": "The text that will be displayed in the form step to go to the previous step. Leave blank to get value from global configuration."
+  },
+  "h8DIWk": {
+    "defaultMessage": "The maximum number of allowed submissions for this form. Leave this empty if no limit is needed.",
+    "description": "Form submissionLimit field help text",
+    "originalDefault": "The maximum number of allowed submissions for this form. Leave this empty if no limit is needed."
+  },
+  "h9debR": {
+    "defaultMessage": "Minimal levels of assurance",
+    "description": "Minimal levels of assurance label",
+    "originalDefault": "Minimal levels of assurance"
+  },
+  "hBxKbW": {
+    "defaultMessage": "JSON content template",
+    "description": "Legacy objects API registration options: 'contentJSON' label",
+    "originalDefault": "JSON content template"
+  },
+  "hPJb+Q": {
+    "defaultMessage": "Add registration backend",
+    "description": "Button text to add registration backend",
+    "originalDefault": "Add registration backend"
+  },
+  "hQ7xjd": {
+    "defaultMessage": "Zaaktype status omschrijving for newly created zaken in StUF-ZDS",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeStatusOmschrijving' helpText",
+    "originalDefault": "Zaaktype status omschrijving for newly created zaken in StUF-ZDS"
+  },
+  "hSvi+z": {
+    "defaultMessage": "Email content template text",
+    "description": "Email registration options 'emailContentTemplateText' label",
+    "originalDefault": "Email content template text"
+  },
+  "hWRRHx": {
+    "defaultMessage": "Form design",
+    "description": "Form design/editor fieldset title",
+    "originalDefault": "Form design"
+  },
+  "hZl34s": {
+    "defaultMessage": "Enabled",
+    "description": "Manage complex process vars enabled checkbox column title",
+    "originalDefault": "Enabled"
+  },
+  "hefA1X": {
+    "defaultMessage": "Are you sure you want to delete this variable?",
+    "description": "User defined variable deletion confirm message",
+    "originalDefault": "Are you sure you want to delete this variable?"
+  },
+  "hfeO2r": {
+    "defaultMessage": "Registration",
+    "description": "'Registration' source label for fixed metadata variables table",
+    "originalDefault": "Registration"
+  },
+  "hhoWxC": {
+    "defaultMessage": "If left blank, then the most recent version is used.",
+    "description": "DMN action: definition version field help text",
+    "originalDefault": "If left blank, then the most recent version is used."
+  },
+  "huHjRm": {
+    "defaultMessage": "Configure",
+    "description": "Manage complex process vars configure column title",
+    "originalDefault": "Configure"
+  },
+  "hxssl8": {
+    "defaultMessage": "Objects API integration",
+    "description": "ZGW APIs registration: Objects API fieldset title",
+    "originalDefault": "Objects API integration"
+  },
+  "hzx+WF": {
+    "defaultMessage": "Internal name",
+    "description": "Form name field label",
+    "originalDefault": "Internal name"
+  },
+  "i7HknI": {
+    "defaultMessage": "Tab name",
+    "description": "Name of the tab in the Form admin",
+    "originalDefault": "Tab name"
+  },
+  "i7Vmcf": {
+    "defaultMessage": "Label",
+    "description": "DMN Input clause label header",
+    "originalDefault": "Label"
+  },
+  "iNmPDd": {
+    "defaultMessage": "Attachment informatieobjecttype",
+    "description": "Objects API registration options \"Attachment informatieobjecttype\" label",
+    "originalDefault": "Attachment informatieobjecttype"
+  },
+  "iQblZd": {
+    "defaultMessage": "Variables that are already included.",
+    "description": "JSON registration options 'fixedMetadataVariables' helpText",
+    "originalDefault": "Variables that are already included."
+  },
+  "iXJKU7": {
+    "defaultMessage": "Component variables",
+    "description": "Variable source group label for component variables",
+    "originalDefault": "Component variables"
+  },
+  "iZESbd": {
+    "defaultMessage": "is less than",
+    "description": "\"<\" operator description",
+    "originalDefault": "is less than"
+  },
+  "ieF+xK": {
+    "defaultMessage": "Case type",
+    "description": "ZGW APIs registration options 'CaseType' label",
+    "originalDefault": "Case type"
+  },
+  "ighCxq": {
+    "defaultMessage": "Plugin configuration: MS Graph",
+    "description": "MS Graph registration options modal title",
+    "originalDefault": "Plugin configuration: MS Graph"
+  },
+  "inhTXo": {
+    "defaultMessage": "years",
+    "description": "Logic trigger number of years",
+    "originalDefault": "years"
+  },
+  "ipGvSb": {
+    "defaultMessage": "Expression",
+    "description": "DMN Input clause expression header",
+    "originalDefault": "Expression"
+  },
+  "ixiVhj": {
+    "defaultMessage": "{name} [new]",
+    "description": "form step label in nav",
+    "originalDefault": "{name} [new]"
+  },
+  "j5KpZP": {
+    "defaultMessage": "loading...",
+    "description": "Loading select option label",
+    "originalDefault": "loading..."
+  },
+  "j7rEgn": {
+    "defaultMessage": "Submission report PDF informatieobjecttype",
+    "description": "Objects API registration options \"Submission report PDF informatieobjecttype\" label",
+    "originalDefault": "Submission report PDF informatieobjecttype"
+  },
+  "jLv6k8": {
+    "defaultMessage": "DMN variable",
+    "description": "Accessible label for DMN variable dropdown",
+    "originalDefault": "DMN variable"
+  },
+  "jU/t8O": {
+    "defaultMessage": "Edit complex variable",
+    "description": "Camunda complex process var configuration modal title",
+    "originalDefault": "Edit complex variable"
+  },
+  "jU6W0l": {
+    "defaultMessage": "Copy",
+    "description": "Copy Objects API prefill configuration from registration backend button",
+    "originalDefault": "Copy"
+  },
+  "jUPlH5": {
+    "defaultMessage": "Resulting string",
+    "description": "Interpolation expression preview label",
+    "originalDefault": "Resulting string"
+  },
+  "jYFS/i": {
+    "defaultMessage": "Variable",
+    "description": "Column title for variable to map to property",
+    "originalDefault": "Variable"
+  },
+  "jZIu+e": {
+    "defaultMessage": "No",
+    "description": "Component property boolean value \"false\"",
+    "originalDefault": "No"
+  },
+  "jitewC": {
+    "defaultMessage": "HTTP method",
+    "description": "Service fetch configuration modal form HTTP method field label",
+    "originalDefault": "HTTP method"
+  },
+  "jo1PVg": {
+    "defaultMessage": "Session will expire",
+    "description": "Model title session expiry warning",
+    "originalDefault": "Session will expire"
+  },
+  "jpL29S": {
+    "defaultMessage": "Folder path",
+    "description": "MS Graph registration options 'folderPath' label",
+    "originalDefault": "Folder path"
+  },
+  "jtJACV": {
+    "defaultMessage": "Availability {isAvailable, select, true {(status: publicly available)} other {}}",
+    "description": "Form availability fieldset title",
+    "originalDefault": "Availability {isAvailable, select, true {(status: publicly available)} other {}}"
+  },
+  "jy1jTd": {
+    "defaultMessage": "{numErrors, plural, one {There is a validation error.} other {There are {numErrors} validation errors.} }",
+    "description": "Registration validation errors icon next to button to configure options",
+    "originalDefault": "{numErrors, plural, one {There is a validation error.} other {There are {numErrors} validation errors.} }"
+  },
+  "k34Vke": {
+    "defaultMessage": "Then",
+    "description": "First logic action prefix",
+    "originalDefault": "Then"
+  },
+  "k50COT": {
+    "defaultMessage": "Name",
+    "description": "Form list 'name' column header",
+    "originalDefault": "Name"
+  },
+  "k5JYxu": {
+    "defaultMessage": "Show form",
+    "description": "Show form button",
+    "originalDefault": "Show form"
+  },
+  "k9CT3p": {
+    "defaultMessage": "Whether to show a link to the main website on the confirmation page.",
+    "description": "Display main website link help text",
+    "originalDefault": "Whether to show a link to the main website on the confirmation page."
+  },
+  "kHn5Yw": {
+    "defaultMessage": "Edit definition",
+    "description": "JSON editor: edit value definition",
+    "originalDefault": "Edit definition"
+  },
+  "kNOyt+": {
+    "defaultMessage": "disabled",
+    "description": "component property \"disabled\" label",
+    "originalDefault": "disabled"
+  },
+  "kWAxhF": {
+    "defaultMessage": "Subject of the email sent to the registration backend to notify a change in the payment status.",
+    "description": "Email registration options 'emailPaymentSubject' helpText",
+    "originalDefault": "Subject of the email sent to the registration backend to notify a change in the payment status."
+  },
+  "klKZV5": {
+    "defaultMessage": "Indicates whether the existing object (retrieved from an optional initial data reference) should be updated, instead of creating a new one. If no existing object exists, a new one will be created instead.",
+    "description": "Objects API registration: updateExistingObject helpText",
+    "originalDefault": "Indicates whether the existing object (retrieved from an optional initial data reference) should be updated, instead of creating a new one. If no existing object exists, a new one will be created instead."
+  },
+  "koVh3m": {
+    "defaultMessage": "Category",
+    "description": "Form category field label",
+    "originalDefault": "Category"
+  },
+  "ksJN3E": {
+    "defaultMessage": "The email addresses to which the submission details will be sent",
+    "description": "Email registration options 'toEmails' label",
+    "originalDefault": "The email addresses to which the submission details will be sent"
+  },
+  "l1fi1t": {
+    "defaultMessage": "(missing information)",
+    "description": "JSON editor: unknown FormIO component key",
+    "originalDefault": "(missing information)"
+  },
+  "l2Wag+": {
+    "defaultMessage": "Mark the form step as not-applicable",
+    "description": "action type \"step-not-applicable\" label",
+    "originalDefault": "Mark the form step as not-applicable"
+  },
+  "lDFtNM": {
+    "defaultMessage": "Value",
+    "description": "Label for 'value' in MappingArrayInput table column",
+    "originalDefault": "Value"
+  },
+  "lNBZdl": {
+    "defaultMessage": "The path of the folder where folders containing Open-Forms related documents will be created. You can use the expressions <code>'{{' year '}}'</code>, <code>'{{' month '}}'</code> and <code>'{{' day '}}'</code>. The path must start with <code>/</code>.",
+    "description": "MS Graph registration options 'folderPath' help text",
+    "originalDefault": "The path of the folder where folders containing Open-Forms related documents will be created. You can use the expressions <code>'{{' year '}}'</code>, <code>'{{' month '}}'</code> and <code>'{{' day '}}'</code>. The path must start with <code>/</code>."
+  },
+  "lcR5L6": {
+    "defaultMessage": "Add item",
+    "description": "Add item to multi-input field",
+    "originalDefault": "Add item"
+  },
+  "ln72CJ": {
+    "defaultMessage": "URL to the object type in the objecttypes API. If provided, an object will be created and a case object relation will be added to the case.",
+    "description": "ZGW APIs registration options 'objecttype' help text",
+    "originalDefault": "URL to the object type in the objecttypes API. If provided, an object will be created and a case object relation will be added to the case."
+  },
+  "m83ECr": {
+    "defaultMessage": "Copying the configuration from the registration backend will clear the existing configuration. Are you sure you want to continue?",
+    "description": "Objects API prefill configuration: warning message when copying the config from registration backend",
+    "originalDefault": "Copying the configuration from the registration backend will clear the existing configuration. Are you sure you want to continue?"
+  },
+  "mCHS+l": {
+    "defaultMessage": "You have selected a catalogue - the document type URLs configured here will be ignored.",
+    "description": "Objects registration: warning that legacy document types will be ignored",
+    "originalDefault": "You have selected a catalogue - the document type URLs configured here will be ignored."
+  },
+  "mH3X/G": {
+    "defaultMessage": "today",
+    "description": "\"today\" operand type",
+    "originalDefault": "today"
+  },
+  "mOgTIH": {
+    "defaultMessage": "the variable",
+    "description": "\"variable\" operand type",
+    "originalDefault": "the variable"
+  },
+  "mOjKcm": {
+    "defaultMessage": "Steps and fields",
+    "description": "Form design tab title",
+    "originalDefault": "Steps and fields"
+  },
+  "mXJbc8": {
+    "defaultMessage": "Easy to understand description",
+    "description": "Logic rule description placeholder",
+    "originalDefault": "Easy to understand description"
+  },
+  "mYYxJE": {
+    "defaultMessage": "months",
+    "description": "Logic trigger number of months",
+    "originalDefault": "months"
+  },
+  "mZ5Rrx": {
+    "defaultMessage": "Form field",
+    "description": "JSON variable type \"Form field\" representation",
+    "originalDefault": "Form field"
+  },
+  "mfD7J5": {
+    "defaultMessage": "Name",
+    "description": "Fixed metadata table name title",
+    "originalDefault": "Name"
+  },
+  "myvtu0": {
+    "defaultMessage": "Manage process variables",
+    "description": "Open manage camunda process vars modal button",
+    "originalDefault": "Manage process variables"
+  },
+  "n4Y2ex": {
+    "defaultMessage": "Version",
+    "description": "Camunda 'process definition version' label",
+    "originalDefault": "Version"
+  },
+  "nEg4dr": {
+    "defaultMessage": "Metadata:",
+    "description": "Label indicating the 'metadata' part of the data",
+    "originalDefault": "Metadata:"
+  },
+  "nFXYHB": {
+    "defaultMessage": "When the form should be deactivated.",
+    "description": "Form deactivation field help text",
+    "originalDefault": "When the form should be deactivated."
+  },
+  "nHFMXn": {
+    "defaultMessage": "Trigger condition",
+    "description": "Logic trigger heading",
+    "originalDefault": "Trigger condition"
+  },
+  "nNbK3G": {
+    "defaultMessage": "Email content template HTML",
+    "description": "Email registration options 'emailContentTemplateHtml' label",
+    "originalDefault": "Email content template HTML"
+  },
+  "nYePys": {
+    "defaultMessage": "Something went wrong while retrieving the available object type versions.",
+    "description": "Objects API registrations options: object type version select error",
+    "originalDefault": "Something went wrong while retrieving the available object type versions."
+  },
+  "nZZkHx": {
+    "defaultMessage": "Include variable",
+    "description": "'Include variable' checkbox label",
+    "originalDefault": "Include variable"
+  },
+  "neCqv9": {
+    "defaultMessage": "The registration result will be an object from the selected type.",
+    "description": "Objects API registration options 'Objecttype' helpText",
+    "originalDefault": "The registration result will be an object from the selected type."
+  },
+  "nhBYT3": {
+    "defaultMessage": "Recipients",
+    "description": "Email registration: recipients fieldset title",
+    "originalDefault": "Recipients"
+  },
+  "nkr7r0": {
+    "defaultMessage": "Amount of days when all submissions of this form will be permanently deleted. Leave blank to use value in General Configuration.",
+    "description": "All Submissions Removal Limit help text",
+    "originalDefault": "Amount of days when all submissions of this form will be permanently deleted. Leave blank to use value in General Configuration."
+  },
+  "nmUEDS": {
+    "defaultMessage": "The purpose limitation (\"doelbinding\") for queries to the BRP Persoon API.",
+    "description": "Form 'BRP Personen purpose limitation header value' field help text",
+    "originalDefault": "The purpose limitation (\"doelbinding\") for queries to the BRP Persoon API."
+  },
+  "o4AUIi": {
+    "defaultMessage": "Multiple target paths configured",
+    "description": "'Multiple target paths configured' registration summary message",
+    "originalDefault": "Multiple target paths configured"
+  },
+  "o5iEgm": {
+    "defaultMessage": "JSON Schema object target",
+    "description": "'JSON Schema object target' label",
+    "originalDefault": "JSON Schema object target"
+  },
+  "o8CfuS": {
+    "defaultMessage": "String",
+    "description": "JSON variable type \"string\" representation",
+    "originalDefault": "String"
+  },
+  "oCo2mP": {
+    "defaultMessage": "Save",
+    "description": "Save service fetch configuration button label",
+    "originalDefault": "Save"
+  },
+  "oVwrVo": {
+    "defaultMessage": "Attach files to email",
+    "description": "Email registration options 'attachFilesToEmail' label",
+    "originalDefault": "Attach files to email"
+  },
+  "oWOr9u": {
+    "defaultMessage": "Submission",
+    "description": "Form submission options tab title",
+    "originalDefault": "Submission"
+  },
+  "oYmpN5": {
+    "defaultMessage": "Whether to include the content of the confirmation page in the PDF.",
+    "description": "Include confirmation page content in PDF",
+    "originalDefault": "Whether to include the content of the confirmation page in the PDF."
+  },
+  "oqv4fM": {
+    "defaultMessage": "The prefill values will be taken from an object of the selected type.",
+    "description": "Objects API prefill options 'Objecttype' helpText",
+    "originalDefault": "The prefill values will be taken from an object of the selected type."
+  },
+  "ow5LZk": {
+    "defaultMessage": "Variables to include in the data to be sent.",
+    "description": "JSON registration options 'variables' helpText",
+    "originalDefault": "Variables to include in the data to be sent."
+  },
+  "oxYXJX": {
+    "defaultMessage": "How successful submissions of this form will be removed after the limit. Leave blank to use value in General Configuration.",
+    "description": "Successful Submissions Removal Method help text",
+    "originalDefault": "How successful submissions of this form will be removed after the limit. Leave blank to use value in General Configuration."
+  },
+  "p+NeER": {
+    "defaultMessage": "No advanced configuration is available for this form.",
+    "description": "Form advanced configuration fallback message",
+    "originalDefault": "No advanced configuration is available for this form."
+  },
+  "p18yml": {
+    "defaultMessage": "Complex process variables",
+    "description": "Open manage complex camunda process vars modal button",
+    "originalDefault": "Complex process variables"
+  },
+  "p3t0c/": {
+    "defaultMessage": "This mapping is used to map the variable keys to keys used in the XML that is sent to StUF-ZDS. Those keys and the values belonging to them in the submission data are included in <code>extraElementen</code>.",
+    "description": "StUF-ZDS registration paymentStatusUpdateMapping message",
+    "originalDefault": "This mapping is used to map the variable keys to keys used in the XML that is sent to StUF-ZDS. Those keys and the values belonging to them in the submission data are included in <code>extraElementen</code>."
+  },
+  "p5Iv+R": {
+    "defaultMessage": "Document type API resource URL in the Catalogi API.",
+    "description": "ZGW APIs registration options 'DocumentType' help text",
+    "originalDefault": "Document type API resource URL in the Catalogi API."
+  },
+  "p8LSwF": {
+    "defaultMessage": "Add action",
+    "description": "Add form logic rule action button",
+    "originalDefault": "Add action"
+  },
+  "p9zrjb": {
+    "defaultMessage": "The value ''{value}' is set but could not be found. {draftsEnabled, select, true {Possibly the draft was deleted.} other {Perhaps this document type is not published yet?} }",
+    "description": "Warning message about missing document type option.",
+    "originalDefault": "The value ''{value}' is set but could not be found. {draftsEnabled, select, true {Possibly the draft was deleted.} other {Perhaps this document type is not published yet?} }"
+  },
+  "pGmjYH": {
+    "defaultMessage": "User",
+    "description": "User column header",
+    "originalDefault": "User"
+  },
+  "pWHOT1": {
+    "defaultMessage": "Value",
+    "description": "JSON editor: 'value' header label",
+    "originalDefault": "Value"
+  },
+  "piUWzT": {
+    "defaultMessage": "Select registration backend",
+    "description": "Registration backend label",
+    "originalDefault": "Select registration backend"
+  },
+  "pjbN8m": {
+    "defaultMessage": "Street name Schema target",
+    "description": "Objects registration variable mapping, addressNL component: 'options.streetName schema target' label",
+    "originalDefault": "Street name Schema target"
+  },
+  "poZZD9": {
+    "defaultMessage": "Step name",
+    "description": "Form step name label",
+    "originalDefault": "Step name"
+  },
+  "pqCru3": {
+    "defaultMessage": "Fetch configuration:",
+    "description": "Currently selected service fetch configuration label",
+    "originalDefault": "Fetch configuration:"
+  },
+  "pyX2Tl": {
+    "defaultMessage": "Confirm",
+    "description": "Confirm complex Camunda variable definition",
+    "originalDefault": "Confirm"
+  },
+  "q3kxsb": {
+    "defaultMessage": "This template is evaluated with the submission data when the payment is received. The resulting JSON is sent to the objects API to update (the payment fields of) the earlier created object.",
+    "description": "Legacy objects API registration options: 'paymentStatusUpdateJson' helpText",
+    "originalDefault": "This template is evaluated with the submission data when the payment is received. The resulting JSON is sent to the objects API to update (the payment fields of) the earlier created object."
+  },
+  "qUYLVg": {
+    "defaultMessage": "Product & payment",
+    "description": "Product & payments tab title",
+    "originalDefault": "Product & payment"
+  },
+  "qXbHf5": {
+    "defaultMessage": "Property",
+    "description": "Column title for case property that a variable is mapped to",
+    "originalDefault": "Property"
+  },
+  "qYZ81s": {
+    "defaultMessage": "How errored submissions of this form will be removed after the limit. Leave blank to use value in General Configuration.",
+    "description": "Errored Submissions Removal Method help text",
+    "originalDefault": "How errored submissions of this form will be removed after the limit. Leave blank to use value in General Configuration."
+  },
+  "qdV9zh": {
+    "defaultMessage": "If enabled, then no access control on the referenced object is performed. Ensure that it does not contain private data before checking this!",
+    "description": "Objects API registration: skipOwnershipCheck helpText",
+    "originalDefault": "If enabled, then no access control on the referenced object is performed. Ensure that it does not contain private data before checking this!"
+  },
+  "qo1UbS": {
+    "defaultMessage": "Export",
+    "description": "Export form button",
+    "originalDefault": "Export"
+  },
+  "qzISfx": {
+    "defaultMessage": "Step slug",
+    "description": "Form step slug label",
+    "originalDefault": "Step slug"
+  },
+  "r4OkBj": {
+    "defaultMessage": "Oh no! Something went wrong.",
+    "description": "Unexpected error message",
+    "originalDefault": "Oh no! Something went wrong."
+  },
+  "r5Olb9": {
+    "defaultMessage": "Manage complex process variables",
+    "description": "Camunda complex process vars modal title",
+    "originalDefault": "Manage complex process variables"
+  },
+  "r64cfz": {
+    "defaultMessage": "Payment updates",
+    "description": "Email registration: payment configuration fieldset title",
+    "originalDefault": "Payment updates"
+  },
+  "r9MTrz": {
+    "defaultMessage": "Request headers",
+    "description": "Service fetch configuration modal form request headers field label",
+    "originalDefault": "Request headers"
+  },
+  "rF90xM": {
+    "defaultMessage": "Data type",
+    "description": "Variable table data type title",
+    "originalDefault": "Data type"
+  },
+  "rGLOtz": {
+    "defaultMessage": "{label} {isPublished, select, false {<draft>(not published)</draft>} other {}}",
+    "description": "Case type option label",
+    "originalDefault": "{label} {isPublished, select, false {<draft>(not published)</draft>} other {}}"
+  },
+  "rQy+Yq": {
+    "defaultMessage": "Upload submission CSV",
+    "description": "Objects API registration: uploadSubmissionCsv label",
+    "originalDefault": "Upload submission CSV"
+  },
+  "rRB7WE": {
+    "defaultMessage": "Registration",
+    "description": "Registration variables tab title",
+    "originalDefault": "Registration"
+  },
+  "rTafvA": {
+    "defaultMessage": "Float",
+    "description": "data type float",
+    "originalDefault": "Float"
+  },
+  "rVV0i6": {
+    "defaultMessage": "Update existing object",
+    "description": "Objects API registration: updateExistingObject label",
+    "originalDefault": "Update existing object"
+  },
+  "rZfe8Z": {
+    "defaultMessage": "Sorry, we couldn't do that because you are logged out - this may be because your session expired.",
+    "description": "Session expiry notice - API call failed with 401",
+    "originalDefault": "Sorry, we couldn't do that because you are logged out - this may be because your session expired."
+  },
+  "rkzjK3": {
+    "defaultMessage": "JSON Schema target",
+    "description": "'JSON Schema target' label",
+    "originalDefault": "JSON Schema target"
+  },
+  "rzGuvz": {
+    "defaultMessage": "(not configured yet)",
+    "description": "DMN evaluation not configured yet message",
+    "originalDefault": "(not configured yet)"
+  },
+  "sAfROS": {
+    "defaultMessage": "Metadata variables",
+    "description": "Metadata variables fieldset title",
+    "originalDefault": "Metadata variables"
+  },
+  "sCkGL9": {
+    "defaultMessage": "invalid output mapping(s)",
+    "description": "Warning message: DMN output mapping problems detected",
+    "originalDefault": "invalid output mapping(s)"
+  },
+  "sFHD3/": {
+    "defaultMessage": "Whether to send a confirmation email to the end-user who submitted the form.",
+    "description": "Help text of form field 'Send the confirmation email'",
+    "originalDefault": "Whether to send a confirmation email to the end-user who submitted the form."
+  },
+  "sNGN82": {
+    "defaultMessage": "Enable to attach file uploads to the registration email. If set, this overrides the global default. Form designers should take special care to ensure that the total file upload sizes do not exceed the email size limit.",
+    "description": "Email registration options 'attachFilesToEmail' helpText",
+    "originalDefault": "Enable to attach file uploads to the registration email. If set, this overrides the global default. Form designers should take special care to ensure that the total file upload sizes do not exceed the email size limit."
+  },
+  "sokfvf": {
+    "defaultMessage": "The service to send the data to.",
+    "description": "JSON registration options 'serviceSelect' helpText",
+    "originalDefault": "The service to send the data to."
+  },
+  "sptpzv": {
+    "defaultMessage": "Switching to the new registration options will remove the existing JSON templates. You will also not be able to save the form until the variables are correctly mapped. Are you sure you want to continue?",
+    "description": "Objects API registration backend: v2 switch warning message",
+    "originalDefault": "Switching to the new registration options will remove the existing JSON templates. You will also not be able to save the form until the variables are correctly mapped. Are you sure you want to continue?"
+  },
+  "t+J++o": {
+    "defaultMessage": "{isReusable, select, true {Reusable step} other {Step}} settings",
+    "description": "Form definition module title",
+    "originalDefault": "{isReusable, select, true {Reusable step} other {Step}} settings"
+  },
+  "t5fg/K": {
+    "defaultMessage": "one or more actions are invalid",
+    "description": "Logic rule warning message about problematic actions.",
+    "originalDefault": "one or more actions are invalid"
+  },
+  "t9+e9k": {
+    "defaultMessage": "Are you sure you want to remove this mapping?",
+    "description": "Delete confirmation message for variable mapped to case property",
+    "originalDefault": "Are you sure you want to remove this mapping?"
+  },
+  "tJQoMq": {
+    "defaultMessage": "There are errors in the prefill configuration.",
+    "description": "Prefill configuration errors icon text",
+    "originalDefault": "There are errors in the prefill configuration."
+  },
+  "tLL2x4": {
+    "defaultMessage": "Change form",
+    "description": "Change form page title",
+    "originalDefault": "Change form"
+  },
+  "tOueRC": {
+    "defaultMessage": "Case properties ({count})",
+    "description": "ZGW APIs registration backend options, 'case properties' tab label",
+    "originalDefault": "Case properties ({count})"
+  },
+  "tRCXsR": {
+    "defaultMessage": "Select components and conditions using drop-downs to build a JsonLogic expression.",
+    "description": "Simple logic type info text",
+    "originalDefault": "Select components and conditions using drop-downs to build a JsonLogic expression."
+  },
+  "tg+6bo": {
+    "defaultMessage": "Payment status update JSON template",
+    "description": "Legacy objects API registration options: 'paymentStatusUpdateJson' label",
+    "originalDefault": "Payment status update JSON template"
+  },
+  "tjRtQk": {
+    "defaultMessage": "Submission confirmation email template",
+    "description": "Submission confirmation email fieldset title",
+    "originalDefault": "Submission confirmation email template"
+  },
+  "twWsC2": {
+    "defaultMessage": "Name",
+    "description": "Manage complex process vars alias column title",
+    "originalDefault": "Name"
+  },
+  "tzwS3S": {
+    "defaultMessage": "Description (omschrijving) of the ROLTYPE to use for employees filling in a form for a citizen/company.",
+    "description": "Objects API registration options 'medewerkerRoltype' help text",
+    "originalDefault": "Description (omschrijving) of the ROLTYPE to use for employees filling in a form for a citizen/company."
+  },
+  "u+IP17": {
+    "defaultMessage": "Maximum allowed number of submissions",
+    "description": "Form submissionLimit field label",
+    "originalDefault": "Maximum allowed number of submissions"
+  },
+  "u/0IPY": {
+    "defaultMessage": "House number addition Schema target",
+    "description": "Objects registration variable mapping, addressNL component: 'options.houseNumberAddition schema target' label",
+    "originalDefault": "House number addition Schema target"
+  },
+  "u3P/1E": {
+    "defaultMessage": "RSIN of the organization, which creates and owns the INFORMATIEOBJECTs.",
+    "description": "Objects API registration options 'organisationRSIN' helpText",
+    "originalDefault": "RSIN of the organization, which creates and owns the INFORMATIEOBJECTs."
+  },
+  "uBO/Al": {
+    "defaultMessage": "Select a step to view or modify.",
+    "description": "No-active-step-selected notice",
+    "originalDefault": "Select a step to view or modify."
+  },
+  "uG5kOq": {
+    "defaultMessage": "Amount of days successful submissions of this form will remain before being removed. Leave blank to use value in General Configuration.",
+    "description": "Successful Submissions Removal Limit help text",
+    "originalDefault": "Amount of days successful submissions of this form will remain before being removed. Leave blank to use value in General Configuration."
+  },
+  "uUf7cu": {
+    "defaultMessage": "Path relative to the Service API root.",
+    "description": "JSON registration options 'path' helpText",
+    "originalDefault": "Path relative to the Service API root."
+  },
+  "uiliGe": {
+    "defaultMessage": "The logic rules you set up here are executed in the order that they are defined. Please consult the <docs>manual</docs> for more information.",
+    "description": "Logic rules introduction/explanation",
+    "originalDefault": "The logic rules you set up here are executed in the order that they are defined. Please consult the <docs>manual</docs> for more information."
+  },
+  "ukFB7B": {
+    "defaultMessage": "Select which authentication backend is automatically redirected to.",
+    "description": "Auto-login field help text",
+    "originalDefault": "Select which authentication backend is automatically redirected to."
+  },
+  "ulTen2": {
+    "defaultMessage": "Required",
+    "description": "option \"required\" of statement checkbox configuration",
+    "originalDefault": "Required"
+  },
+  "uleYj3": {
+    "defaultMessage": "History",
+    "description": "History link button",
+    "originalDefault": "History"
+  },
+  "vAZDY4": {
+    "defaultMessage": "Source path",
+    "description": "Prefill / Objects API: column header for object type property selection",
+    "originalDefault": "Source path"
+  },
+  "vNRiMn": {
+    "defaultMessage": "Theme",
+    "description": "Form theme field label",
+    "originalDefault": "Theme"
+  },
+  "vQME+l": {
+    "defaultMessage": "Create a new form definition",
+    "description": "Create form definition tile",
+    "originalDefault": "Create a new form definition"
+  },
+  "vaO0I+": {
+    "defaultMessage": "Content",
+    "description": "Email registration: content fieldset title",
+    "originalDefault": "Content"
+  },
+  "viEfGU": {
+    "defaultMessage": "The content of the submission confirmation page. It can contain variables that will be templated from the submitted form data. If not specified, the global template will be used.",
+    "description": "Confirmation template help text",
+    "originalDefault": "The content of the submission confirmation page. It can contain variables that will be templated from the submitted form data. If not specified, the global template will be used."
+  },
+  "vikURf": {
+    "defaultMessage": "Optional custom template for the title displayed on the payment page.<br></br> You can use all form variables (using their keys) and the <code>public_reference</code> template variable. If unspecified, a default description is used.",
+    "description": "Ogone legacy payment options 'titleTemplate' help text",
+    "originalDefault": "Optional custom template for the title displayed on the payment page.<br></br> You can use all form variables (using their keys) and the <code>public_reference</code> template variable. If unspecified, a default description is used."
+  },
+  "vng/5K": {
+    "defaultMessage": "Set a key name before you can configure this variable",
+    "description": "JSON editor: object entry has empty key name",
+    "originalDefault": "Set a key name before you can configure this variable"
+  },
+  "vp12ou": {
+    "defaultMessage": "The variable name to be used for the process instance.",
+    "description": "Manage process vars alias help text",
+    "originalDefault": "The variable name to be used for the process instance."
+  },
+  "w4e4jx": {
+    "defaultMessage": "After how many seconds should the cached response expire.",
+    "description": "Help text cache timeout",
+    "originalDefault": "After how many seconds should the cached response expire."
+  },
+  "wAQaa5": {
+    "defaultMessage": "Extra print statement",
+    "description": "Demo registration options 'extraLine' label",
+    "originalDefault": "Extra print statement"
+  },
+  "wIaGgb": {
+    "defaultMessage": "Errored Submissions Removal Method",
+    "description": "Errored Submissions Removal Method field label",
+    "originalDefault": "Errored Submissions Removal Method"
+  },
+  "wLfQfD": {
+    "defaultMessage": "The configuration options here are legacy options. They will continue working, but you should upgrade to the new configuration options above. If a new configuration option is specified, the matching legacy option will be ignored.",
+    "description": "ZGW APIs legacy config options informative message",
+    "originalDefault": "The configuration options here are legacy options. They will continue working, but you should upgrade to the new configuration options above. If a new configuration option is specified, the matching legacy option will be ignored."
+  },
+  "wOMoEs": {
+    "defaultMessage": "Source",
+    "description": "JSON editor: value source selector label",
+    "originalDefault": "Source"
+  },
+  "wUdgIT": {
+    "defaultMessage": "Use raw JSON input",
+    "description": "Toggle array input raw JSON input mode",
+    "originalDefault": "Use raw JSON input"
+  },
+  "wnTTZr": {
+    "defaultMessage": "ID of the drive to use. If left empty, the default drive will be used.",
+    "description": "MS Graph registration options 'driveId' help text",
+    "originalDefault": "ID of the drive to use. If left empty, the default drive will be used."
+  },
+  "wqCiwc": {
+    "defaultMessage": "Indication of the level to which extend the dossier of the ZAAK is meant to be public. This is set on the documents created for the ZAAK.",
+    "description": "StUF-ZDS registration options 'zdsZaakdocVertrouwelijkheid' helpText",
+    "originalDefault": "Indication of the level to which extend the dossier of the ZAAK is meant to be public. This is set on the documents created for the ZAAK."
+  },
+  "wrdDVu": {
+    "defaultMessage": "Legacy configuration",
+    "description": "ZGw APIs registration: legacy configuration options fieldset title",
+    "originalDefault": "Legacy configuration"
+  },
+  "x+ORaW": {
+    "defaultMessage": "Deactivate on",
+    "description": "Form deactivation field label",
+    "originalDefault": "Deactivate on"
+  },
+  "x4gaYf": {
+    "defaultMessage": "Cancel",
+    "description": "JSON editor: cancel variable edit",
+    "originalDefault": "Cancel"
+  },
+  "x6oxfg": {
+    "defaultMessage": "Variable",
+    "description": "Price variable label",
+    "originalDefault": "Variable"
+  },
+  "xBb5YI": {
+    "defaultMessage": "Select an object type and version before you can pick a source path.",
+    "description": "Object type target path selection for auth attribute message for missing options because no object type has been selected.",
+    "originalDefault": "Select an object type and version before you can pick a source path."
+  },
+  "xJBMaf": {
+    "defaultMessage": "Submission confirmation template",
+    "description": "Submission confirmation fieldset title",
+    "originalDefault": "Submission confirmation template"
+  },
+  "xTfMk5": {
+    "defaultMessage": "Translation enabled",
+    "description": "Form translation enabled field label",
+    "originalDefault": "Translation enabled"
+  },
+  "xcp+LU": {
+    "defaultMessage": "Create definition",
+    "description": "create form definition icon title",
+    "originalDefault": "Create definition"
+  },
+  "xxyIg/": {
+    "defaultMessage": "Indicates whether appointments are enabled for this form.",
+    "description": "Form appointment enabled field help text",
+    "originalDefault": "Indicates whether appointments are enabled for this form."
+  },
+  "xyVtKp": {
+    "defaultMessage": "Plugin configuration: Objects API",
+    "description": "Objects API registration options modal title",
+    "originalDefault": "Plugin configuration: Objects API"
+  },
+  "y4U0aW": {
+    "defaultMessage": "{required, select, true {{path} (required)} other {{path}}}",
+    "description": "Representation of a JSON Schema target path",
+    "originalDefault": "{required, select, true {{path} (required)} other {{path}}}"
+  },
+  "yCogwi": {
+    "defaultMessage": "Select definition",
+    "description": "select definition icon title",
+    "originalDefault": "Select definition"
+  },
+  "yIPUtA": {
+    "defaultMessage": "Authorizee",
+    "description": "Identifier role (for mandate context) label for authorizee",
+    "originalDefault": "Authorizee"
+  },
+  "yLt2lv": {
+    "defaultMessage": "JSON template for the body of the request sent to the Objects API.",
+    "description": "Legacy objects API registration options: 'contentJSON' helpText",
+    "originalDefault": "JSON template for the body of the request sent to the Objects API."
+  },
+  "yTfQNG": {
+    "defaultMessage": "Objecttype",
+    "description": "ZGW APIs registration options 'objecttype' label",
+    "originalDefault": "Objecttype"
+  },
+  "yTpHh0": {
+    "defaultMessage": "(unset)",
+    "description": "JSON variable type unset representation",
+    "originalDefault": "(unset)"
+  },
+  "z0FW+t": {
+    "defaultMessage": "Field name",
+    "description": "Name of the translatable field",
+    "originalDefault": "Field name"
+  },
+  "z0bXZT": {
+    "defaultMessage": "Action",
+    "description": "Action column header",
+    "originalDefault": "Action"
+  },
+  "z4zEf7": {
+    "defaultMessage": "Zds zaaktype omschrijving",
+    "description": "StUF-ZDS registration options 'zdsZaaktypeOmschrijving' label",
+    "originalDefault": "Zds zaaktype omschrijving"
+  },
+  "zQE4f2": {
+    "defaultMessage": "N/A",
+    "description": "Not applicable",
+    "originalDefault": "N/A"
+  },
+  "zQcTdi": {
+    "defaultMessage": "Something went wrong retrieving the available object types and/or versions. Please check that the services in the selected API group are configured correctly.",
+    "description": "Legacy Objects API registrations options: unknown error",
+    "originalDefault": "Something went wrong retrieving the available object types and/or versions. Please check that the services in the selected API group are configured correctly."
+  },
+  "zUVGyl": {
+    "defaultMessage": "There are validation errors",
+    "description": "Step validation errors icon title",
+    "originalDefault": "There are validation errors"
+  },
+  "zV3nNZ": {
+    "defaultMessage": "Object",
+    "description": "JSON variable type \"object\" representation",
+    "originalDefault": "Object"
+  },
+  "zYu3XI": {
+    "defaultMessage": "Plugin configuration: Ogone legacy",
+    "description": "Ogone legacy options modal title",
+    "originalDefault": "Plugin configuration: Ogone legacy"
+  },
+  "zqnTBZ": {
+    "defaultMessage": "Submission settings",
+    "description": "Form submission settings fieldset title",
+    "originalDefault": "Submission settings"
+  },
+  "zwOwrD": {
+    "defaultMessage": "Select a property from the object type",
+    "description": "Prefill / Objects API: accessible label for object type property selection",
+    "originalDefault": "Select a property from the object type"
+  }
+}

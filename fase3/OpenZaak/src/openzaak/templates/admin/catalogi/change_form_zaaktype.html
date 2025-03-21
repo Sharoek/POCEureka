@@ -1,0 +1,14 @@
+{% extends 'admin/catalogi/change_form.html' %}
+{% comment %} SPDX-License-Identifier: EUPL-1.2 {% endcomment %}
+{% comment %} Copyright (C) 2019 - 2020 Dimpact {% endcomment %}
+{% load i18n %}
+
+{% block extra_submit_buttons %}
+
+    {% url 'admin:catalogi_zaaktype_publish' original.pk as publish_url %}
+    <input type="button" onclick="window.location.href='{{ publish_url }}'"
+                       value="{% trans "Publiceren" %}" name="_publish"  {% if original.concept == False %} disabled="disabled"{% endif %}/>
+
+    <input type="submit" value="{% trans 'Nieuwe versie toevoegen' %}" name="_addversion" {% if not original.pk or original.concept == True %}disabled="disabled"{% endif %}>
+    {% if original %}<input type="submit" value="{% trans 'Export' %}" name="_export"/>{% endif %}
+{% endblock %}

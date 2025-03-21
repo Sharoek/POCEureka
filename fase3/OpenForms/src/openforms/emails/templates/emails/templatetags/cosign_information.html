@@ -1,0 +1,12 @@
+{% load i18n %}
+
+{% if cosign_complete %}
+    <p>
+        {% blocktranslate trimmed %}This submission has been co-signed by {{ cosigner_email }}.{% endblocktranslate %}
+    </p>
+{%  elif waiting_on_cosign %}
+    <p>
+        {% blocktranslate trimmed %}This form will not be processed until it has been co-signed. A co-sign request was sent to {{ cosigner_email }}.{% endblocktranslate %}
+    </p>
+{% endif %}
+

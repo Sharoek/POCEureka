@@ -1,0 +1,131 @@
+# This is a compose file inteded for trying out the project locally and absolutely
+# not suitable for production usage. The configuration here contains non-safe defaults.
+#
+# If you want to try out CMIS with Alfresco, see docker-compose.alfresco.yml
+
+version: '3.4'
+
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    command: postgres -c max_connections=300 -c log_min_messages=LOG
+    volumes:
+      - ./docker/postgres.entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
+      - db:/var/lib/postgresql/data
+    ports:
+      - "11234:5432"
+
+  redis:
+    image: redis
+
+  web.local:
+    build: .
+    image: openzaak/open-zaak:latest
+    environment: &app-env
+      DJANGO_SETTINGS_MODULE: openzaak.conf.docker
+      SECRET_KEY: ${SECRET_KEY:-7(h1r2hk)8z9+05edulo_3qzymwbo&c24=)qz7+_@3&2sp=u%i}
+      DB_NAME: openzaak
+      DB_USER: openzaak
+      IS_HTTPS: no
+      ALLOWED_HOSTS: localhost,127.0.0.1,web,web.local
+      CORS_ALLOW_ALL_ORIGINS: "True"
+      CSRF_TRUSTED_ORIGINS: http://localhost:9000
+      CACHE_DEFAULT: redis:6379/0
+      CACHE_AXES: redis:6379/0
+      SUBPATH: ${SUBPATH:-/}
+      IMPORT_DOCUMENTEN_BASE_DIR: ${IMPORT_DOCUMENTEN_BASE_DIR:-/app/import-data}
+      IMPORT_DOCUMENTEN_BATCH_SIZE: ${IMPORT_DOCUMENTEN_BATCH_SIZE:-500}
+      OPENZAAK_SUPERUSER_USERNAME: admin
+      DJANGO_SUPERUSER_PASSWORD: admin
+      OPENZAAK_SUPERUSER_EMAIL: admin@localhost
+      DISABLE_2FA: true
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/1
+      CELERY_LOGLEVEL: DEBUG
+      CELERY_WORKER_CONCURRENCY: ${CELERY_WORKER_CONCURRENCY:-4}
+      ENVIRONMENT: dev
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; exit(requests.head('http://localhost:8000/admin/').status_code not in [200, 302])"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      # This should allow for enough time for migrations to run before the max
+      # retries have passed. This healthcheck in turn allows other containers
+      # to wait for the database migrations.
+      start_period: 30s
+    ports:
+      - 8000:8000
+    volumes: &app-volumes
+      - media:/app/media  # Shared media volume to get access to saved OAS files
+      - private-media:/app/private-media
+      - ./import-data:/app/import-data
+      - ./docker/fixtures/catalogi.json:/app/fixtures/catalogi.json
+    depends_on:
+      web-init:
+        condition: service_completed_successfully
+
+  web-init:
+    build: .
+    environment:
+      <<: *app-env
+      #
+      # Django-setup-configuration
+      RUN_SETUP_CONFIG: ${RUN_SETUP_CONFIG:-true}
+    command: /setup_configuration.sh
+    volumes:
+      - ./docker/setup_configuration:/app/setup_configuration
+    depends_on:
+      - db
+      - redis
+
+  # celery:
+  #   build: .
+  #   image: openzaak/open-zaak:latest
+  #   environment: *app-env
+  #   command: /celery_worker.sh
+  #   healthcheck:
+  #     test: ["CMD", "python", "/app/bin/check_celery_worker_liveness.py"]
+  #     interval: 30s
+  #     timeout: 5s
+  #     retries: 3
+  #     start_period: 10s
+  #   volumes: *app-volumes
+  #   depends_on:
+  #     web.local:
+  #       condition: service_healthy
+
+  # celery-beat:
+  #   build: .
+  #   image: openzaak/open-zaak:latest
+  #   environment: *app-env
+  #   command: /celery_beat.sh
+  #   depends_on:
+  #     - celery
+
+  # celery-flower:
+  #   build: .
+  #   image: openzaak/open-zaak:latest
+  #   environment: *app-env
+  #   command: /celery_flower.sh
+  #   ports:
+  #     - 5555:5555
+  #   depends_on:
+  #     - redis
+  #     - celery
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - private-media:/private-media
+    ports:
+      - "9000:80"
+    depends_on:
+      - web.local
+
+volumes:
+  db:
+  media:
+  private-media:

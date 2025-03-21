@@ -1,0 +1,14 @@
+-c ci.txt
+-r ci.txt
+
+# Helpers
+bump2version
+gitpython
+
+# Translations
+django-rosetta
+
+# Debug tooling
+django-debug-toolbar
+django-extensions
+django-silk

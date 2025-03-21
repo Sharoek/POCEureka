@@ -1,0 +1,24 @@
+/* SPDX-License-Identifier: EUPL-1.2 */
+/* Copyright (C) 2019 - 2020 Dimpact */
+.catalogus-options {
+  padding-left: 18px;
+
+  &__title {
+    display: block;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+
+  &__external-types {
+    padding: 0;
+  }
+
+  &__external-type {
+    list-style: none;
+  }
+
+  &__add-type {
+    margin: 0 !important;
+    border: none;
+  }
+}

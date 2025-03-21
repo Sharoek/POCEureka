@@ -1,0 +1,82 @@
+@use 'microscope-sass/lib/bem';
+
+@import '../../vars';
+
+.edit-panel {
+  display: flex;
+  position: relative;
+
+  h2 + & {
+    margin-top: 20px;
+  }
+
+  @include bem.element('submit-layer') {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include bem.element('nav') {
+    width: 25%;
+    max-width: 300px;
+    margin-right: 10px;
+  }
+
+  @include bem.element('edit-area') {
+    flex-grow: 1;
+    min-width: 0;
+    width: 75%;
+
+    // override default django styles
+    h2 {
+      background: var(--edit-panel-title-bg);
+      color: var(--edit-panel-title-fg);
+    }
+
+    // provide sufficient contrast in light mode
+    @at-root & fieldset .collapse-toggle {
+      color: var(--edit-panel-title-fg);
+    }
+
+    @at-root & fieldset.collapsed .collapse-toggle {
+      color: var(--link-fg);
+    }
+  }
+}
+
+// admin style overrides
+.edit-panel {
+  @at-root form .aligned & ul.messagelist {
+    margin-left: 0;
+    padding-left: 0;
+
+    ul:not(.messagelist) {
+      margin-left: 0;
+      padding-left: 12px;
+      list-style: auto;
+
+      li {
+        display: list-item;
+        list-style: square;
+        background: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .checkbox__errors {
+    &--no-padding {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+}

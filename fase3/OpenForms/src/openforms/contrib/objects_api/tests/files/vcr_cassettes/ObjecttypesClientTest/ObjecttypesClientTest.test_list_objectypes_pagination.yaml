@@ -1,0 +1,47 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Authorization:
+      - Token 171be5abaf41e7856b423ad513df1ef8f867ff48
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.2
+    method: GET
+    uri: http://localhost:8001/api/v2/objecttypes?page=1&pageSize=1
+  response:
+    body:
+      string: '{"count":8,"next":"http://objecttypes-web:8000/api/v2/objecttypes?page=2&pageSize=1","previous":null,"results":[{"url":"http://objecttypes-web:8000/api/v2/objecttypes/f4df3ccb-df96-428b-b8c2-3bad8a496691","uuid":"f4df3ccb-df96-428b-b8c2-3bad8a496691","name":"Person
+        with address","namePlural":"Persons with addresses","description":"","dataClassification":"open","maintainerOrganization":"","maintainerDepartment":"","contactPerson":"","contactEmail":"","source":"","updateFrequency":"unknown","providerOrganization":"","documentationUrl":"","labels":{},"createdAt":"2025-01-08","modifiedAt":"2025-01-08","allowGeometry":true,"versions":["http://objecttypes-web:8000/api/v2/objecttypes/f4df3ccb-df96-428b-b8c2-3bad8a496691/versions/1","http://objecttypes-web:8000/api/v2/objecttypes/f4df3ccb-df96-428b-b8c2-3bad8a496691/versions/2"]}]}'
+    headers:
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Date:
+      - Wed, 12 Feb 2025 14:48:37 GMT
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - nginx/1.27.3
+      Vary:
+      - origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+version: 1

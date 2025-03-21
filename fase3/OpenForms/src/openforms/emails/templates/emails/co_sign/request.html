@@ -1,0 +1,29 @@
+{% load i18n capture_tags %}
+
+{% capture as tt_openvariable silent %}{% templatetag openvariable %}{% endcapture %}
+{% capture as tt_closevariable silent %}{% templatetag closevariable %}{% endcapture %}
+
+{% blocktranslate %}
+<p>Dear reader,</p>
+
+<p>
+Someone submitted the form "{{ tt_openvariable }} form_name {{ tt_closevariable }}"
+via the website on {{ tt_openvariable }} submission_date {{ tt_closevariable }}. This
+submission is not complete yet without your signature.
+</p>
+
+<h2>Cosigning required</h2>
+
+<p>
+With the link below you can log in and sign the form submission. Then, we will
+process the request.
+</p>
+
+<p>
+<a href="{{ tt_openvariable }} form_url {{ tt_closevariable }}">{{ tt_openvariable }} form_url {{ tt_closevariable }}</a>
+</p>
+
+<p>Kind regards,</p>
+
+<p>Open Forms</p>
+{% endblocktranslate %}

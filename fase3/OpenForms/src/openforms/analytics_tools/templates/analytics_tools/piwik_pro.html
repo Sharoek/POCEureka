@@ -1,0 +1,18 @@
+{% load solo_tags %}
+{% get_solo 'analytics_tools.AnalyticsToolsConfiguration' as analytics_tools_config %}
+{% if analytics_tools_config.is_piwik_pro_enabled %}
+<!-- Start Piwik PRO head tag -->
+<script id="piwik-pro-analytics" type="text/javascript" nonce="{{ request.csp_nonce }}">
+  var _paq = _paq || [];
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u="{{ analytics_tools_config.piwik_pro_url|escapejs }}/";
+    _paq.push(["setTrackerUrl", u+"ppms.php"]);
+    _paq.push(["setSiteId", "{{ analytics_tools_config.piwik_pro_site_id|escapejs }}"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+    g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"ppms.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik PRO head tag -->
+{% endif %}

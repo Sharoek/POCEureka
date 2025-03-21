@@ -1,0 +1,42 @@
+name: Code quality checks
+
+# Run this workflow every time a new commit pushed to your repository
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.py'
+      - '**.yml'
+  pull_request:
+    paths:
+      - '**.py'
+      - '**.yml'
+  workflow_dispatch:
+
+jobs:
+  open-api-workflow-code-quality:
+    uses: maykinmedia/open-api-workflows/.github/workflows/code-quality.yml@v5
+    with:
+      apt-packages: 'libgdal-dev gdal-bin'
+      python-version: '3.11'
+      node-version: '18'
+      postgres-image: 'postgis/postgis:16-3.5'
+
+      django-settings-module: 'openzaak.conf.ci'
+      django-secret-key: dummy
+
+  # openzaak specific
+  spdx:
+    name: SPDX header check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: maykinmedia/setup-django-backend@v1.3
+        with:
+          apt-packages: 'libxml2 libxmlsec1 libxmlsec1-openssl'
+          python-version: '3.11'
+          setup-node: false
+      - name: Run check
+        run: ./bin/check_spdx.py src

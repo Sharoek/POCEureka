@@ -1,0 +1,147 @@
+{% load static i18n solo_tags style_dictionary appointments theme %}<!DOCTYPE html>
+{% get_solo 'config.GlobalConfiguration' as config %}
+{% get_theme as theme %}
+{% get_current_language as LANG %}
+{% now "DATETIME_FORMAT" as now_str %}
+<html lang="{{ LANG }}" class="{{ theme.get_classname }}">
+    <head>
+        <meta charset="utf-8">
+        <title>{% spaceless %}
+            {% block title %}
+                {% blocktrans with form_name=report.form.name trimmed %}
+                    {{ form_name }}: PDF report
+                {% endblocktrans %}
+            {% endblock %}
+        {% endspaceless %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{% static 'bundles/pdf-css.css' %}" media="all" rel="stylesheet" />
+        {% block extra_css %}{% endblock %}
+
+        {# if external stylesheets are configured, apply it BEFORE the admin-specified design tokens #}
+        {% for stylesheet in theme.get_stylesheets %}
+            <link href="{{ stylesheet }}" media="all" rel="stylesheet" />
+        {% endfor %}
+
+        {# Inject design tokens for theming #}
+        {# This goes through WeasyPrint normally, so excluded from CSP #}
+        {% include 'includes/design-tokens.html' with skip_csp=True %}
+    </head>
+
+    {% if config.organization_name %}
+        {% blocktranslate with name=config.organization_name asvar logo_alt trimmed %}
+            Logo {{ name }}
+        {% endblocktranslate %}
+    {% else %}
+        {% trans "Logo" as logo_alt %}
+    {% endif %}
+
+    <body class="A4">
+
+        <section class="sheet padding-10mm">
+            <header class="header {% if theme.logo %}header--has-logo{% endif %}">
+                <span
+                    class="header__logo"
+                    {% if theme.logo %}role="img"{% endif %}
+                >
+                    {% if theme.logo %}
+                        <span class="sr-only">
+                            {{ logo_alt }}
+                        </span>
+                    {% endif %}
+                </span>
+            </header>
+
+            <h1 class="title">{{ report.form.name }}</h1>
+
+            <section class="metadata">
+                <p>{% blocktrans with submission_date=report.submission.completed_on trimmed %}
+                    Submitted on: {{ submission_date }}
+                {% endblocktrans %}</p>
+                <p>{% blocktrans trimmed %}
+                    Report created on: {{ now_str }}
+                {% endblocktrans %}</p>
+                <p>{% blocktrans with ref=report.submission.public_registration_reference trimmed %}
+                    Your reference is: {{ ref }}
+                {% endblocktrans %}</p>
+            </section>
+
+            {% for submission_step_node in report.renderer.get_children %}
+                {% if submission_step_node.has_children %}
+                    <section class="submission-step">
+                        <h2 class="subtitle">{{ submission_step_node.render }}</h2>
+                        {% for component_node in submission_step_node.get_children %}
+                            {% if component_node.label or component_node.display_value %}
+                                <div class="submission-step-row {% if component_node.layout_modifier %}submission-step-row--{{ component_node.layout_modifier }}{% endif %}">
+                                    {% if component_node.spans_full_width %}
+                                        {{ component_node.display_value }}
+                                    {% else %}
+                                        {% if component_node.component.type == "fieldset" %}
+                                            <span class="submission-step-row__fieldset-label">{{ component_node.label }}</span>
+                                        {% else %}
+                                            {% with node_path=component_node.configuration_path|add:'.'|add:component_node.key %}
+                                                <span id="{{ node_path }}" class="submission-step-row__label">
+                                                    {{ component_node.label }}
+                                                </span>
+
+                                                <div aria-labelledby="{{ node_path }}" class="submission-step-row__value{% if not component_node.display_value %} submission-step-row__value--empty{% endif %}">
+                                                    {% if component_node.display_value %}
+                                                        {{ component_node.display_value }}
+                                                    {% elif not component_node.layout_modifier %}
+                                                        {% trans "No information provided" %}
+                                                    {% endif %}
+                                                </div>
+                                            {% endwith %}
+                                        {% endif %}
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </section>
+                {% endif %}
+            {% endfor %}
+
+            {% if report.co_signer %}
+            <div class="submission-step-row">
+                <div class="submission-step-row__label">{% trans "Co-signed by" %}</div>
+                <div class="submission-step-row__value">{{ report.co_signer }}</div>
+            </div>
+            {% endif %}
+
+            {% if report.show_payment_info %}
+            <section class="payment-info">
+                <div class="submission-step-row">
+                    <div class="submission-step-row__label">
+                        {% trans "Total amount" %}
+                    </div>
+                    <div class="submission-step-row__value">
+                        &euro; {{ report.submission.price }}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {{ report.appointment }}
+
+            {% if report.submission.form.include_confirmation_page_content_in_pdf %}
+                <section>
+                    {{ report.confirmation_page_content }}
+                </section>
+            {% endif %}
+
+            {% if report.needs_privacy_consent and report.submission.privacy_policy_accepted %}
+                <section class="submission-consent">
+                    <div class="submission-consent__check">[X]</div>
+                    <div class="submission-consent__text">{{ config.render_privacy_policy_label }}</div>
+                </section>
+            {% endif %}
+
+            {% if report.needs_statement_of_truth and report.submission.statement_of_truth_accepted %}
+                <section class="submission-consent">
+                    <div class="submission-consent__check">[X]</div>
+                    <div class="submission-consent__text">{{ config.statement_of_truth_label|safe }}</div>
+                </section>
+            {% endif %}
+
+        </section>
+    </body>
+</html>

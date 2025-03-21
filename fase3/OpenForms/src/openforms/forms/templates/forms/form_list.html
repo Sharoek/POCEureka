@@ -1,0 +1,11 @@
+{% extends 'ui/views/abstract/list.html' %}
+{% load i18n %}
+
+{% block card %}
+<div class="info-bar">
+    <span>{% blocktrans trimmed %}
+    You are seeing this page because you're a staff user.
+    {% endblocktrans %}</span>
+</div>
+{{ block.super }}
+{% endblock %}

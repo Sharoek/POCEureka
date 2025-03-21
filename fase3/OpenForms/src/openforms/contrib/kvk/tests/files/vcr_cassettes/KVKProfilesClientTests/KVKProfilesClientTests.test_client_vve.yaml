@@ -1,0 +1,60 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/hal+json
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/hal+json
+      User-Agent:
+      - python-requests/2.32.2
+      apikey:
+      - l7xx1f2691f2520d487b902f4e0b57a0b197
+    method: GET
+    uri: https://api.kvk.nl/test/api/v1/basisprofielen/90000749
+  response:
+    body:
+      string: '{"kvkNummer":"90000749","indNonMailing":"Ja","naam":"Global Conron","formeleRegistratiedatum":"20100208","materieleRegistratie":{"datumAanvang":"19991103"},"statutaireNaam":"Global
+        Conron","sbiActiviteiten":[{"sbiCode":"94997","sbiOmschrijving":"Overige belangenbehartiging
+        (rest)","indHoofdactiviteit":"Ja"}],"_links":{"self":{"href":"https://api.kvk.nl/test/api/v1/basisprofielen/90000749"}},"_embedded":{"eigenaar":{"rsin":"992340597","rechtsvorm":"Vereniging
+        van Eigenaars","uitgebreideRechtsvorm":"Vereniging van Eigenaars","adressen":[{"type":"bezoekadres","indAfgeschermd":"Nee","volledigAdres":"Blaauwweg
+        163 3328XD Dordrecht","straatnaam":"Blaauwweg","huisnummer":163,"postcode":"3328XD","plaats":"Dordrecht","land":"Nederland"}],"_links":{"self":{"href":"https://api.kvk.nl/test/api/v1/basisprofielen/90000749/eigenaar"},"basisprofiel":{"href":"https://api.kvk.nl/test/api/v1/basisprofielen/90000749"}}}}}'
+    headers:
+      API-Version:
+      - 1.4.1
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '465'
+      Content-Security-Policy:
+      - frame-ancestors 'none', default-src 'none'
+      Content-Type:
+      - application/hal+json
+      Date:
+      - Wed, 12 Feb 2025 14:45:51 GMT
+      Feature-Policy:
+      - '''none'''
+      Keep-Alive:
+      - timeout=60
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - unknown
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      strict-transport-security:
+      - max-age=157680000 ; includeSubDomains
+    status:
+      code: 200
+      message: ''
+version: 1

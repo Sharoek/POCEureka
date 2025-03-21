@@ -1,0 +1,74 @@
+@use 'sass:math';
+
+@import '~microscope-sass/lib/grid';
+
+@import '../../../ui/static/ui/scss/settings';
+
+$bootstrap-ratio-mobile: math.div(12, $grid-columns-mobile);
+$bootstrap-ratio-tablet: math.div(12, $grid-columns-tablet);
+$bootstrap-ratio-laptop: math.div(12, $grid-columns-laptop);
+$bootstrap-ratio-desktop: math.div(12, $grid-columns-desktop);
+
+@mixin bootstrap-span($property, $cols) {
+  $bs-span: math.div($cols, 12) * 100%;
+  @include responsive(
+    $property,
+    math.div($bs-span, $bootstrap-ratio-mobile),
+    math.div($bs-span, $bootstrap-ratio-tablet),
+    math.div($bs-span, $bootstrap-ratio-laptop),
+    math.div($bs-span, $bootstrap-ratio-desktop)
+  );
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+
+  margin-left: -3px;
+  margin-right: -3px;
+  margin-bottom: 6px;
+
+  .alert-info {
+    text-indent: -9999px; // basically push the text off the screen
+    line-height: 0; // collapse the lines to not take up vertical space
+
+    &:after {
+      // the real magic -> insert our own content
+      display: block; // needs to take up space
+      content: '\2b'; // font-awesome unicode for +
+      line-height: initial; // reset line height
+      text-indent: 0; // reset text indent
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 3px;
+    padding-right: 3px;
+
+    & > * {
+      flex-grow: 1;
+    }
+
+    $col-sizes: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+    @each $col-size in $col-sizes {
+      &--span-#{$col-size} {
+        @include bootstrap-span(width, $col-size);
+      }
+    }
+  }
+}
+
+[ref='editForm'],
+[ref='preview'] {
+  .formio-component-columns.row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  .columns > * {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+  }
+}

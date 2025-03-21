@@ -1,0 +1,47 @@
+{
+  "name": "openzaak",
+  "version": "1.19.0",
+  "description": "Open Zaak",
+  "main": "src/openzaak/static/bundles/openzaak-js.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "build": "npm run bundle",
+    "bundle": "webpack",
+    "test": "karma start",
+    "watch": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/open-zaak/open-zaak.git"
+  },
+  "author": "Maykin Media",
+  "license": "EUPL-1.2",
+  "homepage": "https://github.com/open-zaak/open-zaak/",
+  "dependencies": {
+    "core-js": "latest",
+    "microscope-sass": "latest",
+    "prop-types": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-use": "^17.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "^7.22.15",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "latest",
+    "css-loader": "latest",
+    "cssnano": "latest",
+    "mini-css-extract-plugin": "latest",
+    "postcss-loader": "latest",
+    "postcss-selector-lint": "latest",
+    "sass-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-stream": "latest",
+    "yargs": "latest"
+  }
+}

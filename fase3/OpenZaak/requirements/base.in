@@ -1,0 +1,30 @@
+open-api-framework
+
+# Core python libraries
+jq
+jsonschema
+dictdiffer # Used to show diffs for audittrails in admin
+markdown  # used to render some markdown in code to html
+python-dateutil
+requests-cache
+self-certifi
+
+# Framework libraries
+django-db-logger
+django-extra-views
+django-loose-fk
+django-privates
+django-relativedelta
+django-celery-beat
+
+# Admin and UI libraries
+django-sniplates
+django-better-admin-arrayfield
+
+# API libraries
+drf-extra-fields
+drf-writable-nested
+humanize
+drc-cmis
+
+commonground-api-common[setup-configuration, testutils]

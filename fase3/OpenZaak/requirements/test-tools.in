@@ -1,0 +1,36 @@
+-c base.txt
+-r base.txt
+
+# Dependencies only relevant for (unit) testing
+coverage
+django-webtest
+factory-boy
+freezegun
+pyquery
+requests-mock
+tblib
+vcrpy
+
+# CI tools
+pytest
+codecov
+
+# Code formatting
+isort
+black
+flake8
+
+# Documentation
+recommonmark
+sphinx
+sphinx-markdown-tables==0.0.15
+sphinx-rtd-theme
+sphinxcontrib-applehelp==1.0.1
+sphinxcontrib-devhelp==1.0.1
+sphinxcontrib-htmlhelp==2.0.0
+sphinxcontrib-qthelp==1.0.2
+sphinxcontrib-serializinghtml==2.0.0
+sphinx-tabs==3.4.7
+
+# SPDX header checks
+click

@@ -1,0 +1,43 @@
+name: Generate and update Docker Hub description
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_name:
+        type: string
+        default: openformulieren/open-forms
+  workflow_call:
+    inputs:
+      image_name:
+        required: true
+        type: string
+    secrets:
+      DOCKER_USERNAME:
+        required: true
+      DOCKER_TOKEN:
+        required: true
+
+jobs:
+  update-docker-readme:
+    name: Generate and update Docker Hub description
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: 'docker/ci/requirements.txt'
+      - name: Install dependencies
+        run: pip install -r docker/ci/requirements.txt
+
+      - name: Generate Docker Hub README
+        run: ./docker/ci/generate_dockerhub_description.py "${{ github.ref_name }}"
+      - name: Update Docker Hub description
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+          repository: ${{ inputs.image_name }}
+          readme-filepath: './docker/ci/README.md'

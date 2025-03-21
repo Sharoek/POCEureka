@@ -1,0 +1,93 @@
+# Core python libraries
+ape-pie
+bleach[css] >= 5
+celery ~= 5.0
+celery-once
+defusedxml
+frozendict
+furl
+glom
+maykin-json-logic-py
+jsonschema
+jsonschema_specifications
+jq
+html5lib
+lxml
+lxml-html-clean
+O365  # microsoft graph
+Pillow  # handle images
+portalocker[redis]
+psycopg  # database driver
+python-dotenv  # environment variables for secrets
+python-decouple  # processing of envvar configs
+python-magic
+tablib[xlsx]
+tinycss2
+xmltodict
+referencing
+self-certifi
+semantic-version
+tabulate
+typing-extensions
+weasyprint
+zeep
+schwifty
+
+# Framework libraries
+django ~= 4.2
+django-admin-index
+django-admin-rangefilter
+django-autoslug
+django-axes[ipware]
+django-camunda
+django-capture-tag
+django-colorfield
+django-cookie-consent
+django-cors-headers
+django-digid-eherkenning[oidc]
+django-flags
+django-hijack
+django-import-export
+django-jsonform
+django-log-outgoing-requests
+django-modeltranslation
+django-ordered-model
+django-privates
+django-redis
+django-simple-certmanager
+django-solo
+django-tinymce
+django-treebeard
+django-yubin
+mozilla-django-oidc-db[setup-configuration]
+maykin-2fa
+django-timeline-logger
+django-csp
+django-csp-reports
+mail-cleaner
+
+# API libraries
+djangorestframework
+drf-nested-routers
+djangorestframework-camel-case
+django-filter
+drf-jsonschema-serializer
+drf-polymorphic
+openapi3-parser
+
+# API schema generation (OpenAPI 3)
+drf-spectacular
+
+# django-extra-fields
+
+# WSGI servers & monitoring - production oriented
+uwsgi
+sentry-sdk[django]  # error monitoring
+elastic-apm  # Elastic APM integration
+flower # task monitoring
+
+# Common Ground integration
+zgw-consumers[setup-configuration]
+
+# Anti virus scan
+clamd

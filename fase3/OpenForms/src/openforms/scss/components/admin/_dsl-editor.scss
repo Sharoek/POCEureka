@@ -1,0 +1,40 @@
+.dsl-editor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+
+  &__node {
+    // account for possibly long labels
+    select,
+    input {
+      max-inline-size: var(--of-admin-select-max-inline-size);
+    }
+
+    label {
+      display: inline !important;
+      float: none !important;
+      padding: 0 0.5em 0 0 !important;
+    }
+
+    input[type='submit'] {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+
+    &--errors {
+      input,
+      select,
+      textarea {
+        border: 1px solid var(--error-fg);
+      }
+    }
+  }
+
+  &__node-group {
+    display: flex;
+    align-items: center;
+  }
+}

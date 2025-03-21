@@ -1,0 +1,52 @@
+// taken from changelists.css from django, which scopes things under
+// the #changelist ID. We use classnames since there's a chance a table like that is
+// not unique on the page.
+
+.changelist {
+  &--react {
+    .results {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        th {
+          padding: 0;
+          white-space: nowrap;
+          vertical-align: middle;
+        }
+
+        th[title] {
+          .text > span:after {
+            content: '';
+            cursor: help;
+            display: inline-block;
+            background-image: url(../admin/img/icon-unknown.svg);
+            width: 13px;
+            height: 13px;
+            margin-left: 3px;
+          }
+        }
+      }
+
+      tbody {
+        th {
+          padding-right: 1em;
+        }
+      }
+
+      tr.has-errors td {
+        vertical-align: bottom !important;
+      }
+    }
+  }
+
+  &--fixed {
+    table {
+      table-layout: fixed;
+    }
+  }
+}

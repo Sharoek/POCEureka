@@ -1,0 +1,11 @@
+{% extends "stuf/soap_envelope.xml" %}{% load stuf %}
+{% block body %}
+{# Parent template already defines some common namespaces #}
+<ZKN:genereerZaakIdentificatie_Di02 xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310">
+    <ZKN:stuurgegevens>
+        <StUF:berichtcode>Di02</StUF:berichtcode>
+        {% render_stuurgegevens stuurgegevens referentienummer %}
+        <StUF:functie>genereerZaakidentificatie</StUF:functie>
+    </ZKN:stuurgegevens>
+</ZKN:genereerZaakIdentificatie_Di02>
+{% endblock %}

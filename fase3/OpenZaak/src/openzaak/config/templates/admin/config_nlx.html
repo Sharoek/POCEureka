@@ -1,0 +1,36 @@
+{% extends "admin/config_base.html" %}
+{% comment %} SPDX-License-Identifier: EUPL-1.2 {% endcomment %}
+{% comment %} Copyright (C) 2020 Dimpact {% endcomment %}
+{% load i18n sniplates %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; <a href="{% url 'config:config-detail' %}">{% trans 'Service configuratie' %}</a>
+&rsaquo; {% trans 'NLX' %}
+</div>
+{% endblock %}
+
+{% block content %}
+<h1>{% trans 'Service configuratie: NLX' %}</h1>
+{% if request.GET.wizard == 'true' %}<h3>Step 1 of 3</h3>{% endif %}
+
+<div id="content-main">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% load_widgets form='snippets/forms.html' %}
+
+        <fieldset class="module aligned">
+            {{ form.non_field_errors }}
+
+            {% form_field form.directory %}
+            {% form_field form.outway %}
+
+        </fieldset>
+
+        {% include 'admin/includes/wizard_buttons.html' %}
+
+    </form>
+</div>
+
+{% endblock %}

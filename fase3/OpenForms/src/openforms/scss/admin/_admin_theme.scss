@@ -1,0 +1,434 @@
+/*
+Generic admin styling overrides.
+
+DO NOT PUT ANY TARGET APP-SPECIFIC RULES HERE.
+ */
+@use 'sass:list' as list;
+@use 'sass:selector' as selector;
+
+@use './themes/dark' as dark-theme;
+@use './themes/light' as light-theme;
+
+@import 'microscope-sass/lib/bem';
+
+@import '../vars';
+
+@include light-theme.styles;
+@include dark-theme.styles;
+
+/* Overrides */
+body {
+  &.change-form {
+    line-height: 1.15; // bootstrap reboot overrides this otherwise, which is pulled in by formio
+  }
+}
+
+div#header {
+  // some admin pages (form definitions, form designer) include bootstrap which is
+  // just a massive PITA and we need these overrides because of the CSS reset that's
+  // loaded.
+  &,
+  * {
+    box-sizing: content-box;
+  }
+
+  line-height: normal;
+}
+
+#logout-form {
+  // ensure the button is styled like the links
+  button {
+    border-bottom: none;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: var(--header-link-color);
+      text-decoration: none;
+    }
+  }
+}
+
+#user-tools {
+  // fixme - hardcoded magic numbers, because of the domain switcher that may or may not be there
+  height: 32px;
+
+  a {
+    border-bottom: none;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: var(--header-link-color);
+    }
+  }
+
+  .user-tools__switcher {
+    select {
+      box-sizing: border-box !important;
+    }
+  }
+}
+
+div.breadcrumbs {
+  a {
+    &:focus,
+    &:hover {
+      color: var(--breadcrumbs-link-hover);
+    }
+  }
+}
+
+.module.module--spaceless {
+  margin-block-end: 0;
+}
+
+/* Important is used because Django templates include their own style, after ours */
+#changelist-filter {
+  a:focus,
+  a:hover {
+    color: var(--link-fg) !important;
+  }
+
+  li.selected a {
+    color: var(--link-fg) !important;
+
+    &:focus,
+    &:hover {
+      color: var(--primary) !important;
+    }
+  }
+}
+
+/**
+ * Properly align inputs and labels
+ */
+.flex-container {
+  // otherwise long labels vertically stretch the input boxes
+  align-items: flex-start;
+}
+
+.checkbox-row {
+  gap: var(--of-admin-checkbox-gap);
+  align-items: center;
+
+  input[type='checkbox'] {
+    margin: 0;
+  }
+
+  @at-root .aligned & label {
+    width: auto;
+    vertical-align: unset !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .vCheckboxLabel {
+    vertical-align: unset !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.aligned label:has(input[type='checkbox']) {
+  display: flex;
+  align-items: center;
+  gap: var(--of-admin-checkbox-gap);
+  margin: 0;
+  padding: 0;
+}
+
+/* Calendar & time widget */
+.calendarbox,
+.clockbox {
+  z-index: 2;
+}
+
+.calendar caption,
+.calendarbox h2 {
+  background: $color_secondary_dark !important;
+  color: $color_dark !important;
+}
+
+.calendar td,
+.timelist {
+  a {
+    &:focus,
+    &:hover {
+      background: $color_primary_dark !important;
+    }
+  }
+}
+
+.module.clockbox h2 {
+  /* Match the clock widget with the calendar widget */
+  background: $color_secondary_dark !important;
+  color: $color_dark !important;
+  font-weight: bold !important;
+}
+
+@mixin icon-override($iconUrl) {
+  background: none;
+  // display: inline-flex;
+  // align-items: center;
+  // padding-left: 0;
+  color: var(--body-fg);
+  position: relative;
+
+  // need to use pseudo element, otherwise the text in the same element is not visible
+  // because of the mask clipping
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+    background: var(--body-fg) !important;
+    color: var(--body-fg);
+    mask-image: url($iconUrl);
+    mask-repeat: no-repeat;
+    mask-size: 14px 14px;
+    mask-position: 0px 0px;
+  }
+}
+
+/* Icons */
+.addlink {
+  @include icon-override('../img/admin/plus-square-regular.svg');
+}
+
+.object-tools a.addlink {
+  &:before {
+    display: none;
+  }
+}
+
+.changelink,
+.inlinechangelink {
+  @include icon-override('../img/admin/edit-regular.svg');
+}
+.deletelink {
+  background: url('../img/admin/trash-alt-regular.svg') 0 0/14px 14px no-repeat;
+}
+.datetimeshortcuts .clock-icon {
+  @include icon-override('../img/admin/clock-regular.svg');
+  background: none !important;
+}
+.datetimeshortcuts .date-icon {
+  @include icon-override('../img/admin/calendar-alt-regular.svg');
+  background: none !important;
+}
+
+/* Footer */
+.login .version {
+  text-align: center;
+}
+.version {
+  padding: 0 30px;
+  color: $color_secondary_dark;
+  font-size: smaller;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**
+ * Environment information
+ */
+.env-info {
+  display: block;
+  align-self: center;
+  padding-inline: 8px;
+  padding-block: 5px;
+  background-color: var(--of-env-info-background-color, var(--secondary));
+  color: var(--of-env-info-color, var(--primary-fg));
+  border-radius: 3px;
+}
+
+/**
+ * Django form field lengths
+ */
+.change-form {
+  .vTextField {
+    width: var(--of-admin-input-field-size);
+  }
+}
+
+// some admin pages (form definitions, form designer) include bootstrap which is
+// just a massive PITA and we need these overrides because of the CSS reset that's
+// loaded.
+div#container {
+  .content #content {
+    padding-top: 20px; // restore original django padding
+  }
+}
+
+// login template from 2FA in combination with admin
+body.login {
+  #container {
+    #header {
+      box-sizing: border-box;
+      width: 100%;
+      border-bottom: none;
+    }
+
+    #main {
+      padding-top: 0;
+    }
+  }
+}
+
+body.popup {
+  #container {
+    #main {
+      padding-top: 0; // popup menu's have no header
+    }
+  }
+}
+
+/**
+ * Styling disabled fields/inputs
+ */
+.checkbox-row {
+  @include modifier('disabled') {
+    opacity: 0.5;
+
+    &,
+    input,
+    label {
+      cursor: not-allowed;
+    }
+
+    input:disabled {
+      opacity: 1;
+    }
+  }
+}
+
+.field--disabled {
+  opacity: 0.5;
+
+  input,
+  select {
+    &:disabled {
+      opacity: 1;
+    }
+  }
+
+  &,
+  input,
+  select,
+  label {
+    cursor: not-allowed;
+  }
+}
+
+/**
+ * DJANGO-JSONFORM
+ */
+.rjf-form-wrapper {
+  .rjf-form-group {
+    max-inline-size: calc(var(--of-admin-input-field-size) + 72px + 0.5rem);
+  }
+
+  .rjf-form-group-inner {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .rjf-form-row-inner {
+    padding: 0 !important;
+  }
+
+  .rjf-form-row {
+    padding: 0;
+
+    input {
+      inline-size: var(--of-admin-input-field-size);
+      max-inline-size: 100%;
+      margin-block-start: 2px !important;
+      margin-block-end: 2px !important;
+    }
+  }
+
+  .rjf-add-button {
+    @include icon-override('../img/admin/plus-square-regular.svg');
+  }
+
+  @at-root div[data-django-jsonform-container] {
+    display: inline-block;
+    inline-size: calc(var(--of-admin-input-field-size) + 72px + 0.5rem);
+
+    & ~ .help {
+      background-position-y: 7px;
+      block-size: 24px;
+    }
+  }
+}
+
+/**
+ * Branding
+ */
+
+// some admin pages (form definitions, form designer) include bootstrap which is
+// just a massive PITA and we need these overrides because of the CSS reset that's
+// loaded.
+#branding {
+  h1 {
+    // bootstrap mess
+    line-height: normal;
+    // admin override
+    font-weight: bold;
+  }
+}
+
+/**
+ * Help text mouseover
+ */
+
+/* Additional components seem to need the same behaviour */
+/* TODO: TinyMCE is different... */
+.aligned label + ul {
+  display: inline-block;
+  margin-left: inherit !important;
+}
+
+/**
+ * Bootstrap overrides
+ *
+ * Bootstrap is used by the formio builder and enforces some default colors that
+ * aren't great.
+ */
+.btn {
+  &.btn-primary {
+    background-color: transparent;
+    border-color: transparent;
+    color: inherit;
+
+    &:hover {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: var(--primary-fg);
+    }
+  }
+}
+
+body {
+  background-color: var(--body-bg) !important;
+  color: var(--body-fg);
+}
+
+// allow nested tags inside of h2 elements for fieldsets, as they are by default hidden
+// by django's css (.fieldset.collapsed * {display: none;})
+fieldset.collapsed h2 {
+  * {
+    display: initial;
+  }
+}

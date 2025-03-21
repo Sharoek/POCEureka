@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: '{"type": "http://objecttypes-web:8000/api/v2/objecttypes/8faed0fa-7864-4409-aa6d-533a37616a9e",
+      "record": {"typeVersion": 1, "data": {"bsn": "111222333", "some": {"path": "foo"}},
+      "startAt": "2025-02-12"}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Authorization:
+      - Token 7657474c3d75f56ae0abd0d1bf7994b09964dca9
+      Connection:
+      - keep-alive
+      Content-Crs:
+      - EPSG:4326
+      Content-Length:
+      - '205'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.2
+    method: POST
+    uri: http://localhost:8002/api/v2/objects
+  response:
+    body:
+      string: '{"url":"http://objects-web:8000/api/v2/objects/7d88c14d-8f4f-4404-bb4f-f31c9de1d781","uuid":"7d88c14d-8f4f-4404-bb4f-f31c9de1d781","type":"http://objecttypes-web:8000/api/v2/objecttypes/8faed0fa-7864-4409-aa6d-533a37616a9e","record":{"index":1,"typeVersion":1,"data":{"bsn":"111222333","some":{"path":"foo"}},"geometry":null,"startAt":"2025-02-12","endAt":null,"registrationAt":"2025-02-12","correctionFor":null,"correctedBy":null}}'
+    headers:
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      Connection:
+      - keep-alive
+      Content-Crs:
+      - EPSG:4326
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Date:
+      - Wed, 12 Feb 2025 16:14:12 GMT
+      Location:
+      - http://localhost:8002/api/v2/objects/7d88c14d-8f4f-4404-bb4f-f31c9de1d781
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - nginx/1.27.3
+      Vary:
+      - origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+    status:
+      code: 201
+      message: Created
+version: 1

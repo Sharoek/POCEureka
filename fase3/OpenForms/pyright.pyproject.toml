@@ -1,0 +1,78 @@
+[tool.pyright]
+include = [
+    "src/openforms/api/urls.py",
+    # plugin/registry-related code (base classes etc.)
+    "src/openforms/plugins",
+    "src/openforms/appointments/base.py",
+    "src/openforms/appointments/registry.py",
+    "src/openforms/authentication/base.py",
+    "src/openforms/authentication/registry.py",
+    "src/openforms/dmn/base.py",
+    "src/openforms/dmn/registry.py",
+    "src/openforms/formio/registry.py",
+    "src/openforms/formio/rendering/registry.py",
+    "src/openforms/pre_requests/base.py",
+    "src/openforms/pre_requests/registry.py",
+    "src/openforms/prefill/base.py",
+    "src/openforms/prefill/co_sign.py",
+    "src/openforms/prefill/registry.py",
+    "src/openforms/registrations/base.py",
+    "src/openforms/registrations/registry.py",
+    "src/openforms/validations/base.py",
+    "src/openforms/validations/registry.py",
+    "src/openforms/variables/base.py",
+    "src/openforms/variables/registry.py",
+    # Formio tooling
+    "src/openforms/formio/typing/",
+    "src/openforms/formio/formatters/",
+    # Core forms app
+    "src/openforms/forms/api/serializers/logic/action_serializers.py",
+    # Payments
+    "src/openforms/payments/",
+    # Interaction with the outside world
+    "src/openforms/contrib/zgw/service.py",
+    "src/openforms/contrib/objects_api/",
+    "src/openforms/contrib/referentielijsten/",
+    # Emails
+    "src/openforms/emails/templatetags/cosign_information.py",
+    # Logging
+    "src/openforms/logging/logevent.py",
+    "src/openforms/logging/models.py",
+    # Registrations
+    "src/openforms/registrations/tasks.py",
+    "src/openforms/registrations/contrib/email/",
+    "src/openforms/registrations/contrib/json_dump/",
+    "src/openforms/registrations/contrib/stuf_zds/options.py",
+    "src/openforms/registrations/contrib/stuf_zds/plugin.py",
+    "src/openforms/registrations/contrib/stuf_zds/typing.py",
+    "src/openforms/registrations/contrib/objects_api/handlers/",
+    "src/openforms/registrations/contrib/objects_api/plugin.py",
+    "src/openforms/registrations/contrib/objects_api/registration_variables.py",
+    "src/openforms/registrations/contrib/objects_api/submission_registration.py",
+    "src/openforms/registrations/contrib/objects_api/typing.py",
+    "src/openforms/registrations/contrib/zgw_apis/",
+    # core submissions app
+    "src/openforms/submissions/api/validation.py",
+    "src/openforms/submissions/cosigning.py",
+    "src/openforms/submissions/report.py",
+    # our own template app/package on top of Django
+    "src/openforms/template",
+    # generic typing helpers
+    "src/openforms/typing.py",
+]
+exclude = [
+    "**/__pycache__",
+    "src/openforms/contrib/objects_api/tests/",
+    "src/openforms/contrib/objects_api/json_schema.py",
+    "src/openforms/formio/formatters/tests/",
+    "src/openforms/payments/management/commands/checkpaymentemaildupes.py",
+    "src/openforms/payments/tests/",
+    "src/openforms/payments/contrib/demo/tests/",
+    "src/openforms/payments/contrib/ogone/tests/",
+    "src/openforms/registrations/contrib/zgw_apis/tests/test_backend_partial_failure.py",
+    "src/openforms/registrations/contrib/zgw_apis/tests/test_utils.py",
+]
+ignore = []
+
+pythonVersion = "3.12"
+pythonPlatform = "Linux"

@@ -1,0 +1,59 @@
+{% extends "admin/base.html" %}
+{% comment %} SPDX-License-Identifier: EUPL-1.2 {% endcomment %}
+{% comment %} Copyright (C) 2019 - 2020 Dimpact {% endcomment %}
+{% load i18n static open_api_framework %}
+
+{% block title %}{{ title }} | {{ settings.PROJECT_NAME }}{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'open_api_framework/css/admin.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bundles/admin_overrides.css' %}">
+
+    <link rel="icon" type="image/png" href="{% static 'ico/favicon.png' %}">
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">{{ settings.PROJECT_NAME }} beheer</a></h1>
+{% endblock %}
+
+{% block welcome-msg %}
+    {% trans 'Ingelogd als' %}
+    <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+{% endblock %}
+
+{% block userlinks %}
+    {% if site_url %}
+        <a href="{{ site_url }}">{{ settings.SITE_TITLE }}</a> /
+    {% endif %}
+    {% if user.has_usable_password %}
+    <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+    {% endif %}
+    {% url 'maykin_2fa:account_security' as 2fa_account_security_url %}
+    {% if 2fa_account_security_url %}
+        <a href="{{ 2fa_account_security_url }}">{% trans "Manage two-factor auth" %}</a> /
+    {% endif %}
+    <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block messages %}
+    {% if show_environment %}
+        {% environment %}
+    {% endif %}
+
+    {{ block.super }}
+{% endblock %}
+
+{% block footer %}
+    <div id="footer">
+        {% if show_version %}
+            {% version %}
+        {% endif %}
+    </div>
+
+    {# Load the custom JS #}
+    <script src="{% static 'bundles/openzaak-js.js' %}"></script>
+{% endblock %}

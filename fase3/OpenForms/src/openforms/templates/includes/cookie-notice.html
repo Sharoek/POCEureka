@@ -1,0 +1,42 @@
+{% load i18n cookie_consent_tags %}
+
+{% url 'cookie_consent_cookie_group_list' as manage_url %}
+{% url 'cookie_consent_status' as status_url %}
+
+{% if request.path != manage_url %}
+
+    {% all_cookie_groups 'cookie-consent__cookie-groups' %}
+
+    <template
+        id="cookie-consent__cookie-bar"
+        data-var-name="{{ analytics_varname }}"
+        data-status-url="{{ status_url }}"
+    >
+        <section class="cookie-notice" aria-label="{% trans 'Cookie notice' %}">
+
+            <span class="cookie-notice__text">
+                {% blocktrans trimmed %}
+                We use cookies to optimize and improve our website and services.
+                You can <a class="utrecht-link utrecht-link--openforms" href="{{ manage_url }}">manage your preferences</a>.
+                {% endblocktrans %}
+            </span>
+
+            <div class="openforms-toolbar">
+                <ul class="openforms-toolbar__list">
+                    <li class="openforms-toolbar__list-item">
+                        <button
+                            type="submit"
+                            class="utrecht-button utrecht-button--primary-action cookie-notice__accept"
+                        >{% trans "Accept all" %}</button>
+                    </li>
+                    <li class="openforms-toolbar__list-item">
+                        <button
+                            type="submit"
+                            class="utrecht-button utrecht-button--primary-action cookie-notice__decline"
+                        >{% trans "Decline all" %}</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </template>
+{% endif %}

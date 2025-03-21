@@ -1,0 +1,55 @@
+{% extends "admin/config_base.html" %}
+{% comment %} SPDX-License-Identifier: EUPL-1.2 {% endcomment %}
+{% comment %} Copyright (C) 2020 Dimpact {% endcomment %}
+{% load i18n sniplates %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; <a href="{% url 'config:config-detail' %}">{% trans 'Service configuratie' %}</a>
+{% if request.GET.wizard == 'true' %}&rsaquo; <a href="{% url 'config:config-nlx' %}">{% trans 'NLX' %}</a>{% endif %}
+&rsaquo; {% trans 'Open Zaak services' %}
+</div>
+{% endblock %}
+
+{% block content %}
+<h1>{% trans 'Service configuratie: Open Zaak' %}</h1>
+{% if request.GET.wizard == 'true' %}<h3>Step 2 of 3</h3>{% endif %}
+
+<div id="content-main">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% load_widgets form='snippets/forms.html' %}
+
+        {{ formset.management_form }}
+        {{ formset.non_form_errors }}
+
+        <fieldset class="module">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th title="Service activeren en aanbieden in Open Zaak">Activeren</th>
+                        <th title="Service opnemen in de NLX-inway configuratie">Aanbieden via NLX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for form in formset %}
+                    <tr class="form-row">
+                    {{ form.non_field_errors }}
+                    {{ form.id }}
+                        <td>{{ form.instance.component|title }} API</td>
+                        <td>{{ form.enabled }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </fieldset>
+
+        {% include 'admin/includes/wizard_buttons.html' %}
+
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,5 @@
+@use './json-editor';
+
+.json-data-preview {
+  @include json-editor.container;
+}

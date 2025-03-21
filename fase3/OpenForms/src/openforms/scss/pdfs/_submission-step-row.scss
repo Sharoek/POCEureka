@@ -1,0 +1,69 @@
+@import '~microscope-sass/lib/typography';
+
+.submission-step-row {
+  break-inside: avoid-page; // needed to avoid spreading labels and their values across two pages
+
+  & + & {
+    margin-top: 1mm;
+  }
+
+  &#{&}--full-width {
+    display: block;
+  }
+
+  &:not(&--root) + &--root {
+    padding-top: $grid-margin-1;
+  }
+
+  &#{&}--fieldset,
+  &#{&}--editgrid {
+    padding-top: $grid-margin-2;
+
+    .submission-step-row__label {
+      font-weight: bolder;
+    }
+  }
+
+  &#{&}--editgrid-group {
+    padding-top: $grid-margin-1;
+
+    .submission-step-row__label {
+      font-weight: bold;
+    }
+  }
+
+  &#{&}--columns {
+    padding-top: $grid-margin-2;
+  }
+
+  &__fieldset-label {
+    @include body();
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  &__label {
+    @include body();
+    font-weight: bold;
+  }
+
+  &__value {
+    @include body();
+    word-break: break-all;
+    margin-bottom: 0.5em;
+    min-height: 1em;
+
+    &--empty {
+      font-style: italic;
+    }
+
+    // wysiwyg content
+    p {
+      margin: 0;
+    }
+
+    > * {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '~microscope-sass/lib/typography';
+
+@page {
+  size: A4;
+  margin-bottom: 10mm;
+  margin-top: 12mm;
+
+  @bottom-center {
+    content: counter(page) '/' counter(pages);
+    font-size: 85%;
+    @include text;
+  }
+}
+
+@page :first {
+  margin-top: 10mm;
+}
+
+@page haslogo {
+  margin-top: 0mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include body(auto);
+}
+
+a {
+  color: var(--utrecht-link-color);
+  cursor: pointer;
+}

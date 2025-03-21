@@ -1,0 +1,33 @@
+.admin-react-select {
+  @at-root .react-modal__form .form-row & {
+    &,
+    & * {
+      box-sizing: border-box;
+    }
+  }
+
+  @at-root .flex-container:has(label + &) {
+    // flex-grow + max-inline-size causes the help text item to be pushed all the
+    // way to the right.
+    min-inline-size: calc(170px + var(--of-admin-select-max-inline-size));
+  }
+
+  @at-root .form-row:has(&) {
+    overflow: visible;
+  }
+
+  @at-root .errors &__control {
+    --border-color: var(--error-fg);
+  }
+
+  inline-size: clamp(
+    var(--of-admin-select-min-inline-size),
+    100%,
+    var(--of-admin-select-max-inline-size)
+  );
+  max-inline-size: var(--of-admin-select-max-inline-size);
+
+  &__menu-portal {
+    z-index: 4 !important; // one higher than the react-modal z-index
+  }
+}

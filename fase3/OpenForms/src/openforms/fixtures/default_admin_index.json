@@ -1,0 +1,444 @@
+[
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 0,
+        "translations": {
+            "en": "Accounts",
+            "nl": "Accounts"
+        },
+        "name": "Accounts",
+        "slug": "accounts",
+        "models": [
+            [
+                "accounts",
+                "user"
+            ],
+            [
+                "accounts",
+                "userpreferences"
+            ],
+            [
+                "auth",
+                "group"
+            ],
+            [
+                "authtoken",
+                "token"
+            ],
+            [
+                "authtoken",
+                "tokenproxy"
+            ],
+            [
+                "mozilla_django_oidc_db",
+                "openidconnectconfig"
+            ],
+            [
+                "otp_static",
+                "staticdevice"
+            ],
+            [
+                "otp_totp",
+                "totpdevice"
+            ],
+            [
+                "two_factor_webauthn",
+                "webauthndevice"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 1,
+        "translations": {
+            "en": "Forms",
+            "nl": "Formulieren"
+        },
+        "name": "Formulieren",
+        "slug": "formulieren",
+        "models": [
+            [
+                "forms",
+                "category"
+            ],
+            [
+                "forms",
+                "form"
+            ],
+            [
+                "forms",
+                "formsubmissionstatistics"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 2,
+        "translations": {
+            "en": "Submissions",
+            "nl": "Inzendingen"
+        },
+        "name": "Inzendingen",
+        "slug": "inzendingen",
+        "models": [
+            [
+                "appointments",
+                "appointmentinfo"
+            ],
+            [
+                "payments",
+                "submissionpayment"
+            ],
+            [
+                "submissions",
+                "emailverification"
+            ],
+            [
+                "submissions",
+                "submission"
+            ],
+            [
+                "submissions",
+                "submissionfileattachment"
+            ],
+            [
+                "submissions",
+                "submissionreport"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 4,
+        "translations": {
+            "en": "Products",
+            "nl": "Producten"
+        },
+        "name": "Producten",
+        "slug": "producten",
+        "models": [
+            [
+                "products",
+                "product"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 5,
+        "translations": {
+            "en": "Configuration",
+            "nl": "Configuratie"
+        },
+        "name": "Configuratie",
+        "slug": "configuratie",
+        "models": [
+            [
+                "admin_index",
+                "appgroup"
+            ],
+            [
+                "analytics_tools",
+                "analyticstoolsconfiguration"
+            ],
+            [
+                "appointments",
+                "appointmentsconfig"
+            ],
+            [
+                "config",
+                "cspsetting"
+            ],
+            [
+                "config",
+                "globalconfiguration"
+            ],
+            [
+                "config",
+                "maptilelayer"
+            ],
+            [
+                "config",
+                "theme"
+            ],
+            [
+                "cookie_consent",
+                "cookie"
+            ],
+            [
+                "cookie_consent",
+                "cookiegroup"
+            ],
+            [
+                "digid_eherkenning",
+                "configcertificate"
+            ],
+            [
+                "digid_eherkenning",
+                "digidconfiguration"
+            ],
+            [
+                "digid_eherkenning",
+                "eherkenningconfiguration"
+            ],
+            [
+                "digid_eherkenning_oidc",
+                "ofdigidconfig"
+            ],
+            [
+                "digid_eherkenning_oidc",
+                "ofdigidmachtigenconfig"
+            ],
+            [
+                "digid_eherkenning_oidc",
+                "ofeherkenningbewindvoeringconfig"
+            ],
+            [
+                "digid_eherkenning_oidc",
+                "ofeherkenningconfig"
+            ],
+            [
+                "django_camunda",
+                "camundaconfig"
+            ],
+            [
+                "django_yubin",
+                "blacklist"
+            ],
+            [
+                "flags",
+                "flagstate"
+            ],
+            [
+                "log_outgoing_requests",
+                "outgoingrequestslogconfig"
+            ],
+            [
+                "multidomain",
+                "domain"
+            ],
+            [
+                "np_family_members",
+                "familymemberstypeconfig"
+            ],
+            [
+                "prefill",
+                "prefillconfig"
+            ],
+            [
+                "simple_certmanager",
+                "certificate"
+            ],
+            [
+                "simple_certmanager",
+                "signingrequest"
+            ],
+            [
+                "soap",
+                "soapservice"
+            ],
+            [
+                "variables",
+                "servicefetchconfiguration"
+            ],
+            [
+                "zgw_consumers",
+                "nlxconfig"
+            ],
+            [
+                "zgw_consumers",
+                "service"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 6,
+        "translations": {
+            "en": "Logs",
+            "nl": "Logs"
+        },
+        "name": "Logs",
+        "slug": "logs",
+        "models": [
+            [
+                "axes",
+                "accessattempt"
+            ],
+            [
+                "axes",
+                "accessfailurelog"
+            ],
+            [
+                "axes",
+                "accesslog"
+            ],
+            [
+                "cookie_consent",
+                "logitem"
+            ],
+            [
+                "cspreports",
+                "cspreport"
+            ],
+            [
+                "django_yubin",
+                "log"
+            ],
+            [
+                "django_yubin",
+                "message"
+            ],
+            [
+                "log_outgoing_requests",
+                "outgoingrequestslog"
+            ],
+            [
+                "logging",
+                "avgtimelinelogproxy"
+            ],
+            [
+                "logging",
+                "timelinelogproxy"
+            ],
+            [
+                "submissions",
+                "temporaryfileupload"
+            ],
+            [
+                "timeline_logger",
+                "timelinelog"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 7,
+        "translations": {
+            "en": "Useful links",
+            "nl": "Handige links"
+        },
+        "name": "Handige links",
+        "slug": "handige-links",
+        "models": []
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 3,
+        "translations": {
+            "en": "Appointments",
+            "nl": "Afspraken"
+        },
+        "name": "Afspraken",
+        "slug": "afspraken",
+        "models": [
+            [
+                "appointments",
+                "appointment"
+            ],
+            [
+                "appointments",
+                "appointmentinfo"
+            ],
+            [
+                "appointments",
+                "appointmentproduct"
+            ],
+            [
+                "appointments",
+                "appointmentsconfig"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.applink",
+    "fields": {
+        "order": 0,
+        "translations": {
+            "en": "Test email backend",
+            "nl": "E-mail-backend testen"
+        },
+        "app_group": [
+            "configuratie"
+        ],
+        "name": "Test email backend",
+        "link": "/admin/email/test/"
+    }
+},
+{
+    "model": "admin_index.applink",
+    "fields": {
+        "order": 1,
+        "translations": {
+            "en": "API Documentation",
+            "nl": "API Documentatie"
+        },
+        "app_group": [
+            "handige-links"
+        ],
+        "name": "API Documentatie",
+        "link": "/api/docs/"
+    }
+},
+{
+    "model": "admin_index.applink",
+    "fields": {
+        "order": 2,
+        "translations": {
+            "en": "Documentation",
+            "nl": "Documentatie"
+        },
+        "app_group": [
+            "handige-links"
+        ],
+        "name": "Documentatie",
+        "link": "http://open-forms.readthedocs.io/"
+    }
+},
+{
+    "model": "admin_index.applink",
+    "fields": {
+        "order": 3,
+        "translations": {
+            "en": "Github",
+            "nl": "Github"
+        },
+        "app_group": [
+            "handige-links"
+        ],
+        "name": "Github",
+        "link": "https://github.com/open-formulieren/open-forms"
+    }
+},
+{
+    "model": "admin_index.applink",
+    "fields": {
+        "order": 4,
+        "translations": {
+            "en": "Configuration overview",
+            "nl": "Configuratie overzicht"
+        },
+        "app_group": [
+            "configuratie"
+        ],
+        "name": "Configuratie overzicht",
+        "link": "/admin/config/overview/"
+    }
+}
+]

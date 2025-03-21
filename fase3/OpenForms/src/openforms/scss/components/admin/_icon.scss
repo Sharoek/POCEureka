@@ -1,0 +1,27 @@
+@import '../../../ui/static/ui/scss/settings';
+
+.icon {
+  cursor: pointer;
+  padding: $grid-margin-1;
+
+  &--danger {
+    @include color-danger;
+  }
+
+  &--warning {
+    @include color-warning;
+  }
+
+  &--no-pointer {
+    cursor: default;
+  }
+
+  &--as-lead {
+    padding: 0;
+    padding-right: $grid-margin-1;
+  }
+
+  &--compact {
+    padding: 0;
+  }
+}

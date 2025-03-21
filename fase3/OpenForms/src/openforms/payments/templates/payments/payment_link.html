@@ -1,0 +1,24 @@
+{% extends 'ui/views/abstract/detail.html' %}
+{% load i18n static openforms %}
+
+
+{% block card %}
+    {% if form %}
+        <h2>{% trans "Payment required!" %}</h2>
+        <p>{{ object.form.name }} - {{ object.public_registration_reference }}</p>
+        <p>{% trans "Total:" %} &euro; {{ price }}</p>
+        <form id="payment-form" action="{{ url }}" method="{{ method }}">
+            {{ form }}
+            <input type="submit" value="{% trans "Start payment" %}">
+        </form>
+        <script nonce="{{ request.csp_nonce }}">
+            window.addEventListener('DOMContentLoaded', function () {
+                document.getElementById("payment-form").submit();
+            }, false);
+        </script>
+    {% else %}
+        <p>{{ object.form.name }} - {{ object.public_registration_reference }}</p>
+        <p>{% trans "Total:" %} &euro; {{ price }}</p>
+        <p>{% trans "Thanks!" %}</p>
+    {% endif %}
+{% endblock %}

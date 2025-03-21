@@ -1,0 +1,31 @@
+-c base.txt
+-r base.txt
+
+# Dependencies only relevant for (unit) testing
+coverage
+django-jenkins
+django-simple-certmanager[testutils]
+django-webtest
+factory-boy
+freezegun
+playwright
+pyquery  # integrates with webtest
+requests-mock
+tenacity
+tblib
+testfixtures
+pep8
+pytest  # documentation tests
+hypothesis  # property-based testing
+vcrpy  # record HTTP fixtures
+zgw-consumers[testutils]
+
+# Code formatting
+black
+isort~=5.10.0
+flake8
+
+# Build tooling
+# setup.py install fallback is deprecated, building wheels locally and caching them
+# is the most performant way to install dependencies
+wheel

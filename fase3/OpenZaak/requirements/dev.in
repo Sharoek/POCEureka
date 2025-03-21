@@ -1,0 +1,17 @@
+-c ci.txt
+-r ci.txt
+
+# Helpers
+bump2version
+pip-tools
+gitpython
+
+# Debug tooling
+django-debug-toolbar
+django-extensions
+django-silk
+whitenoise
+
+# Deployment
+
+-r ../deployment/requirements.in

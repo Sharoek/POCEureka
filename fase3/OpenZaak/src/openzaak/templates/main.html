@@ -1,0 +1,78 @@
+{% extends "master.html" %}
+{% comment %} SPDX-License-Identifier: EUPL-1.2 {% endcomment %}
+{% comment %} Copyright (C) 2019 - 2020 Dimpact {% endcomment %}
+
+{% block content %}
+
+  <div class="header">
+    <h1 class="header__title">{{ settings.PROJECT_NAME }} startpunt</h1>
+    <p class="header__description">{{ settings.SITE_TITLE }}</p>
+  </div>
+
+  <div class="container container--center">
+
+    {% block components %}
+
+      <h2>Components</h2>
+
+      <div class="cardlist">
+
+        <div class="cardlist__item">
+          <div class="card">
+            <h5 class="card__title"><i class="fas fa-pencil-ruler"></i> Zaken</h5>
+            <p>Zaak Registratie Component (ZRC)</p>
+            <a href="{% url 'index-zaken' %}" class="button button--primary">Zaken</a>
+          </div>
+        </div>
+        <div class="cardlist__item">
+          <div class="card">
+           <h5 class="card__title"><i class="fas fa-pencil-ruler"></i> Besluiten</h5>
+           <p>Besluit Registratie Component (BRC)</p>
+           <a href="{% url 'index-besluiten' %}" class="button button--primary">Besluiten</a>
+          </div>
+        </div>
+        <div class="cardlist__item">
+          <div class="card">
+            <h5 class="card__title"><i class="fas fa-pencil-ruler"></i> Documenten</h5>
+            <p>Documenten Registratie Component (DRC)</p>
+            <a href="{% url 'index-documenten' %}" class="button button--primary">Documenten</a>
+          </div>
+       </div>
+
+      </div>
+
+      <div class="cardlist">
+
+        <div class="cardlist__item">
+          <div class="card">
+            <h5 class="card__title"><i class="fas fa-pencil-ruler"></i> Catalogi</h5>
+            <p>Zaaktype Catalogus (ZTC)</p>
+            <a href="{% url 'index-catalogi' %}" class="button button--primary">Catalogi</a>
+          </div>
+        </div>
+
+         <div class="cardlist__item">
+           <div class="card">
+             <h5 class="card__title"><i class="fas fa-pencil-ruler"></i> Autorisaties</h5>
+             <p>Autorisatie Component (AC)</p>
+             <a href="{% url 'index-autorisaties'  %}" class="button button--primary">Autorisaties</a>
+           </div>
+        </div>
+     </div>
+
+    {% endblock %}
+
+    {% block admin_link %}
+      <p></p>
+      <p>
+        <a href="{% url 'admin:index' %}" class="button button--alert"><i class="fas fa-lock"></i> Beheer</a>
+      </p>
+    {% endblock %}
+
+    <p>
+      <a href="{% url 'view-config' %}" class="button button--secondary">
+        <i class="fa fa-info-circle"></i> Bekijk configuratie</a>
+    </p>
+  </div>
+
+{% endblock %}

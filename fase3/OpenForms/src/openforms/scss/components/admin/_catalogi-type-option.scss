@@ -1,0 +1,11 @@
+@use 'microscope-sass/lib/bem';
+
+.catalogi-type-option {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include bem.element('draft-suffix') {
+    color: var(--body-quiet-color);
+  }
+}

@@ -1,0 +1,47 @@
+{% extends 'admin/change_form.html' %}
+{% load i18n static openforms admin_urls %}
+
+{% block extrahead %}
+    {% include "admin/forms/includes/formio_config.html" %}
+    {{ block.super }}
+{% endblock extrahead %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'bundles/core-css.css' %}">
+    {{ block.super }}
+{% endblock %}
+
+{% block content_title %}{% endblock %}
+{% block object-tools-items %}{% endblock %}
+
+{% block field_sets %}
+{% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+
+{% get_available_languages as languages %}
+{{ languages|json_script:'languages' }}  {# Used to determine languages for FormIO translations #}
+
+{{ label_mapping|json_script:'label-mapping' }}  {# Used for missing translations warning #}
+
+<div
+    class="react-form-create"
+    data-form-uuid="{{ original.uuid|default:'' }}"
+    data-form-url="{{ original.get_absolute_url }}"
+    data-form-history-url="{{ history_url }}"
+    data-csrftoken="{{ csrf_token }}"
+    data-tinymce-url="{% static 'tinymce/tinymce.min.js' %}"
+    data-outgoing-requests-url="{% url 'admin:log_outgoing_requests_outgoingrequestslog_changelist' %}"
+> {# Managed by React #} </div>
+{% endblock %}
+
+{% block inline_field_sets %}
+
+{% endblock %}
+
+{% block submit_buttons_bottom %}
+
+{% endblock %}
+
+{% block admin_change_form_document_ready %}
+    <script src="{% static 'bundles/core-js.js' %}"></script>
+{% endblock %}

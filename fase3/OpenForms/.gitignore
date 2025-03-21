@@ -1,0 +1,68 @@
+# Developers
+.hg
+.git
+.svn
+.idea/
+.vscode/
+.sass-cache/
+*.db
+*.pyc
+__pycache__
+*~
+*.mo
+
+# Javascript libraries
+/node_modules/
+
+# Generated files
+/docs/_build
+/certifi_ca_bundle
+# must be symlinked as the source file is in another repository
+/docs/changelog-sdk.rst
+
+# tests & coverage reports
+/reports/
+/htmlcov/
+.coverage*
+.pytest_cache
+.hypothesis
+
+# Environment
+/deployment/app.*.yml
+/deployment/hosts*
+!/deployment/hosts.example
+/deployment/templates/stuf-bg.conf
+
+local.py
+/env/
+/venv/
+/media/
+/private_media/
+/static/
+/mail/
+/log/*.log*
+/log/*.jsonl
+/log/nginx/*.log*
+/.env
+/docker/.env
+/private_media/
+/celerybeat
+/tmp/*
+!/tmp/.gitkeep
+/bin/ssh_tunnel*
+
+# Static files
+src/openforms/static/bundles/
+src/openforms/fonts/
+/storybook-static
+
+# typically a symlink (or full copy!) during local dev
+src/openforms/static/sdk
+
+# Custom extensions symlinks
+src/prefill_haalcentraalhr
+src/token_exchange
+
+# docker volumes
+setup_configuration/*
+!setup_configuration/.gitkeep

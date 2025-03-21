@@ -1,0 +1,27 @@
+{% load i18n %}{% autoescape off %}{% if appointment %}{% trans "Appointment information" %}
+
+{% trans "Products" %}:{% for product in appointment.products %}
+- {{ product.name }}{% if product.amount > 1 %} (x{{ product.amount }}){% endif %}{% endfor %}
+
+{% trans "Location" %}:
+{{ appointment.location.name }}{% if appointment.location.address %}
+{{ appointment.location.address }}{% endif %}{% if appointment.location.city %}
+{{ appointment.location.postalcode }} {{ appointment.location.city }}{% endif %}
+
+{% trans "Date and time" %}:
+{{ appointment.start_at|date }}, {{ appointment.start_at|time }}{% if appointment.end_at %} - {{ appointment.end_at|time }}{% endif %}
+
+{% if appointment_renderer.has_children %}{% trans "Your contact details" %}:{% for node in appointment_renderer.get_children %}
+- {{ node.label }}: {{ node.display_value }}{% endfor %}{% endif %}
+
+{% trans "Remarks" %}:
+{{ appointment.remarks }}
+
+{% if appointment.other %}{% for key, value in appointment.other.items %}
+{{ key }}:
+{{ value }}{% endfor %}{% endif %}
+
+{% trans "If you want to cancel or change your appointment, you can do so below." %}
+{% trans "Cancel appointment" %}: {{ appointment_cancel_link }}
+{% trans "If you wish to change your appointment, please cancel it using the above link and create a new one." %}
+{% endif %}{% endautoescape %}

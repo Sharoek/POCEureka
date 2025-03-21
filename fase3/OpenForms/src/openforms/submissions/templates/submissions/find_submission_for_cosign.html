@@ -1,0 +1,37 @@
+{% extends 'ui/views/abstract/detail.html' %}
+{% load i18n %}
+
+{% block card %}
+    <div class="openforms-card">
+        <header class="openforms-card__header">
+            <h1 class="title">
+                {% trans "Retrieve submission for co-signing" %}
+            </h1>
+        </header>
+
+        <div class="openforms-card__body">
+            {% block card_body %}
+                <p class="body">
+                    <form method="post" action=".">{% csrf_token %}
+                        {% include "includes/forms/errorlist.html" with errors=form.non_field_errors only %}
+
+                        {% include "includes/forms/field_wrapper.html" with field=form.code type='text' only %}
+
+                        <div class="openforms-toolbar openforms-toolbar--reverse openforms-toolbar--bottom">
+                            <button class="utrecht-button utrecht-button--primary-action" type="submit">
+                                {% trans "Submit" %}
+                            </button>
+                        </div>
+                    </form>
+                    <form method="post" action="{% url "authentication:logout" %}">{% csrf_token %}
+                        <div class="openforms-toolbar openforms-toolbar--reverse openforms-toolbar--bottom">
+                            <button class="utrecht-button utrecht-button--primary-action utrecht-button--danger" type="submit">
+                                {% trans "Log out" %}
+                            </button>
+                        </div>
+                    </form>
+                </p>
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

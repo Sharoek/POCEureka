@@ -1,0 +1,75 @@
+{% load i18n static cookie_consent_tags solo_tags openforms theme %}<!DOCTYPE html>
+
+{% get_solo 'config.GlobalConfiguration' as config %}
+{% get_solo 'analytics_tools.AnalyticsToolsConfiguration' as analytics_tools_config %}
+{% firstof analytics_tools_config.analytics_cookie_consent_group.varname '_dummy' as analytics_varname %}
+{% with request|cookie_group_accepted:analytics_varname as enable_analytics %}
+{% get_theme as theme %}
+
+<html lang="nl" class="utrecht-document {{ theme.get_classname }}">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% if config.organization_name %}{{ config.organization_name }} {% else %}Openforms{% endif %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if request.indexing_options.block %}
+    <meta name="robots" content="{{ request.indexing_options.content }}">
+    {% endif %}
+    <link href="{% if config.favicon %}{{ config.favicon.url }}{% else %}{% static 'ico/favicon.png' %}{% endif %}" rel="shortcut icon">
+    <link href="{% static 'bundles/public-styles.css' %}" media="all" rel="stylesheet"/>
+    {% include "forms/sdk_css_snippet.html" %}
+    {% block extra_css %}
+        {% include 'includes/design-tokens.html' %}
+    {% endblock %}
+
+    {# Note that the custom stylesheets are deliberately kept outside of extra_css to ensure it is the last stylesheet loaded! #}
+    {% for stylesheet in theme.get_stylesheets %}
+        <link href="{{ stylesheet }}" media="all" rel="stylesheet" />
+    {% endfor %}
+    {# Load the various supported analytics provider snippets - they are activated after consent #}
+    {% include "analytics_tools/all_head.html" with analytics_varname=analytics_varname %}
+</head>
+
+<body class="utrecht-page">
+    {% block skiplink %}
+        <a class="skiplink utrecht-link" href="#main-content">{% translate "Show content." %}</a>
+    {% endblock %}
+
+    {# No point in putting this in a <template> tag, since it targets noscript #}
+    {% if enable_analytics and analytics_tools_config.enable_google_analytics and analytics_tools_config.gtm_code %}
+        {# Load the second part of the Google tag manager snippet #}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe class="gtm-frame" src="https://www.googletagmanager.com/ns.html?id={{ analytics_tools_config.gtm_code }}"
+        height="0" width="0"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
+
+    {% block content %}
+        {% block header %}
+            {% include "includes/page-header.html" %}
+        {% endblock %}
+
+        <div class="utrecht-page__content utrecht-page-content">
+            <main class="utrecht-page-content__main" id="main-content">
+                {% block inner-content %}
+                    Override <code>{% verbatim %}{% block inner-content %}{% endverbatim %}</code>
+                    to get some actual content.
+                {% endblock %}
+            </main>
+            {% block a11y-toolbar %}
+                {% include "includes/a11y_toolbar.html" only %}
+            {% endblock a11y-toolbar %}
+        </div>
+    {% endblock %}
+
+    {% block footer %}
+        {% include "includes/cookie-notice.html" with analytics_varname=analytics_varname %}
+        {% include "includes/page-footer.html" %}
+    {% endblock %}
+
+    <script src="{% static 'bundles/public.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+    {# Load the various supported analytics provider snippets - they are activated after consent #}
+    {% include "analytics_tools/all_bottom.html" with analytics_varname=analytics_varname %}
+</body>
+</html>
+{% endwith %}

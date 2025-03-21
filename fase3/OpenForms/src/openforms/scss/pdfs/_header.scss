@@ -1,0 +1,39 @@
+@use 'sass:math';
+
+@import '~microscope-sass/lib/typography';
+
+$padding-size: 10mm;
+
+.header {
+  @include margin('auto');
+  // offset the container padding
+  margin-top: -$padding-size;
+  margin-left: -$padding-size;
+  margin-right: -$padding-size;
+  // NOTE: uses fixed value for paper rather than design tokens in pixels for a more
+  // deterministic output
+  padding: math.div($padding-size, 2) $padding-size;
+
+  background-color: var(--of-page-header-bg, $color-white);
+
+  &#{&}--has-logo {
+    page: haslogo;
+  }
+
+  &:not(&--has-logo) {
+    display: none;
+  }
+
+  &__logo {
+    min-width: 100px;
+    min-height: 50px;
+    object-fit: contain; // maintain aspect ratio
+
+    width: var(--of-header-logo-width, auto);
+    height: var(--of-header-logo-height, 50px);
+    background-image: var(--of-header-logo-url);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+}

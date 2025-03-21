@@ -1,0 +1,23 @@
+import {ArgTypes, Canvas, Meta} from '@storybook/addon-docs';
+
+import ObjectsApiOptionsFormFields from './ObjectsApiOptionsFormFields';
+import * as ObjectsApiOptionsFormFieldsStories from './ObjectsApiOptionsFormFields.stories';
+
+<Meta of={ObjectsApiOptionsFormFieldsStories} />
+
+# Objects API Registration
+
+Here we can set up the registration backend for Objects APIs. The Objecttype and corresponding
+versions are fetched from the API. When using the _Variables Mapping_ configuration mode, the
+mapping between variables and Objecttype targets is configured in the
+[_Variables_ tab](/story/form-design-variables-editor--with-objects-api-registration-backends).
+
+<Canvas of={ObjectsApiOptionsFormFieldsStories.Default} />
+
+## Props
+
+<ArgTypes of={ObjectsApiOptionsFormFields} />
+
+**Warning**: this component requires the following contexts:
+
+- `ValidationErrorContext`, for validation errors
