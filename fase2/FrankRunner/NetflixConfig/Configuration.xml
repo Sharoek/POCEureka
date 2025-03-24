@@ -1,0 +1,14 @@
+<Configuration
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../FrankConfig.xsd"
+	>
+	<Adapter name="EurekaService">
+		<Pipeline>
+			<SenderPipe name="Sender">
+				<param name="service" value="openzaakService" />
+				<param name="endpoint" value="ping" />
+				<HttpSender name="fetchOpenzaak"/>
+			</SenderPipe>
+		</Pipeline>
+	</Adapter>
+</Configuration>
