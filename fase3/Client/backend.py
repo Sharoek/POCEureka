@@ -12,7 +12,7 @@ async def test_openforms(request):
 
 @app.get("/openzaak")
 async def test_openzaak(request):
-    result = await EurekaFacade.eureka_facade.pingService("openzaakService", "ping")
+    result = await EurekaFacade.eureka_facade.pingService("openzaakService", "/ping")
     return text(result)
 
 
