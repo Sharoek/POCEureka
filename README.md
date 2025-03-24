@@ -19,7 +19,6 @@ In this stage, we establish a fundamental setup where:
 
 In this stage, we introduce the Frank!Framework and modify the setup to:
 * Replace Spring Boot services with two Frank!Framework services.
-* Ensure both Frank!Framework instances can register with Eureka.
 * Validate communication between Frank services via Eureka.
 
 ### Stage 3: Multi-Service Communication
